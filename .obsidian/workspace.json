@@ -1,0 +1,145 @@
+{
+  "main": {
+    "id": "2b23b9ec9819b080",
+    "type": "split",
+    "children": [
+      {
+        "id": "da352423c17f9976",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3b6edacdc485d7a7",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0f9d1082540c29c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff8ad134123064dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d22db76533b33cfc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f8c4aba21190f109",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6779213f9c4bd40d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "32319a25aaf4e1db",
+    "type": "split",
+    "children": [
+      {
+        "id": "522ead609ff561ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "153c7f85252af2c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b1a70659debc348e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ee879f9d2d120fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9c8015bc89d13817",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "3b6edacdc485d7a7",
+  "lastOpenFiles": [
+    "Pathway.md",
+    "Active Directory/Domain Enumeration/Defence.md",
+    "Active Directory/Domain Enumeration/CMD.md",
+    "_attachments/Pasted image 20221102143332.png",
+    "Active Directory/Domain Enumeration/Powershell/User Hunting.md",
+    "Active Directory/Domain Enumeration/Powershell/GPOs.md",
+    "Windows/Windows Enumeration.md",
+    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Active Directory/AD Concepts/Trusts.md",
+    "_attachments/Pasted image 20221102174533.png"
+  ]
+}

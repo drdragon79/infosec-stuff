@@ -1,0 +1,137 @@
+{
+  "main": {
+    "id": "2b23b9ec9819b080",
+    "type": "split",
+    "children": [
+      {
+        "id": "d86f570029a4be89",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Active Directory/Initial Foothold/LLMNR.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0f9d1082540c29c4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ff8ad134123064dc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d22db76533b33cfc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "f8c4aba21190f109",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6779213f9c4bd40d",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "32319a25aaf4e1db",
+    "type": "split",
+    "children": [
+      {
+        "id": "522ead609ff561ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "153c7f85252af2c6",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Active Directory/Initial Foothold/LLMNR.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "b1a70659debc348e",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Active Directory/Initial Foothold/LLMNR.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ee879f9d2d120fc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "9c8015bc89d13817",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Active Directory/Initial Foothold/LLMNR.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "d22db76533b33cfc",
+  "lastOpenFiles": [
+    "Powershell Cheatsheet.md",
+    "Active Directory/Initial Foothold/LLMNR.md",
+    "Untitled.md"
+  ]
+}
