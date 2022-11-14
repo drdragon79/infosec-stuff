@@ -8,11 +8,15 @@
         "type": "tabs",
         "children": [
           {
-            "id": "3b6edacdc485d7a7",
+            "id": "5e4ea178b370431d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Local Privilege Escalation/Passwords.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -65,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -81,6 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Windows/Local Privilege Escalation/Passwords.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Windows/Local Privilege Escalation/Passwords.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +125,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Windows/Local Privilege Escalation/Passwords.md"
+              }
             }
           }
         ],
@@ -129,17 +138,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3b6edacdc485d7a7",
+  "active": "5e4ea178b370431d",
   "lastOpenFiles": [
-    "Pathway.md",
-    "Active Directory/Domain Enumeration/Defence.md",
-    "Active Directory/Domain Enumeration/CMD.md",
-    "_attachments/Pasted image 20221102143332.png",
-    "Active Directory/Domain Enumeration/Powershell/User Hunting.md",
-    "Active Directory/Domain Enumeration/Powershell/GPOs.md",
-    "Windows/Windows Enumeration.md",
-    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Windows/Windows Internals/Commands.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Windows/Local Privilege Escalation/Passwords.md",
+    "Uncategorized/Msfvenom.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Windows/Local Privilege Escalation/Service Exploits.md",
+    "Windows/Local Privilege Escalation/Registry Exploits.md",
+    "Windows/Local Privilege Escalation/Kernel Exploitation.md",
     "Active Directory/AD Concepts/Trusts.md",
-    "_attachments/Pasted image 20221102174533.png"
+    "Active Directory/AD Concepts/Terminologies.md"
   ]
 }
