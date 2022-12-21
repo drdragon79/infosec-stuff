@@ -15,6 +15,12 @@ reg add <key> [options]
 - `/t <type>` : type of the value
 - `/d <data>` : data to add
 - `/f` : do not ask for confirmation
+### save
+saves a copy of a key, entry and values
+```powershell
+reg save <key> <filename> [options]
+```
+- `/y` : overwrite the files
 
 # net
 

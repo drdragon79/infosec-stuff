@@ -8,12 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5e4ea178b370431d",
+            "id": "3eb85acd5e5dae59",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Passwords.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Passwords.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Passwords.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Passwords.md"
+                "file": "README.md"
               }
             }
           }
@@ -135,20 +134,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
-  "active": "5e4ea178b370431d",
+  "active": "3eb85acd5e5dae59",
   "lastOpenFiles": [
-    "Windows/Windows Internals/Commands.md",
-    "Windows/Windows Internals/Cmdlets.md",
-    "Windows/Local Privilege Escalation/Passwords.md",
-    "Uncategorized/Msfvenom.md",
+    "Pathway.md",
     "Windows/Windows Internals/SysInternals.md",
-    "Windows/Local Privilege Escalation/Service Exploits.md",
-    "Windows/Local Privilege Escalation/Registry Exploits.md",
-    "Windows/Local Privilege Escalation/Kernel Exploitation.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/AD Concepts/Terminologies.md"
+    "Windows/Windows Internals/Commands.md",
+    "Uncategorized/WinRM.md",
+    "Uncategorized/winexe.md",
+    "Uncategorized/WebDAV Exploitation.md",
+    "Uncategorized/SMB.md",
+    "Uncategorized/psexec.md",
+    "Uncategorized/Pass The Hash.md",
+    "Uncategorized/Msfvenom.md"
   ]
 }
