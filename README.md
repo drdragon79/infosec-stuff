@@ -1,1 +1,1 @@
-My personal notes for everything Offensive
+My personal notes for everything offensive
