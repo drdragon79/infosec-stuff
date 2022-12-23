@@ -160,15 +160,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcf816c05069efae",
+  "active": "d22db76533b33cfc",
   "lastOpenFiles": [
+    "Windows/Windows Enumeration.md",
     "Windows/Windows Internals/WMI.md",
     "Active Directory/Lateral Movement and Pivoting/Remote process with WMI.md",
     "Active Directory/AD Concepts/Trusts.md",
     "Active Directory/Domain Enumeration/CMD.md",
     "Windows/Local Privilege Escalation/Service Exploits.md",
     "Windows/Powershell Cheatsheet.md",
-    "Windows/Windows Enumeration.md",
     "README.md",
     "Pathway.md",
     "Windows/Windows Internals/SysInternals.md"
