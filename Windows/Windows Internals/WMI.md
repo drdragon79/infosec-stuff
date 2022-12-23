@@ -205,4 +205,7 @@ Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMe
 > Qualifiers indicate if a parameter is input parmeter or output parmeter
 
 # Creating Objects
-- `Invoke-WmiMethod` can be used to create objects
+- `Invoke-WmiMethod` can be used to create objects (from static methods of a class).
+```
+Invoke
+```

@@ -1,3 +1,4 @@
+[[WMI]]
 # Connecting to WMI on remote machine
 ### Protocols support
 - **DCOM**: RPC over IP. Uses port 135/TCP and port 49152-65535/TCP.
