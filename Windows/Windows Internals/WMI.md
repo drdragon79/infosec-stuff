@@ -2,7 +2,7 @@
 - Microsoft's Implimentation of:
 	- CIM: Common Information Model
 	- WBEM: Web Based Enterprise Management
-- Provides a uniform interface for applications/script to manage a local or remote cmputer or network
+- Provides a uniform interface for applications/script to manage a local or remote computer or network
 # Architecture
 ![[Pasted image 20221216201142.png]]
 # Components
@@ -109,7 +109,7 @@ function Get-WmiNamespace {
 ### Categories 
 - Core Classes: represents managed object that apply to all areas of management. Example - `__SystemSecurity` class
 - Common Classes: Extension of core classes. for specific management areas. Prefixed with `CIM_` . Example - `CIM_UnitaryComputerSystem`
-- Extended Classes: Technology specific addition to common classes. Example - Win32_ComputerSystem
+- Extended Classes: Technology specific addition to common classes. Example - `Win32_ComputerSystem`
 ### Types
 - Abstract - Template Class used to define new classes. Cannot be used to retrieve instances.
 - Static - Stores data like WMI configuration and operational data.
@@ -166,3 +166,43 @@ Get-CimInstance -ClassName Win32_BIOS
 # similar to sql
 -Query "select * from Win32_Process where Name = 'lsass.exe'"
 ```
+### Removing an Object
+- We can use the `Remove-WmiObject` to remove the object returned by `Get-WmiObect`
+```powershell
+# This is equivalent to killing the process
+Get-WmiObject -Class win32_process | Where-Object {$_.Name -Like "*notepad*"} | Remove-WmiObject
+Get-CimInstance -Class win32_process | Where-Object {$_.Name -Like "*notepad*"} | Remove-CimInstance
+```
+
+# Methods
+- Find all classes in a Namespace that has methods
+```powershell
+# WMI
+Get-WmiObject -List | Where-Object {$_.Methods}
+
+# CIM
+Get-Cimclass -MethodName *
+# Search for a specific class
+Get-CimClass -MethodName create
+```
+- Listing Methods of a class
+```powershell
+# WMI
+(Get-WmiObject -Class win32_process -List).Methods
+Get-WmiObject -Class Win32_process -List | Select-Object -ExpandProperty Methods
+
+# CIM
+(Get-CimClass -Class Win32_process).CimClassMethods
+Get-CimClass -Class Win32_process | Select-Object -ExpandProperty CimClassMethods
+```
+> [!NOTE]
+> Mention of `static` in qualifiers indicates that the method is a static method. Can be called directly with Class without creating an object. For example `Create` is a static method, and can be called via class to create a process
+- Listing paramters of a method
+```powershell
+Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMethods | Where-Object {$_.Name -like "Create"} | Select-Object -ExpandProperty Parameters
+```
+> [!NOTE]
+> Qualifiers indicate if a parameter is input parmeter or output parmeter
+
+# Creating Objects
+- `Invoke-WmiMethod` can be used to create objects
