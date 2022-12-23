@@ -207,5 +207,5 @@ Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMe
 # Creating Objects
 - `Invoke-WmiMethod` can be used to create objects (from static methods of a class).
 ```
-Invoke-WmiMethod
+Invoke-WmiMethod 
 ```
