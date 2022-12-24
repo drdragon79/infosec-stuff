@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Enumeration.md",
+                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
                 "mode": "source",
                 "source": false
               }
@@ -26,13 +26,12 @@
               "type": "markdown",
               "state": {
                 "file": "Windows/Windows Internals/WMI.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -82,7 +81,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 261.5
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md"
+                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md"
               }
             }
           }
@@ -160,17 +159,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dcf816c05069efae",
+  "active": "3eb85acd5e5dae59",
   "lastOpenFiles": [
     "Windows/Windows Enumeration.md",
     "Windows/Windows Internals/WMI.md",
-    "Active Directory/Lateral Movement and Pivoting/Remote process with WMI.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/Domain Enumeration/CMD.md",
-    "Windows/Local Privilege Escalation/Service Exploits.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Windows/Windows Internals/Commands.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Untitled.canvas",
     "Windows/Powershell Cheatsheet.md",
-    "README.md",
-    "Pathway.md",
-    "Windows/Windows Internals/SysInternals.md"
+    "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/Domain Enumeration/CMD.md"
   ]
 }

