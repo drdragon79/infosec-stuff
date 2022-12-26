@@ -162,10 +162,10 @@ Get-CimInstance -ClassName Win32_BIOS
 	Where-Object name -eq "svchost.exe"
 	```
 3. `-Query` Parameter
-```powershell
-# similar to sql
--Query "select * from Win32_Process where Name = 'lsass.exe'"
-```
+	```powershell
+	# similar to sql
+	-Query "select * from Win32_Process where Name = 'lsass.exe'"
+	```
 ### Removing an Object
 - We can use the `Remove-WmiObject` to remove the object returned by `Get-WmiObect`
 ```powershell
@@ -203,6 +203,18 @@ Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMe
 ```
 > [!NOTE]
 > Qualifiers indicate if a parameter is input parmeter or output parmeter
+- Executing Methods on an object
+```powershell
+# WMI
+# Search for an object and store 
+$calcObject = Get-WmiObject -Class Win32_process | Where-Object {$_.Name -like "calc.exe"}
+# Call the object's method by passing the object and method.
+Invoke-WmiMethod -InputObject $calcObject -Name Terminate
+
+# CIM
+$calcObject = Get-CimInstance -Class Win32_process | Where-Object {$_.Name -like "calc.exe"}
+Invoke-CimMethod -InputObject $calcObject -MethodName Terminate
+```
 
 # Creating Objects
 - `Invoke-WmiMethod` can be used to create objects (from static methods of a class).
@@ -211,7 +223,7 @@ Get-CimClass -ClassName win32_process | Select-Object -ExpandProperty CimClassMe
 #WMI
 Invoke-WmiMethod -Class Win32_Process -Name Create -ArgumentList calc.exe
 #CIM
-Invoke-CimMethod -ClassName Win32_process -Name Create -Argument @{
+Invoke-CimMethod -ClassName Win32_process -MethodName Create -Argument @{
 CommandLine = "calc.exe"
 }
 
@@ -284,3 +296,81 @@ wmic process /?
 - Powershell WMI Browser
 - .NET.System.Management Class
 # Remote Computers
+## WMI
+- Uses DCOM on port 135 for establishing connection (default - `Winmgmgt` service)
+- Admin privs are needed to access WMI on remote machines
+- Supports `-ComputerName` parameter 
+- Not firewall and NAT friendly.
+- Data exchange is done on dynamics ports. The ports are configured by `HKEY_LOCAL_MACHINE\Software\Microsoft\Rpc\Internet`
+```powershell
+Get-WmiObject -Class Win32_BIOS -ComputerName 192.168.0.1 -Credential domain\username
+```
+## CIM
+- Can use any of the following procol to connect to the remote machine through CIM Sessions
+	- DCOM (Port 135) 
+	- WinRM/WSMan (Port 5385/HTTP or 5286/HTTPS)
+ - Admin Privs are required to connect to the machine
+ - Supports `-ComputerName` parameter.
+- WinRM/WSMan is firewall and NAT friendly
+- If DCOM is blocked via firewall, WimRM can be used instead (if enabled)
+- By default, WinRM/WSMan is used for connecting to the remote machine
+```powershell
+# Create a credential object
+$username = "Administrator"
+$password = "password"
+$securepassword = ConvertTo-SecureString -Force -AsPlainText $password
+$credential = [System.Management.Automation.PSCredential]::new($username,$securepassword)
+
+# Create a session option if connecting with DCOM [OPTIONAL]
+$sessionOption = New-CimSessionOption -Protocol DCOM
+
+# Create a session
+$session = New-CimSession -ComputerName 192.168.0.1 -Credential $credential -SessionOption $sessionOption
+
+# Connect to the machine
+Get-CimInstance -ClassName Win32_BIOS -Session $session
+```
+# Registry
+- WMI can ineract with registry using `StdRegProv` class.
+- The class `StdRegProv` resides in the `root\default` class.
+- Provides a range of method on different Registry hives to retrieve keys and values, add, modify and remove keys and values.
+- List the methods of the class:
+```powershell
+Get-WmiObject -Namespace root\default -Class StdRegProv -List | Select-Object -ExpandProperty Methods | Select-Object -Property Name
+
+Name
+----
+CreateKey
+DeleteKey
+EnumKey
+EnumValues
+DeleteValue
+SetDWORDValue
+SetQWORDValue
+GetDWORDValue
+GetQWORDValue
+SetStringValue
+GetStringValue
+SetMultiStringValue
+GetMultiStringValue
+SetExpandedStringValue
+GetExpandedStringValue
+SetBinaryValue
+GetBinaryValue
+CheckAccess
+SetSecurityDescriptor
+GetSecurityDescriptor
+```
+- Contants for Registry Hives :
+	- `$HIVE_HKROOT` = 2147483648
+	- `$HIVE_HKCU` = 2147483649
+	- `$HIVE_HKLM` = 2147483650
+	- `$HIVE_HKU` = 2147483651
+ - Contants for data types:
+	 - `$REG_SZ` = 1
+	 - `$REG_EXPAND_SZ` = 2
+	 - `$REG_BINARY` = 3
+	 - `REG_DWORD` = 4
+	 - `$REG_MULTI_SZ` = 7
+	 - `$REG_QWORD` = 11
+

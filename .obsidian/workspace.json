@@ -13,20 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "dcf816c05069efae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
                 "file": "Windows/Windows Internals/WMI.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -97,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
+                "file": "Windows/Windows Internals/WMI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md",
+                "file": "Windows/Windows Internals/WMI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI.md"
+                "file": "Windows/Windows Internals/WMI.md"
               }
             }
           }
@@ -161,15 +149,15 @@
   },
   "active": "3eb85acd5e5dae59",
   "lastOpenFiles": [
-    "Windows/Windows Enumeration.md",
-    "Windows/Windows Internals/WMI.md",
     "Active Directory/Lateral Movement and Pivoting/WMI.md",
-    "Windows/Windows Internals/Cmdlets.md",
-    "Windows/Windows Internals/Commands.md",
-    "Windows/Windows Internals/SysInternals.md",
-    "Untitled.canvas",
-    "Windows/Powershell Cheatsheet.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/Domain Enumeration/CMD.md"
+    "Windows/Windows Enumeration.md",
+    "README.md",
+    "Windows/Windows Internals/WMI.md",
+    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Linux/Command Cheatsheet/TAR.md",
+    "Active Directory/Domain Enumeration/Credential Injection.md",
+    "Active Directory/Domain Enumeration/Powershell/Groups.md",
+    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
+    "Active Directory/AD Concepts/Trusts.md"
   ]
 }

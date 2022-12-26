@@ -65,42 +65,34 @@ netsh firewall show state
 1. Antivirus Details
 ```powershell
 Get-WmiObject -Namespace root\securitycenter2 -Class AntiVirusProduct
-Get-CimInstance -Namespace root\securitycenter2 -Class Antivirusproduct
 ```
 2. Services
 ```powershell
 Get-WmiObject -Namespace root\cimv2 -Class Win32_service
-Get-CimInstance -Namespace root\cimv2 -Class Win32_service
 ```
 3. Processor Architecture
 ```powershell
 Get-WmiObject -Namespace root\cimv2 -Class win32_processor
-Get-CimInstance -Namespace root\cimv2 -Class win32_processor
 ```
 4. Logged On User
 ```powershell
 Get-WmiObject -Class win32_ComputerSystem | Select-Object -Property Username
-Get-CimInstance -Class win32_ComputerSystem | Select-Object -Property Username
 ```
 5. Installed HotFix
 ```powershell
 Get-WmiObject -Class Win32_quickfixengineering
-Get-CimInstance -Class Win32_quickfixengineering
 ```
 6. Get log files locations
 ```powershell
 Get-WmiObject -Class win32_NTeventlogfile
-Get-CimInstance -Class win32_NTeventlogfile
 ```
 7. Get Command Line to start process
 ```powershell
 Get-WmiObject -Class win32_process | Select-Object -Property ProcessName,CommandLine
-Get-CimInstance -Class win32_process | Select-Object -Property ProcessName,CommandLine
 ```
 8. Get BinPath for running services
 ```powershell
 Get-WmiObject -Class win32_service | select DisplayName,Pathname
-Get-CimInstance -Class win32_service | select DisplayName,Pathname
 ```
 # Automated Tools
 ### Executables
