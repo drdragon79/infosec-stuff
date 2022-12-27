@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "c75876a42103d07c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Weaponization.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Weaponization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Weaponization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md"
+                "file": "Weaponization.md"
               }
             }
           }
@@ -147,17 +160,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3eb85acd5e5dae59",
+  "active": "c75876a42103d07c",
   "lastOpenFiles": [
-    "Active Directory/Lateral Movement and Pivoting/WMI.md",
+    "Windows/Windows Internals/WMI.md",
     "Windows/Windows Enumeration.md",
     "README.md",
-    "Windows/Windows Internals/WMI.md",
-    "Active Directory/Domain Enumeration/Powershell/Forest.md",
-    "Linux/Command Cheatsheet/TAR.md",
-    "Active Directory/Domain Enumeration/Credential Injection.md",
-    "Active Directory/Domain Enumeration/Powershell/Groups.md",
-    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
-    "Active Directory/AD Concepts/Trusts.md"
+    "Windows/Local Privilege Escalation/Windows Privileges.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Windows/Windows Internals/Commands.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI.md",
+    "Active Directory/Domain Enumeration/Powershell/Forest.md"
   ]
 }

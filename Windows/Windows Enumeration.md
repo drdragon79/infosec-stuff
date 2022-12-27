@@ -94,6 +94,27 @@ Get-WmiObject -Class win32_process | Select-Object -Property ProcessName,Command
 ```powershell
 Get-WmiObject -Class win32_service | select DisplayName,Pathname
 ```
+9. Routing table
+```powershell
+Get-WmiObject -Class Win32_IP4RouteTable
+```
+10. User Accounts
+```powershell
+Get-WmiObject -Class Win32_UserAccount
+```
+11. Groups
+```powershell
+Get-WmiObject -Class Win32_Group
+```
+12. Shadow Copy Information
+```powershell
+Get-WmiObject -Class Win32_ShadowCopy
+# Shadown copy class can be used to call the Create method to create shadow copy
+# Create a shadow copy and creating a link to that shadow copy.
+(Get-WmiObject -Class Win32_ShadowCopy -List).Create("C:\", "ClientAccessible")
+$link = (Get-WmiObject -Class Win32_ShadowCopy).DeviceObject + "\"
+cmd /c mklink /d C:\shadowcopy "$link"
+```
 # Automated Tools
 ### Executables
 - winPEAS.exe

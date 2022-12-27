@@ -373,4 +373,26 @@ GetSecurityDescriptor
 	 - `REG_DWORD` = 4
 	 - `$REG_MULTI_SZ` = 7
 	 - `$REG_QWORD` = 11
-
+> [!NOTE]
+> EnumKeys and EnumValues method has a vague definition in the case of registry and WMI.
+> For Example:
+> 	1. EnumKeys returns the following data for `software\Microsoft\OneDrive`
+![[Pasted image 20221227143012.png]]
+> 	1. EnumValues return the following data for `software\Microsoft\OneDrive`
+![[Pasted image 20221227143119.png]]
+- Query Keys within keys with `EnumKey`
+```powershell
+Invoke-WmiMethod -Namespace root\default -Class StdRegProv -Name EnumKey -ArgumentList @(2147483649,"Software\Microsoft\Internet Explorer\Toolbar") | Select-Object -ExpandProperty sNames
+```
+- Query Name within Keys with `EnumValues`
+```powershell
+Invoke-WmiMethod -Namespace root\default -Class StdRegProv -Name EnumValues -ArgumentList @(2147483649,"Software\Microsoft\Internet Explorer\TypedUrls") | Select-Object -ExpandProperty sNames
+```
+- Query Values within Names with `GetStringValue` , etc
+```powershell
+Invoke-WmiMethod -Namespace root\default -Class StdRegProv -Name GetStringValue -ArgumentList @(2147483649,"Software\Microsoft\Internet Explorer\TypedUrls","Url3") | Select-Object -ExpandProperty sValue
+```
+- Create or Modify a value with `SetStringValue` , etc
+```powershell
+Invoke-WmiMethod -Namespace root\default -Class StdRegProv -Name SetStringValue -ArgumentList @(2147483649,"Software\Microsoft\Internet Explorer\TypedUrls","ValueName","KeyName")
+```
