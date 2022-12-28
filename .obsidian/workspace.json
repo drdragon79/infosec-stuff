@@ -18,8 +18,69 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "1934dc7b205c8cb2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Initial Foothold/Payloads.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4128dfde5b49f369",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d421705564b0fced",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/AD Concepts/NetNTLM.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b4de4365371661db",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/Credential Dumping/Mimikatz.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6aeff698721cd1c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -85,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+                "file": "Active Directory/AD Concepts/Kerberos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+                "file": "Active Directory/AD Concepts/Kerberos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md"
+                "file": "Active Directory/AD Concepts/Kerberos.md"
               }
             }
           }
@@ -147,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c75876a42103d07c",
+  "active": "6aeff698721cd1c5",
   "lastOpenFiles": [
-    "Uncategorized/SMB.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Windows/Windows Authentication.md",
+    "Active Directory/Credential Dumping/Mimikatz.md",
+    "Active Directory/AD Concepts/NetNTLM.md",
+    "Active Directory/Domain Enumeration/Powershell/Trusts.md",
+    "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/AD Concepts/Terminologies.md",
+    "Active Directory/AD Concepts/Kerberos.md",
     "Initial Foothold/Payloads.md",
-    "Windows/Windows Internals/WMI.md",
-    "Windows/Windows Enumeration.md",
-    "README.md",
-    "Windows/Local Privilege Escalation/Windows Privileges.md",
-    "Windows/Powershell Cheatsheet.md",
-    "Windows/Windows Internals/Cmdlets.md",
-    "Windows/Windows Internals/Commands.md"
+    "Uncategorized/SMB.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md"
   ]
 }

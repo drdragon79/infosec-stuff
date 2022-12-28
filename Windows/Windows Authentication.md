@@ -1,0 +1,2 @@
+# LM Hash
+# NT Hash
