@@ -73,14 +73,14 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md",
-                "mode": "source",
+                "file": "Windows/Powershell Cheatsheet.md",
+                "mode": "preview",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -208,17 +208,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6aeff698721cd1c5",
+  "active": "4128dfde5b49f369",
   "lastOpenFiles": [
-    "Windows/Windows Authentication.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Windows/Windows Internals/WMI.md",
     "Active Directory/Credential Dumping/Mimikatz.md",
+    "Windows/Windows Authentication.md",
     "Active Directory/AD Concepts/NetNTLM.md",
     "Active Directory/Domain Enumeration/Powershell/Trusts.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/AD Concepts/Terminologies.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Initial Foothold/Payloads.md",
-    "Uncategorized/SMB.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md"
+    "Active Directory/AD Concepts/Trusts.md"
   ]
 }
