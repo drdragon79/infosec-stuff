@@ -130,7 +130,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 261.5
+    "width": 260.5
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -210,15 +210,15 @@
   },
   "active": "4128dfde5b49f369",
   "lastOpenFiles": [
+    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Active Directory/AD Concepts/Kerberos.md",
     "Windows/Powershell Cheatsheet.md",
     "Windows/Windows Internals/Cmdlets.md",
     "Active Directory/Domain Enumeration/Powershell/ACLs.md",
-    "Active Directory/AD Concepts/Kerberos.md",
     "Windows/Windows Internals/WMI.md",
     "Active Directory/Credential Dumping/Mimikatz.md",
     "Windows/Windows Authentication.md",
     "Active Directory/AD Concepts/NetNTLM.md",
-    "Active Directory/Domain Enumeration/Powershell/Trusts.md",
-    "Active Directory/AD Concepts/Trusts.md"
+    "Active Directory/Domain Enumeration/Powershell/Trusts.md"
   ]
 }
