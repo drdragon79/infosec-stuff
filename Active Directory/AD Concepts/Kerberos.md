@@ -11,7 +11,7 @@ sequenceDiagram
 	User->>TGS: 3. Request for accessing a service
 	TGS->>User: 4. Service Ticket
 	User->>Service: 5. Service Ticket and User Authenticator Message
-	Service->>User: 6. Authenticator Message
+	Service->>User: 6. Service Authenticator Message
 ```
 # Working
 ### 1. User -> Auth_Server
@@ -154,4 +154,14 @@ Lifetime of Service Ticket
 - The Service uses it's `ServiceSecretKey` to decrypt the Service Ticket.
 - The Service can now access the `ServiceSessionKey` .
 - The Service the uses the `ServiceSessionKey` to decypt the User Authenticator.
-- The service then perfrom checks by comparing the Username and Timestamp.
+- The service then perfrom checks by comparing the Username and Timestamp, and that the service ticket is not expired.
+- After everything is validated the service then checks it's cache to check if the authenticator it just recivieved is not already in the service's cache. This check provides replay protection.
+- The service then creates it's own authenticator message known as `service Authenticator` and send it back to the user.
+```
+[Encrypted:ServiceSessionKey]
+ServiceName/ID
+Timestamp
+```
+### 7. User
+- The user has a copy of `ServiceSessionKey` and uses it to decrypt the `Service Authenticator`.
+- The User then verifies the ServiceName, and the timestamp.
