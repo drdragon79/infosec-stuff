@@ -11,8 +11,12 @@
             "id": "4128dfde5b49f369",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Uncategorized/WinRM.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Uncategorized/WinRM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Uncategorized/WinRM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Uncategorized/WinRM.md"
+              }
             }
           }
         ],
@@ -139,17 +147,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d22db76533b33cfc",
+  "active": "4128dfde5b49f369",
   "lastOpenFiles": [
+    "Uncategorized/winexe.md",
+    "Uncategorized/psexec.md",
+    "Uncategorized/SMB.md",
+    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
     "Initial Access/Recon-AssetDiscovery.md",
     "OSINT.md",
     "Windows/Windows Authentication.md",
     "Initial Foothold/Recon/Subdomain Enumeration.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
-    "Windows/Windows Internals/WMI.md",
-    "Tools.md",
-    "Physical RT/RFID.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Active Directory/AD Concepts/Terminologies.md"
+    "Windows/Windows Internals/WMI.md"
   ]
 }

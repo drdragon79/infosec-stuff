@@ -20,6 +20,7 @@ sequenceDiagram
 # Impacket's PSexec
 psexec.py <Username>@<server> cmd.exe
 ```
+More about psexec [here](https://www.rapid7.com/blog/post/2013/03/09/psexec-demystified/)
 # WinRM
 - Ports: 5985/TCP (WinRM HTTP) or 5986/TCP (WinRM HTTPS)
 - Group: Remote Management Users
