@@ -11,40 +11,11 @@
             "id": "4128dfde5b49f369",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Windows/Windows Authentication.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "df166922ebfd85dd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Physical RT/RFID.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "145ff6c2db5a4bdb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Physical RT/RFID.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -94,7 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 289.5
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -110,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Physical RT/RFID.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Physical RT/RFID.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Physical RT/RFID.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -172,17 +139,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "df166922ebfd85dd",
+  "active": "d22db76533b33cfc",
   "lastOpenFiles": [
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Active Directory/AD Concepts/Terminologies.md",
-    "Active Directory/AD Concepts/NetNTLM.md",
-    "OSINT/Links.md",
-    "Physical RT/RFID.md",
-    "Physical RT/Untitled.md",
+    "Initial Access/Recon-AssetDiscovery.md",
+    "OSINT.md",
     "Windows/Windows Authentication.md",
-    "README.md",
-    "Initial Foothold/Payloads.md",
-    "Active Directory/Domain Enumeration/Powershell/Forest.md"
+    "Initial Foothold/Recon/Subdomain Enumeration.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Windows/Windows Internals/WMI.md",
+    "Tools.md",
+    "Physical RT/RFID.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Active Directory/AD Concepts/Terminologies.md"
   ]
 }

@@ -1,5 +1,33 @@
-# Sock Puppet
+# Automated OSINT.
+- [Amass](https://github.com/OWASP/Amass) - In-depth Attack Surface Mapping and Asset Discovery.
+- [Recon-ng](https://github.com/lanmaster53/recon-ng) - Open Source Intelligence gathering tool
+- [SpiderFoot](https://github.com/smicallef/spiderfoot) - Automates OSINT for threat intelligence and mapping your attack surface. 
+- [SecurityTrails](https://securitytrails.com/) - Threat Intel & Attack Surface mapping.
 
+# Email & Password Hunting.
+### Emails
+- [Hunter](https://hunter.io/)
+- [Phonebook](https://phonebook.cz/)
+- [VoilaNorbert](https://www.voilanorbert.com/)
+- [Email-Hippo](https://tools.verifyemailaddress.io/)
+- [Email-Checker](https://email-checker.net/validate)
+- [Clearbit-Connect](https://chrome.google.com/webstore/detail/clearbit-connect-supercha/pmnhcgfcafcnkbengdcanjablaabjplo?hl=en)
+### Passwords
+- [Dehashed](https://dehashed.com/)
+- [WeLeakInfo](https://weleakinfo.to/v2/)
+- [LeakCheck](https://leakcheck.io/)
+- [SnusBase](https://snusbase.com/)
+- [Scylla](http://scylla.sh/)
+- [HaveIBeenPwned](https://haveibeenpwned.com/)
+
+# Subdomain Enumeration.
+- [Cert.sh](crt.sh)
+- [Sublist3r](https://github.com/aboul3la/Sublist3r)
+
+# DNS Recon.
+- [DNSDumpster](https://dnsdumpster.com/)
+
+# Sock Puppet
 - [Creating-an-Effective-Sock-Puppet-for-OSINT-Investigations-Introduction](https://jakecreps.com/2018/11/02/sock-puppets/)
 - [The Art Of The Sock](https://www.secjuice.com/the-art-of-the-sock-osint-humint/)
 - [Reddit](https://www.reddit.com/r/OSINT/comments/dp70jr/my_process_for_setting_up_anonymous_sockpuppet/)
@@ -8,7 +36,6 @@
 - [Privacy.com](https://privacy.com/)
 
 # Search Engine
-
 - [Google](https://www.google.com/)
 - [Google Advanced Search](https://www.google.com/advanced_search)
 - [Google Search Guide](http://www.googleguide.com/print/adv_op_ref.pdf)
@@ -20,7 +47,6 @@
 - [Baidu](https://baidu.com/)
 
 # Image
-
 - [Google-Image-Search](https://images.google.com/)
 - [Yandex](https://yandex.com/)
 - [TinEye](https://tineye.com/)
@@ -28,32 +54,12 @@
 - [GeoGuessr](https://www.geoguessr.com/)
 - [GeoGuessr-The-Top-Tips-Tricks-and-Techniques](https://somerandomstuff1.wordpress.com/2019/02/08/geoguessr-the-top-tips-tricks-and-techniques/)
 
-# Email
-
-- [Hunter](https://hunter.io/)
-- [Phonebook](https://phonebook.cz/)
-- [VoilaNorbert](https://www.voilanorbert.com/)
-- [Email-Hippo](https://tools.verifyemailaddress.io/)
-- [Email-Checker](https://email-checker.net/validate)
-- [Clearbit-Connect](https://chrome.google.com/webstore/detail/clearbit-connect-supercha/pmnhcgfcafcnkbengdcanjablaabjplo?hl=en)
-
-# Password
-
-- [Dehashed](https://dehashed.com/)
-- [WeLeakInfo](https://weleakinfo.to/v2/)
-- [LeakCheck](https://leakcheck.io/)
-- [SnusBase](https://snusbase.com/)
-- [Scylla](http://scylla.sh/)
-- [HaveIBeenPwned](https://haveibeenpwned.com/)
-
 # Username
-
 - [NameChk](https://namechk.com/)
 - [WhatsMyName](https://whatsmyname.app/)
 - [NameCheckup](https://namecheckup.com/)
 
 # People
-
 - [WhitePages](https://www.whitepages.com/)
 - [truepeoplesearch.com](https://www.truepeoplesearch.com/)
 - [FastPeopleSearch](https://www.fastpeoplesearch.com/)
@@ -67,3 +73,4 @@
 - [TrueCaller](https://www.truecaller.com/)
 - [CallerIdTest](https://calleridtest.com/)
 - [Infobel](https://www.infobel.com/)
+
