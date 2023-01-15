@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "da352423c17f9976",
+        "id": "5e4f614dcba49878",
         "type": "tabs",
         "children": [
           {
-            "id": "4128dfde5b49f369",
+            "id": "a75f4560f9da7555",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Uncategorized/WinRM.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Uncategorized/WinRM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Uncategorized/WinRM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Uncategorized/WinRM.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -147,17 +139,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4128dfde5b49f369",
+  "active": "a75f4560f9da7555",
   "lastOpenFiles": [
-    "Uncategorized/winexe.md",
-    "Uncategorized/psexec.md",
-    "Uncategorized/SMB.md",
-    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
+    "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
+    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
+    "Uncategorized/Port Forwarding.md",
+    "Linux/Privilege Escalation/Kernel Exploit.md",
+    "Linux/Privilege Escalation/Cron Jobs.md",
     "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
-    "Initial Access/Recon-AssetDiscovery.md",
-    "OSINT.md",
-    "Windows/Windows Authentication.md",
-    "Initial Foothold/Recon/Subdomain Enumeration.md",
-    "Windows/Windows Internals/WMI.md"
+    "Windows/Windows Internals/WMI.md",
+    "Active Directory/Domain Enumeration/CMD.md",
+    "Active Directory/Credential Dumping/Mimikatz.md",
+    "Uncategorized/Mimikatz.md"
   ]
 }
