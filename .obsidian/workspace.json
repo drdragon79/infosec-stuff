@@ -11,8 +11,12 @@
             "id": "a75f4560f9da7555",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Initial Access/Passwords.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Initial Access/Passwords.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Initial Access/Passwords.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Initial Access/Passwords.md"
+              }
             }
           }
         ],
@@ -141,6 +149,8 @@
   },
   "active": "a75f4560f9da7555",
   "lastOpenFiles": [
+    "Initial Access/Payloads.md",
+    "Initial Access/Passwords.md",
     "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
     "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
     "Uncategorized/Port Forwarding.md",
@@ -148,8 +158,6 @@
     "Linux/Privilege Escalation/Cron Jobs.md",
     "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
     "Windows/Windows Internals/WMI.md",
-    "Active Directory/Domain Enumeration/CMD.md",
-    "Active Directory/Credential Dumping/Mimikatz.md",
-    "Uncategorized/Mimikatz.md"
+    "Active Directory/Domain Enumeration/CMD.md"
   ]
 }
