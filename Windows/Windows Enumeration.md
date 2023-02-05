@@ -4,6 +4,7 @@
 # Get Systeminfo
 systeminfo
 systeminfo | findstr /B /C:"Os Version"
+systeminfo | findtr Domain
 
 # Get hotfix
 wmic qfe # quick fix engineering
@@ -47,7 +48,6 @@ netstat
 # search for "password" in *.txt files
 findstr /si Password *.txt
 ```
-
 5. AV Enumeration
 ```powershell
 # Check if windows defender is running

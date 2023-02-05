@@ -26,4 +26,6 @@ crunch 6 6 abcd -o wordlist.txt
 ### [Cupp](https://github.com/Mebus/cupp)
 - Common user password profiler
 - interactive tool to generated password list based on person.
-- 
+```bash
+python3 cupp.py -i
+```

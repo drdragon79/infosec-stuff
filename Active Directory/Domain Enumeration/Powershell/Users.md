@@ -16,6 +16,9 @@ Get-ADUser -Filter * -Properties * | Select-Object -First 1 | Get-Member | Selec
 Get-ADUser -Filter 'Description -like "*built*"' -Properties Description | Select-Object -Property Name,Description
 # or
 Get-ADUser -Filter * -Property * | Where-Object {$_.Description -Like "*built*"} | Select-Object -Property Name,Description
+
+# Search Users by LDAP hierarchical tree structure
+Get-ADUser -Filter * -SearchBase "CN=Users,DC=MYORG,DC=LOCAL"
 ```
 ### Powerview
 ```powershell

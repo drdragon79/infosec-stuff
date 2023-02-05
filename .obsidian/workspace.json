@@ -13,13 +13,42 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Initial Access/Passwords.md",
+                "file": "Active Directory/Domain Enumeration/Powershell/Users.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9fc989ad229f6de1",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "b11239f2c2183f5a",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "348340cac8aae82a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows Internals/Cmdlets.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Initial Access/Passwords.md",
+                "file": "Windows/Windows Internals/Cmdlets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Initial Access/Passwords.md",
+                "file": "Windows/Windows Internals/Cmdlets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Initial Access/Passwords.md"
+                "file": "Windows/Windows Internals/Cmdlets.md"
               }
             }
           }
@@ -147,17 +176,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a75f4560f9da7555",
+  "active": "348340cac8aae82a",
   "lastOpenFiles": [
-    "Initial Access/Payloads.md",
-    "Initial Access/Passwords.md",
-    "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
-    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
-    "Uncategorized/Port Forwarding.md",
-    "Linux/Privilege Escalation/Kernel Exploit.md",
-    "Linux/Privilege Escalation/Cron Jobs.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Windows/Windows Internals/Commands.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Windows/Windows Authentication.md",
+    "Windows/Windows Enumeration.md",
+    "Uncategorized/Mimikatz.md",
+    "Uncategorized/Lay Of The Land.md",
+    "Windows/Evasion/AntiVirus.md",
     "Windows/Windows Internals/WMI.md",
-    "Active Directory/Domain Enumeration/CMD.md"
+    "Active Directory/Domain Enumeration/Powershell/Users.md"
   ]
 }
