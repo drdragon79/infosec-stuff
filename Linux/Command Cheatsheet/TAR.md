@@ -1,7 +1,7 @@
 -   Basic Syntax
-    ```bash
-    tar [mode] [option] -f [archive] files
-    ```
+```bash
+tar [mode] [option] -f [archive] files
+```
 
 ### MODE
 

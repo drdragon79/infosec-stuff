@@ -1,4 +1,4 @@
-## Query Install Antivirus
+## Query Installed Antivirus
 ```powershell
 # Using wmic 
 wmic /namespace:\\root\securitycenter2 path antivirusproduct

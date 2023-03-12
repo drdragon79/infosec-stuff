@@ -41,7 +41,7 @@ ipconfig /all # verbose
 arp -a
 
 # socket enumration
-netstat
+netstat -abno
 ```
 4. Password Hunting
 ```powershell
@@ -115,6 +115,7 @@ Get-WmiObject -Class Win32_ShadowCopy
 $link = (Get-WmiObject -Class Win32_ShadowCopy).DeviceObject + "\"
 cmd /c mklink /d C:\shadowcopy "$link"
 ```
+
 # Automated Tools
 ### Executables
 - winPEAS.exe
