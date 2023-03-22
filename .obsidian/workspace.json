@@ -8,12 +8,48 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a75f4560f9da7555",
+            "id": "5587c1028f35b581",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Enumeration.md",
+                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4696e16363293d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows Internals/SID.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8a35f254c3e14666",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Windows Internals/Privileges.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b5c4ab9898647d8a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Local Privilege Escalation/Windows Privileges.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows Enumeration.md",
+                "file": "Windows/Persistence/Adding Privileged Users.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Windows Enumeration.md",
+                "file": "Windows/Persistence/Adding Privileged Users.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Windows Enumeration.md"
+                "file": "Windows/Persistence/Adding Privileged Users.md"
               }
             }
           }
@@ -147,20 +183,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a75f4560f9da7555",
+  "active": "5587c1028f35b581",
   "lastOpenFiles": [
-    "Windows/Powershell Cheatsheet.md",
-    "Windows/Windows Authentication.md",
-    "Linux/Linux Enumeration.md",
-    "Windows/Persistence",
-    "Linux/Command Cheatsheet/TAR.md",
-    "Active Directory/Domain Enumeration/Powershell/Users.md",
-    "Windows/Windows Internals/WMI.md",
-    "Windows/Windows Internals/Cmdlets.md",
-    "Windows/Evasion/AntiVirus.md",
-    "README.md",
+    "Windows/Windows Internals/SID.md",
+    "Windows/Persistence/Adding Privileged Users.md",
+    "Tools/Impacket.md",
     "Windows/Windows Internals/Commands.md",
-    "Windows/Windows Internals/SysInternals.md",
-    "Windows/Windows Enumeration.md"
+    "Windows/Windows Internals/Privileges.md",
+    "Windows/Windows Internals/Policies.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Windows/Local Privilege Escalation/Windows Privileges.md",
+    "Windows/Windows Internals/WMI.md",
+    "Windows/Windows Internals/UAC.md",
+    "Linux/Privilege Escalation/Sudo.md",
+    "Linux/Privilege Escalation/Kernel Exploit.md",
+    "Linux/Privilege Escalation/Cron Jobs.md",
+    "Linux/Privilege Escalation/SUID.md",
+    "Linux/Privilege Escalation/Weak File Permission.md",
+    "Uncategorized/Port Forwarding.md",
+    "Uncategorized/Mimikatz.md",
+    "Windows/Local Privilege Escalation/Insecure GUI Apps.md",
+    "Windows/Local Privilege Escalation/Startup Apps.md",
+    "Windows/Local Privilege Escalation/Vulnerable Software.md",
+    "Windows/Local Privilege Escalation/Passwords.md",
+    "Windows/Local Privilege Escalation/Potato.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Windows/Evasion/AntiVirus.md",
+    "Linux/Command Cheatsheet/TAR.md",
+    "Physical/RFID.md",
+    "Windows/Persistence"
   ]
 }
