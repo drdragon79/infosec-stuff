@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "5e4f614dcba49878",
+        "id": "1925068e9efbc376",
         "type": "tabs",
         "children": [
           {
-            "id": "5587c1028f35b581",
+            "id": "c97fe58c3479f79b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -20,42 +20,67 @@
             }
           },
           {
-            "id": "e4696e16363293d7",
+            "id": "6d1b85538329cfee",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/SID.md",
+                "file": "Windows/Persistence/Backdoor Files.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "8a35f254c3e14666",
+            "id": "266b19fb87ef4461",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/Privileges.md",
+                "file": "Windows/Persistence/Services.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b5c4ab9898647d8a",
+            "id": "fcde12f470364576",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Windows Privileges.md",
+                "file": "Windows/Persistence/Scheduled Tasks.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "617cf7b263d194b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Persistence/Logon Triggered.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3e84970cf5066537",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Windows/Persistence/Logon Triggered.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -121,7 +146,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "file": "Windows/Persistence/Logon Triggered.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +163,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "file": "Windows/Persistence/Logon Triggered.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md"
+                "file": "Windows/Persistence/Logon Triggered.md"
               }
             }
           }
@@ -183,34 +208,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5587c1028f35b581",
+  "active": "3e84970cf5066537",
   "lastOpenFiles": [
-    "Windows/Windows Internals/SID.md",
-    "Windows/Persistence/Adding Privileged Users.md",
-    "Tools/Impacket.md",
+    "Windows/Persistence/Scheduled Tasks.md",
+    "Windows/Persistence/Services.md",
+    "Windows/Persistence/Existing Services.md",
+    "Windows/Windows Internals/SysInternals.md",
     "Windows/Windows Internals/Commands.md",
-    "Windows/Windows Internals/Privileges.md",
-    "Windows/Windows Internals/Policies.md",
-    "Windows/Windows Internals/Cmdlets.md",
-    "Windows/Local Privilege Escalation/Windows Privileges.md",
+    "Windows/Persistence/Login Screen (RDP).md",
+    "Windows/Persistence/Logon Triggered.md",
+    "Windows/Persistence/Untitled",
+    "Windows/Persistence/Backdoor Files.md",
+    "Windows/Local Privilege Escalation/Service Exploits.md",
+    "Tools/Impacket.md",
+    "Tools/Msfvenom.md",
+    "Windows/Persistence/Adding Privileged Users.md",
+    "Active Directory/Domain Enumeration/Credential Injection.md",
+    "Windows/Windows Internals/SID.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Windows/Windows Authentication.md",
+    "Windows/Windows Enumeration.md",
     "Windows/Windows Internals/WMI.md",
     "Windows/Windows Internals/UAC.md",
+    "Windows/Windows Internals/Cmdlets.md",
+    "Uncategorized/WinRM.md",
+    "Windows/Windows Internals/Privileges.md",
+    "Windows/Windows Internals/Policies.md",
+    "Windows/Local Privilege Escalation/Windows Privileges.md",
     "Linux/Privilege Escalation/Sudo.md",
     "Linux/Privilege Escalation/Kernel Exploit.md",
-    "Linux/Privilege Escalation/Cron Jobs.md",
-    "Linux/Privilege Escalation/SUID.md",
-    "Linux/Privilege Escalation/Weak File Permission.md",
-    "Uncategorized/Port Forwarding.md",
-    "Uncategorized/Mimikatz.md",
-    "Windows/Local Privilege Escalation/Insecure GUI Apps.md",
-    "Windows/Local Privilege Escalation/Startup Apps.md",
-    "Windows/Local Privilege Escalation/Vulnerable Software.md",
-    "Windows/Local Privilege Escalation/Passwords.md",
-    "Windows/Local Privilege Escalation/Potato.md",
-    "Windows/Powershell Cheatsheet.md",
-    "Windows/Evasion/AntiVirus.md",
-    "Linux/Command Cheatsheet/TAR.md",
-    "Physical/RFID.md",
     "Windows/Persistence"
   ]
 }

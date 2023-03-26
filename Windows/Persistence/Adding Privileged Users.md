@@ -40,3 +40,17 @@ secedit /configure /db config.sdb /cnf /config.inf
 # this will launch the configuration windows for the Win-RM's security descriptor
 Set-PSSessionconfiguration -Name Microsoft.Powershell -showSecurityDescriptorUI
 ```
+
+### RID hijacking
+[[SID]]
+- Changing the effective RID of a user to RID of an admistrator so that when the user logs in, it will have the same access tokens as an administrator.
+- Effective RID is stored in `F` key at:
+```cmd
+HKLM\SAM\SAM\Domain\Account\Users\RID(hex)
+```
+- SAM is restricted to SYSTEM only.
+```powershell
+PsExec64.exe -i -s regedit
+```
+- Effective RID is located at `0x30` location in little endian format
+- After changing the effective RID to 500 (0x01F4), the next time users logs in, it will get Administrators privileges.

@@ -14,7 +14,7 @@ runas /netonly /user:<domain>\<username> cmd.exe
 * `cmd.exe`: Command to execute.
 
 #### Credential Verification
-The credentials are not verfied when we pass it to `runas`. To Verify the credentials, we need to list the `SYSVOL` directory.
+The credentials are not verfied when we pass it to `runas`. To Verify the credentials, we cal try to list the `SYSVOL` directory.
 
 The `SYSVOL` directory is a special directory that is available to all the domain users. It is required to push the GPOs to the Users or Computers.
 

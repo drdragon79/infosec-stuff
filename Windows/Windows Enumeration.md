@@ -64,7 +64,11 @@ netsh firewall show state
 # WMI
 1. Antivirus Details
 ```powershell
+# Installed Antivirus solutions
 Get-WmiObject -Namespace root\securitycenter2 -Class AntiVirusProduct
+
+# Defender status
+Get-MpComputerStatus
 ```
 2. Services
 ```powershell

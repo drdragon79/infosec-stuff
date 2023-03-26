@@ -23,4 +23,11 @@ reg save <key> <filename> [options]
 - `/y` : overwrite the files
 
 # net
-
+### net users
+### net localgroup
+### net start|stop
+# sc
+### sc create
+### sc configure
+### sc start
+# schtasks

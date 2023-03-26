@@ -1,4 +1,4 @@
-	### Syntax
+### Syntax
 ```bash
 # List
 msfvenom -l [types]
