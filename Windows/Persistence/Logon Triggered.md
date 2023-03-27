@@ -19,4 +19,14 @@ C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
 backdoor -> C:\Windows\reverse_shell.exe
 ```
 ### Winlogon
+- Winlogon - windows component that loads user profile after user authenticates
+- Winlogon registry keys are located at : `HKLM\Software\Microsoft\Windows NT\CurrentVersion\Winlogon`
+- Interesting Keys in the registry:
+	- `Userinit` -> userinit.exe (restores the user preference)
+	- `Shell` -> explorer.exe (system's shell)
+- We can append our reverse shell in userinit.exe after `,`
+- `Userinit` -> userinit.exe,reverse_shell.exe
 ### Logon Scripts
+- Apart from loading the user profile, userinit.exe checks for an environment variable `UserInitMprLogonScript`. This environment variable can be used to run scripts when user logs in.
+- This variable is located at: `HKCU\Environment`
+- `UserInitMprLogonScript` -> `C:\Windows\reverse.exe`
