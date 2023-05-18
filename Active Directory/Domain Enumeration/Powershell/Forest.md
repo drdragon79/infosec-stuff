@@ -8,7 +8,7 @@ Get-ADForest -Identity eurocorp.local # the forest must have trust relationship
 # Get list of domains in the forest
 (Get-ADForest).Domains
 ```
-- List all Global Calalogs ([[Terminologies#Global Calalog]])
+- List all Global Calalogs ([[Basics#Global Calalog]])
 ```powershell
 # Get all global calalog for the current forest 
 Get-ADForest | Select-Object -ExpandProperty GlobalCatalogs
@@ -28,7 +28,7 @@ Get-NetForest -Forest eurocorp.local
 Get-NetForestDomain
 Get-NetForestDomain -Forest eurocorp.local # the forest must have a trust relationship
 ```
-- List all Global Catalogs ([[Terminologies#Global Calalog]])
+- List all Global Catalogs ([[Basics#Global Calalog]])
 ```powershell
 Get-NetForestCalalog
 Get-NetForestCalalog -Forest eurocorp.local # needs to have trust 

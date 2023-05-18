@@ -4,7 +4,7 @@
 sequenceDiagram
 	actor User
 	participant Auth_Server
-	participant TGS as Ticker_Granting_Server
+	participant TGS as Ticket_Granting_Server
 	participant Service
 	User->>Auth_Server: 1. Unencrypted Authentication Request
 	Auth_Server->>User: 2. Ticket Granting Ticket
@@ -58,7 +58,7 @@ SecretKey = HASH(password+salt+version)
 - The key is then used to decrypt the first message send by the authentication server
 - The User has now access to TGS ID and TGSSessionKey
 - The User then generates two more messages to send to the Ticket Granting Server
-- Frist one is a plain text with the follwing content
+- Frist one is a plain text with the following content
 ```
 [Unencrypted]
 ServiceName/ID

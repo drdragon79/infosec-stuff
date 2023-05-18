@@ -29,4 +29,4 @@ Trusted Domain Objects (TDOs) represent the trust relationship in a domain.
 - Cannot be extended to a third forest (No implicit trust)
 - Can be one-way or two-way and transitive and non-transitive
 
-### Trust Enumeration - [[Active Directory/Domain Enumeration/Powershell/Trusts]]
+Trust Enumeration - [[Active Directory/Domain Enumeration/Powershell/Trusts]]

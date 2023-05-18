@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "52279841af8f5cda",
+        "id": "beb77dc76aad7d9b",
         "type": "tabs",
         "children": [
           {
-            "id": "785e6c1ff77f4e78",
+            "id": "cad47dd22da26788",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Persistence/Services.md",
+                "file": "Active Directory/Domain Enumeration/Powershell/Forest.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "b25da033342ae0bd",
+            "id": "d5b8cf2d17457eae",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "file": "Active Directory/AD Concepts/Basics.md",
                 "mode": "source",
                 "source": false
               }
@@ -77,6 +77,14 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "6c8ddf3187c0d746",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ]
       }
@@ -98,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "file": "Active Directory/AD Concepts/Basics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md",
+                "file": "Active Directory/AD Concepts/Basics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Persistence/Adding Privileged Users.md"
+                "file": "Active Directory/AD Concepts/Basics.md"
               }
             }
           }
@@ -160,35 +168,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b25da033342ae0bd",
+  "active": "d5b8cf2d17457eae",
   "lastOpenFiles": [
+    "Active Directory/AD Concepts/Administrators.md",
+    "Active Directory/AD Concepts/Basics.md",
+    "Active Directory/Domain Enumeration/Powershell/Computer.md",
+    "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Active Directory/Domain Enumeration/Powershell/Domain.md",
+    "Windows/Local Privilege Escalation/Passwords.md",
+    "Windows/Local Privilege Escalation/Registry Exploits.md",
+    "Windows/Local Privilege Escalation/Insecure GUI Apps.md",
+    "Windows/Local Privilege Escalation/Kernel Exploitation.md",
+    "Physical/RFID.md",
+    "Linux/Privilege Escalation/Weak File Permission.md",
+    "Linux/Privilege Escalation/SUID.md",
+    "Linux/Privilege Escalation/Sudo.md",
+    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
+    "_attachments/Pasted image 20230512003628.png",
+    "Active Directory/AD Concepts/NetNTLM.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Active Directory/Exploitation/Kerberos Delegation.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Windows/Windows Internals/Windows Internals",
+    "Active Directory/Exploitation/Delegations.md",
+    "Active Directory/Untitled",
+    "Windows/Persistence/Services.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Uncategorized/Port Forwarding.md",
     "Uncategorized/Data Exfilteration.md",
+    "Windows/Persistence/Adding Privileged Users.md",
     "Untitled.canvas",
     "Windows/Persistence/Existing Services.md",
-    "Windows/Persistence/Services.md",
-    "Windows/Persistence/Scheduled Tasks.md",
-    "Windows/Persistence/Logon Triggered.md",
-    "Windows/Persistence/Login Screen (RDP).md",
-    "Windows/Persistence/Adding Privileged Users.md",
-    "Windows/Persistence/Backdoor Files.md",
-    "Windows/Local Privilege Escalation/Service Exploits.md",
-    "Active Directory/Domain Enumeration/Powershell/GPOs.md",
-    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
-    "Active Directory/Credential Dumping/Mimikatz.md",
-    "Active Directory/AD Concepts/Administrators.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Active Directory/Domain Enumeration/Defence.md",
-    "2023-03-27.md",
-    "Windows/Windows Internals/Commands.md",
-    "Windows/Windows Internals/SysInternals.md",
     "Windows/Persistence/Untitled",
-    "Tools/Impacket.md",
-    "Tools/Msfvenom.md",
-    "Active Directory/Domain Enumeration/Credential Injection.md",
-    "Windows/Windows Internals/SID.md",
-    "Windows/Powershell Cheatsheet.md",
-    "Windows/Windows Authentication.md",
-    "Windows/Windows Enumeration.md",
     "Windows/Persistence"
   ]
 }

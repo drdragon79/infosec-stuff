@@ -1,3 +1,6 @@
+```powershell
+$env.USERDOMAIN
+```
 ### .NET
 ```powershell
 $AD = [System.DirectoryServices.ActiveDirectory.Domain]
@@ -8,6 +11,7 @@ $AD::GetCurrentDomain()
 ```powershell
 #Get information about current domain
 Get-ADDomain
+(Get-ADDomain).DNSRoot
 
 #Get information about a different domain if trust is configured
 Get-ADDomain -Identity differentdomain.local
@@ -40,4 +44,9 @@ Get-DomainPolicy -Domain anotherdomain.local
 # Get Domain Controller for the domain
 Get-NetDomainController
 Get-NetDomainController -Domain anotherdomain.local
+```
+
+### WMI
+```powershell
+(Get-WmiObject Win32_ComputerSystem).Domain
 ```
