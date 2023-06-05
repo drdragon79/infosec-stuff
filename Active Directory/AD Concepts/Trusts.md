@@ -1,3 +1,11 @@
+# Trusts
+- A relationship between two or more trees or forest or domains. [[Active Directory/AD Concepts/Trusts|Trusts]]
+### Trust Types
+- Parent-Child: default trust when child domain is created.
+- Forest: Trust to share resources in a forest.
+- External: Trust to connect to a specific domain that is not trusted forest.
+- Realm: Connects AD with non windows domain.
+- Shortcut: When two domains are not directly connected. Avoids jumping over many trusts by creating shortcut trusts.
 In AD environment, Trust is a relationship between two domain or forest which allow users of one domain or forest to access resources in other domain for forest.
 
 Trust can be automatic (parent-child, same forest etc) or established (forest, external).
@@ -28,5 +36,8 @@ Trusted Domain Objects (TDOs) represent the trust relationship in a domain.
 - Between forest root domain.
 - Cannot be extended to a third forest (No implicit trust)
 - Can be one-way or two-way and transitive and non-transitive
+
+### Trust Key
+When trust is created, a trust key is made to keep the connection secure. A trust account is created in the domain database, similar to a user account(ends with `$`) and the trust key is stored as the password of this user.
 
 Trust Enumeration - [[Active Directory/Domain Enumeration/Powershell/Trusts]]

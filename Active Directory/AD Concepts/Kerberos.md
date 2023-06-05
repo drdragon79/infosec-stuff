@@ -1,3 +1,25 @@
+- Preferred way of authentication in active directory networks for domain control.
+- Cannot be used in WORKGROUPS
+- Implemented by [[Authentication#Kerberos SSP]].
+- Uses [[#Tokens]] to authenticate against a [[#Principal]].
+
+# Actors
+
+
+# Principals
+- [[Active Directory/AD Concepts/Users|Users]] & [[Active Directory/AD Concepts/Services|Services]]
+- To request a ticket for the service, [[Active Directory/AD Concepts/Services#SPN|SPNs]] are required.
+- Principals are also used to represent the user asking for the ticket using it's `SamAccountName` using `NT-PRINCIPAL` type.S
+- `NT-ENTERPRISE` is used to identify users from different domain, using `SamAccountName@DomainFQDN`.
+
+# Tickets
+- Tickets are partially encrypted data containing:
+	- Target Principal - Usually a service (SPN).
+	- Information about client - Name & Domain
+	- Key to establish a secure connection
+	- Timestamp
+
+
 # Overview
 - A Key Distribution Center(KDC) Comprises of Authentication Server and Ticket Granting Server.
 ```mermaid

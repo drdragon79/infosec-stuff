@@ -1,3 +1,7 @@
+### CMD
+```cmd
+nltest /domain-trust
+```
 ### ADModule
 ```powershell
 # Get list of Trust in current domain

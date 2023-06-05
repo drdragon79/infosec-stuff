@@ -4,28 +4,28 @@
     "type": "split",
     "children": [
       {
-        "id": "beb77dc76aad7d9b",
+        "id": "a026b136df007e08",
         "type": "tabs",
         "children": [
           {
-            "id": "cad47dd22da26788",
+            "id": "e2a3483ea3fbf200",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Domain Enumeration/Powershell/Forest.md",
+                "file": "Active Directory/AD Concepts/Kerberos.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d5b8cf2d17457eae",
+            "id": "87603360d520eba0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/AD Concepts/Basics.md",
+                "file": "Active Directory/AD Concepts/Kerberos.md",
                 "mode": "source",
                 "source": false
               }
@@ -106,11 +106,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/AD Concepts/Basics.md",
-                "collapseAll": false,
-                "extraContext": false,
+                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "collapseAll": true,
+                "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": false,
+                "showSearch": true,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -123,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/AD Concepts/Basics.md",
+                "file": "Active Directory/AD Concepts/Kerberos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,18 +135,18 @@
             "state": {
               "type": "tag",
               "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
+                "sortOrder": "alphabetical",
+                "useHierarchy": false
               }
             }
           },
           {
-            "id": "9c8015bc89d13817",
+            "id": "4e5d286400d70392",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/AD Concepts/Basics.md"
+                "file": "Active Directory/AD Concepts/Kerberos.md"
               }
             }
           }
@@ -168,38 +168,40 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d5b8cf2d17457eae",
+  "active": "87603360d520eba0",
   "lastOpenFiles": [
-    "Active Directory/AD Concepts/Administrators.md",
-    "Active Directory/AD Concepts/Basics.md",
-    "Active Directory/Domain Enumeration/Powershell/Computer.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/Domain Enumeration/Powershell/Forest.md",
-    "Active Directory/Domain Enumeration/Powershell/Domain.md",
-    "Windows/Local Privilege Escalation/Passwords.md",
-    "Windows/Local Privilege Escalation/Registry Exploits.md",
-    "Windows/Local Privilege Escalation/Insecure GUI Apps.md",
-    "Windows/Local Privilege Escalation/Kernel Exploitation.md",
+    "Untitled.canvas",
+    "2023-06-06.md",
     "Physical/RFID.md",
+    "Linux/Linux Enumeration.md",
     "Linux/Privilege Escalation/Weak File Permission.md",
     "Linux/Privilege Escalation/SUID.md",
     "Linux/Privilege Escalation/Sudo.md",
-    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
-    "_attachments/Pasted image 20230512003628.png",
-    "Active Directory/AD Concepts/NetNTLM.md",
+    "Linux/Privilege Escalation/Kernel Exploit.md",
+    "Linux/Privilege Escalation/Cron Jobs.md",
+    "Linux/Command Cheatsheet/TAR.md",
     "Active Directory/AD Concepts/Kerberos.md",
+    "Active Directory/AD Concepts/Groups.md",
+    "Active Directory/AD Concepts/Basics.md",
+    "Active Directory/Domain Enumeration/Powershell/Users.md",
+    "Active Directory/AD Concepts/NetNTLM.md",
+    "Active Directory/AD Concepts/Services.md",
     "Active Directory/Exploitation/Kerberos Delegation.md",
-    "Windows/Windows Internals/SysInternals.md",
-    "Windows/Windows Internals/Windows Internals",
     "Active Directory/Exploitation/Delegations.md",
+    "Active Directory/AD Concepts/Authentication.md",
+    "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/AD Concepts/Users.md",
+    "Active Directory/AD Concepts/Computers.md",
+    "Active Directory/AD Concepts/Administrators.md",
+    "Windows/Windows Enumeration.md",
+    "Windows/Windows Authentication.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Active Directory/AD Concepts/Basics",
+    "_attachments/Pasted image 20230522234722.png",
+    "_attachments/Pasted image 20230522234704.png",
+    "_attachments/Pasted image 20230512003628.png",
+    "Windows/Windows Internals/Windows Internals",
     "Active Directory/Untitled",
-    "Windows/Persistence/Services.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
-    "Uncategorized/Port Forwarding.md",
-    "Uncategorized/Data Exfilteration.md",
-    "Windows/Persistence/Adding Privileged Users.md",
-    "Untitled.canvas",
-    "Windows/Persistence/Existing Services.md",
     "Windows/Persistence/Untitled",
     "Windows/Persistence"
   ]

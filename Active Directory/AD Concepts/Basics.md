@@ -5,42 +5,24 @@ Used to identify the domain.
 Eg. `contoso.local`, `contoso.com`
 Enumerating domains : [[Domain]]
 ### NetBIOS Name
-Another way to identify a domain. For example netbios name for `contoso.local` would be `CONTOS`. 
+Another way to identify a domain. For example netbios name for `contoso.local` would be `CONTOSO`. 
 A Domain can also be identfied using domain SIDs. This is more often used by windows API rather than users.
 # Trees
+- Collection of domains and subdomains
+```mermaid
+flowchart TD
+	A[dragon.local] --> B[earth.dragon.local]
+	A --> C[mars.dragon.local]
+```
+- Each domain/sub-domain has their own [[#Domain Controller]]
 
 # Forests
-# Trusts
-# Users
-# Groups
-# Computers
-# Services
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Objects
-# Groups
-# Organisational Unit (OU)
+- Collection of Domains connected via some [[#Trusts]]
+```mermaid
+flowchart TD
+	A[Trust] --> B[doctor.local]
+	A --> C[dragon.local]
+```
 # Permission Delegations
 - AD Delegations are used to grans users some permission to perform tasks that require elevated permission without adding them to `DomainAdmins` or `Administrators`.
 - Delegations are used to delegate some permisson over an object of collections of OUs. For example: people from IT can have `PasswordReset` permission over users in Management OU.
