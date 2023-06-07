@@ -21,7 +21,7 @@ LMHash = DES("KGS!@#$%",password1) + DES("KGS!@#$%",password2)
 - Dumping password on modern system will show `aad3b435b51404eeaad3b435b51404ee` (LMHash of empty string)
 #### Kerberos Keys
 - Kerberos keys are derived from the user's password.
-##### Kerberos Keys
+##### Algorithms
 - AES 256 Key: Used by `AES256-CTS-HMAC-SHA1-96` algorithm (Most Used).
 - AES 128 Key: Used by `AES128-CTS-HMAC-SHA1-96` algorithm.
 - DES Key: Used by `DES-CBC-MD5` algorithm.

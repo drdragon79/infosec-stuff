@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "file": "Active Directory/AD Concepts/Users.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -168,8 +167,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87603360d520eba0",
+  "active": "e2a3483ea3fbf200",
   "lastOpenFiles": [
+    "Archive/Kerberos.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Archive",
+    "Active Directory/Exploitation/Kerberos.md",
+    "Active Directory/Exploitation/Delegations.md",
+    "Active Directory/AD Concepts/Services.md",
+    "Active Directory/Exploitation/NTLM.md",
+    "Active Directory/Exploitation/Kerberos Delegation.md",
+    "Active Directory/AD Concepts/Users.md",
     "Untitled.canvas",
     "2023-06-06.md",
     "Physical/RFID.md",
@@ -180,22 +188,15 @@
     "Linux/Privilege Escalation/Kernel Exploit.md",
     "Linux/Privilege Escalation/Cron Jobs.md",
     "Linux/Command Cheatsheet/TAR.md",
-    "Active Directory/AD Concepts/Kerberos.md",
     "Active Directory/AD Concepts/Groups.md",
     "Active Directory/AD Concepts/Basics.md",
     "Active Directory/Domain Enumeration/Powershell/Users.md",
     "Active Directory/AD Concepts/NetNTLM.md",
-    "Active Directory/AD Concepts/Services.md",
-    "Active Directory/Exploitation/Kerberos Delegation.md",
-    "Active Directory/Exploitation/Delegations.md",
     "Active Directory/AD Concepts/Authentication.md",
     "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/AD Concepts/Users.md",
     "Active Directory/AD Concepts/Computers.md",
     "Active Directory/AD Concepts/Administrators.md",
     "Windows/Windows Enumeration.md",
-    "Windows/Windows Authentication.md",
-    "Windows/Powershell Cheatsheet.md",
     "Active Directory/AD Concepts/Basics",
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",
