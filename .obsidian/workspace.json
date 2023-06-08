@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Active Directory/AD Concepts/Kerberos.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               }
             }
@@ -169,16 +169,17 @@
   },
   "active": "e2a3483ea3fbf200",
   "lastOpenFiles": [
+    "Active Directory/AD Concepts/Groups.md",
+    "Active Directory/AD Concepts/Services.md",
     "Active Directory/Exploitation/Kerberos.md",
+    "Active Directory/Exploitation/Delegations.md",
+    "Archive/Kerberos.md",
+    "Active Directory/AD Concepts/Users.md",
     "Active Directory/AD Concepts/Kerberos.md",
     "Uncategorized/Port Forwarding.md",
-    "Archive/Kerberos.md",
     "Archive",
-    "Active Directory/Exploitation/Delegations.md",
-    "Active Directory/AD Concepts/Services.md",
     "Active Directory/Exploitation/NTLM.md",
     "Active Directory/Exploitation/Kerberos Delegation.md",
-    "Active Directory/AD Concepts/Users.md",
     "Untitled.canvas",
     "2023-06-06.md",
     "Physical/RFID.md",
@@ -189,7 +190,6 @@
     "Linux/Privilege Escalation/Kernel Exploit.md",
     "Linux/Privilege Escalation/Cron Jobs.md",
     "Linux/Command Cheatsheet/TAR.md",
-    "Active Directory/AD Concepts/Groups.md",
     "Active Directory/AD Concepts/Basics.md",
     "Active Directory/Domain Enumeration/Powershell/Users.md",
     "Active Directory/AD Concepts/NetNTLM.md",

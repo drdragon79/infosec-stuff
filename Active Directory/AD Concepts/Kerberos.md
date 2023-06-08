@@ -83,3 +83,10 @@ sequenceDiagram
 # Kerberos Services
 - `KDC`: Runs on port 88 (TCP/UDP)
 - `Kpasswd`: Runs on port 464 (TCP/UDP). Used to change password of users. 
+
+# Kerberos Formats
+### Linux
+Kerberos keys in stored in `keytab` files, usually located at `/etc/krb5.keytab`. Linux uses `.ccache` file format to save kerberos keys. 
+### Windows
+Windows uses the `kirbi` format to stores the kerberos keys. They are stored in the lsass memory. Tickets are transmitted over the network using this format. [ticket_converter.py](https://github.com/Zer1t0/ticket_converter) can be used to convert `.ccache` to `krb`.
+It is also possible to create kerberos keys from users' password using [Get-KerberosAESKey.ps1](https://gist.github.com/Kevin-Robertson/9e0f8bfdbf4c1e694e6ff4197f0a4372).
