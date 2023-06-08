@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Active Directory/AD Concepts/Kerberos.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -169,10 +169,11 @@
   },
   "active": "e2a3483ea3fbf200",
   "lastOpenFiles": [
-    "Archive/Kerberos.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Archive",
     "Active Directory/Exploitation/Kerberos.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Uncategorized/Port Forwarding.md",
+    "Archive/Kerberos.md",
+    "Archive",
     "Active Directory/Exploitation/Delegations.md",
     "Active Directory/AD Concepts/Services.md",
     "Active Directory/Exploitation/NTLM.md",
@@ -196,7 +197,6 @@
     "Active Directory/AD Concepts/Trusts.md",
     "Active Directory/AD Concepts/Computers.md",
     "Active Directory/AD Concepts/Administrators.md",
-    "Windows/Windows Enumeration.md",
     "Active Directory/AD Concepts/Basics",
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",

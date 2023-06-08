@@ -67,12 +67,19 @@ sequenceDiagram
 	Client ->> Service: 6. AP-REQ (ST)
 	Service ->> KDC: 7. KERB-VRFY-PAC-REQ
 	KDC ->> Service: 8. PAC Response
-	Service ->> Client: 9. AP-REQ
+	Service ->> Client: 9. AP-RES
 	
 ```
 1. `AS-REQ`: Client sends the timestamp encrypted with it's [[#Kerberos Keys]]. This is called pre-authentication, and sometimes it is not required.
 2. `AS-REP`: The server responds back with two information. TGT encrypted with KDC key and client data encrypted with client key.
 3. `Negotiation`: Using [[Authentication#SPNEGO]], client negotiates the authentication protocol (either NTLM or Kerberos).
 4. `TGS-REQ (TGT)`: Client sends the TGT and the [[Active Directory/AD Concepts/Services#SPN|SPN]] of the target service, to the KDC and asks for the service ticket.
-5. `TGS-REP (ST)`: KDC decrypts the TGT using it's key and gets access to the username and session key. KDC uses the session key to decrypt the username and verify if everything is correct. The KDC then sends two information of the client, ST of the request service, encrypted with the the key of the service user
+5. `TGS-REP (ST)`: KDC decrypts the TGT using it's key and gets access to the username and session key. KDC uses the session key to decrypt the username and verify if everything is correct. The KDC then sends two information of the client, ST of the request service, encrypted with the the key of the service user and the client data encrypted with the session key.
+6. `AP-REQ (ST)`: Client sends the ST received in the last step to the service. The service uses it's key and decrypts the ST and gets the service session key which is used to establish secure communication. It also gets the PAC data after decrypting the ST, which specifies if the user has the privilege to access the resource. 
+7. `KERB-VRFY-PAC-REQ`: (OPTIONAL). This step only occurs when the the service wants to validate the PAC. It sends the PAC to the KDC to verify it's authenticity, as it is signed using KDC keys.
+8. `PAC Response`: The KDC responds with the result of the verificaiton.
+9. `AP-RES` : This step is also Optional. The service responds to the `AP-REQ` using the session key it got from ST to prove that service can decrypt the ST.
 
+# Kerberos Services
+- `KDC`: Runs on port 88 (TCP/UDP)
+- `Kpasswd`: Runs on port 464 (TCP/UDP). Used to change password of users. 
