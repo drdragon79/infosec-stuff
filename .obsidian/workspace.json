@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a026b136df007e08",
+        "id": "81fed94871b2f79f",
         "type": "tabs",
         "children": [
           {
-            "id": "e2a3483ea3fbf200",
+            "id": "c1f08d7e7f9200d5",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "87603360d520eba0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/AD Concepts/Users.md",
+                "file": "Windows/Windows Internals/WMI.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "akshay",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -105,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "file": "Windows/Windows Internals/WMI.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -122,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md",
+                "file": "Windows/Windows Internals/WMI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/AD Concepts/Kerberos.md"
+                "file": "Windows/Windows Internals/WMI.md"
               }
             }
           }
@@ -167,42 +156,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e2a3483ea3fbf200",
+  "active": "f8c4aba21190f109",
   "lastOpenFiles": [
+    "Active Directory/Credential Dumping/Mimikatz.md",
+    "Active Directory/AD Concepts/Database.md",
+    "Active Directory/AD Concepts/Credentails.md",
+    "Active Directory/Credential Dumping/Credentails.md",
     "Active Directory/AD Concepts/Groups.md",
-    "Active Directory/AD Concepts/Services.md",
-    "Active Directory/Exploitation/Kerberos.md",
-    "Active Directory/Exploitation/Delegations.md",
-    "Archive/Kerberos.md",
-    "Active Directory/AD Concepts/Users.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Uncategorized/Port Forwarding.md",
-    "Archive",
-    "Active Directory/Exploitation/NTLM.md",
-    "Active Directory/Exploitation/Kerberos Delegation.md",
-    "Untitled.canvas",
-    "2023-06-06.md",
-    "Physical/RFID.md",
-    "Linux/Linux Enumeration.md",
-    "Linux/Privilege Escalation/Weak File Permission.md",
-    "Linux/Privilege Escalation/SUID.md",
-    "Linux/Privilege Escalation/Sudo.md",
-    "Linux/Privilege Escalation/Kernel Exploit.md",
-    "Linux/Privilege Escalation/Cron Jobs.md",
-    "Linux/Command Cheatsheet/TAR.md",
-    "Active Directory/AD Concepts/Basics.md",
-    "Active Directory/Domain Enumeration/Powershell/Users.md",
-    "Active Directory/AD Concepts/NetNTLM.md",
-    "Active Directory/AD Concepts/Authentication.md",
+    "Active Directory/AD Concepts/Group Policy.md",
+    "Windows/Windows Concepts/SID.md",
+    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
+    "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
+    "Active Directory/Protocols/MSRPC.md",
+    "Active Directory/Protocols/SMB.md",
+    "Active Directory/Protocols/WinRM.md",
+    "Uncategorized/SMB.md",
+    "README.md",
+    "Active Directory/Domain Enumeration/Powershell/Groups.md",
     "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/AD Concepts/Basics.md",
+    "Active Directory/AD Concepts/Logon Types.md",
+    "Active Directory/AD Concepts/Kerberos.md",
     "Active Directory/AD Concepts/Computers.md",
-    "Active Directory/AD Concepts/Administrators.md",
+    "Active Directory/AD Concepts/Authorization.md",
+    "Active Directory/AD Concepts/Authentication.md",
+    "Windows/Commands/reg.md",
+    "Windows/Commands/sc.md",
+    "Active Directory/Protocols",
+    "Containers/Kubernetes",
+    "Containers/Docker",
+    "Containers",
+    "Windows/Commands",
+    "Archive",
+    "Untitled.canvas",
     "Active Directory/AD Concepts/Basics",
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",
     "_attachments/Pasted image 20230512003628.png",
-    "Windows/Windows Internals/Windows Internals",
-    "Active Directory/Untitled",
+    "Windows/Windows Internals",
     "Windows/Persistence/Untitled",
     "Windows/Persistence"
   ]

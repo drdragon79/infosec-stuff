@@ -90,3 +90,32 @@ Kerberos keys in stored in `keytab` files, usually located at `/etc/krb5.keytab`
 ### Windows
 Windows uses the `kirbi` format to stores the kerberos keys. They are stored in the lsass memory. Tickets are transmitted over the network using this format. [ticket_converter.py](https://github.com/Zer1t0/ticket_converter) can be used to convert `.ccache` to `krb`.
 It is also possible to create kerberos keys from users' password using [Get-KerberosAESKey.ps1](https://gist.github.com/Kevin-Robertson/9e0f8bfdbf4c1e694e6ff4197f0a4372).
+
+# Kerberos Delegations
+Used when for example, a web-server wants to access another service on behalf of the user. The webserver impersonates a user and performs actions on a third service.
+### Unconstrained Delegation
+User sends TGT along with ST so that the service can impersonate the user by requesting ST for a third service, using the TGT
+### Constrained Delegation
+Uses `Service For User (S4U)` extension that allows a service to impersonate a user without using TGT, for specific services.
+
+### Anti Delegation Measures
+To prevent delegations, two methods can be used:
+- `NOT_DELEGATED` flag in [[Active Directory/AD Concepts/Users#User Account Control|User Account Control]] attribute.
+- User belongs to `Protected Groups`.
+
+# Service For User (S4U)
+- [[#Unconstrained Delegation]] is dangerous, as it allows services to impersonate user and access any service.
+- S4U restricts this and only allows delegation to certain services.
+	- Service for User to Proxy (S4U2Proxy)
+	- Service for User to Self (S4U2Self)
+- No TGT is required in this extention.
+
+### S4U2Proxy
+This extension allows a service to request another service on behalf of the user by using `ST` instead of `TGT`.
+The service can only ask for impersonation `ST` for certain services defined in one of the following ways:
+- **Classic Constrained Delegation**: `msDS-AllowedToDelegateTo` attribute of the service account. It contains [[Active Directory/AD Concepts/Services#SPN|SPN]] of the services for which the service account can ask ST for. To edit this parameter, `SeEnableDelegationPrivilege` priv is required.
+- **Resource Based Constrained Delegation**: The service account is mentioned in the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute of the target service for which the service account will ask ST for.
+
+### S4U2Self
+- Kerberos delegation when the client does not support Kerberos protocol. (Protocol Transition)
+- KDE checks for 

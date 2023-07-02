@@ -1,5 +1,4 @@
-
-# Overview
+# Ticket Acquisition Flow
 - A Key Distribution Center(KDC) Comprises of Authentication Server and Ticket Granting Server.
 ```mermaid
 sequenceDiagram

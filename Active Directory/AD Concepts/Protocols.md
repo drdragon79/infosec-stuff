@@ -1,0 +1,3 @@
+# SMB
+# RPC
+# WinRM

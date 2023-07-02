@@ -1,6 +1,6 @@
 ### Registry
 Can can contain password for unsecure services.
-[[Commands#reg]]
+[[reg#reg]]
 ```powershell
 # search for password in either keyname or keyvalue recursively
 reg query HKLM /f password /t REG_SZ /s

@@ -60,7 +60,7 @@ CommandType Name
 - CIM is aligned to the standards of DMTF (Distributed Management Task Force) which means it can work with non-windows box as well.
 NOTE: WMI is Windows oriented version of CIM
 ```powershell
-PS C:\Users\akshay> Get-Command *cim* -Type cmdlet | Select-Object -Property CommandType,Name
+PS C:\Users\drdragon> Get-Command *cim* -Type cmdlet | Select-Object -Property CommandType,Name
 
 CommandType Name
 ----------- ----

@@ -29,10 +29,10 @@ LMHash = DES("KGS!@#$%",password1) + DES("KGS!@#$%",password2)
 ### User Account Control
 - A property of a User Class in AD. This property has certain flags:
 - `ACCOUNTDISABLE`: Account is disabled and cannot be used.
--   `DONT_REQUIRE_PREAUTH`: The account doesn't require Kerberos pre-authentication.
--   `NOT_DELEGATED`: This account cannot be delegated through Kerberos delegation.
--   `TRUSTED_FOR_DELEGATION`: Kerberos Unconstrained Delegation is enabled for this account and its services. [SeEnableDelegationPrivilege](http://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/) required to modify it.
--   `TRUSTED_TO_AUTH_FOR_DELEGATION`: The Kerberos S4U2Self extension is enabled for this account and its services. [SeEnableDelegationPrivilege](http://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/) required to modify it.
+- `DONT_REQUIRE_PREAUTH`: The account doesn't require Kerberos pre-authentication.
+- `NOT_DELEGATED`: This account cannot be delegated through Kerberos delegation.
+- `TRUSTED_FOR_DELEGATION`: Kerberos Unconstrained Delegation is enabled for this account and its services. [SeEnableDelegationPrivilege](http://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/) required to modify it.
+- `TRUSTED_TO_AUTH_FOR_DELEGATION`: The Kerberos S4U2Self extension is enabled for this account and its services. [SeEnableDelegationPrivilege](http://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/) required to modify it.
 ### User Properties
 - `Description`
 - `AdminCount`

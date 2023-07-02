@@ -1,0 +1,5 @@
+- Windows Remote Management
+- Microsoft's implementation of WS-Management (Web Services-Management) specification which defines a protocol of managing computers using SOAP over HTTP.
+- Ports:
+	- 5985: HTTP
+	- 5986: HTTPS

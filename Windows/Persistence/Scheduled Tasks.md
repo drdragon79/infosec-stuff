@@ -1,4 +1,4 @@
-[[Commands#schtasks]]
+[[reg#schtasks]]
 ### Scheduling tasks
 - Create a task that runs every minutes and runs a reverse shell
 ```powershell
