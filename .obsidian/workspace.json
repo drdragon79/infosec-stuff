@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "akshay",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md",
+                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Windows Internals/WMI.md"
+                "file": "Windows/Local Privilege Escalation/Automated Tools.md"
               }
             }
           }
@@ -156,9 +155,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8c4aba21190f109",
+  "active": "c1f08d7e7f9200d5",
   "lastOpenFiles": [
+    "Active Directory/Exploitation/Kerberos.md",
+    "Windows/Local Privilege Escalation/Automated Tools.md",
+    "Active Directory/Domain Enumeration/CMD.md",
+    "Active Directory/Domain Enumeration/Credential Injection.md",
+    "Active Directory/Domain Enumeration/Defence.md",
+    "Active Directory/Domain Enumeration/Sharphound-BloodHound.md",
+    "Active Directory/Domain Enumeration/Management Console.md",
     "Active Directory/Credential Dumping/Mimikatz.md",
+    "Active Directory/Domain Enumeration/Powershell/Users.md",
+    "Active Directory/Domain Enumeration/Powershell/Domain.md",
+    "Windows/Powershell Cheatsheet.md",
+    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
+    "Windows/Windows Internals/DPAPI.md",
+    "Windows/Windows Internals/WMI.md",
     "Active Directory/AD Concepts/Database.md",
     "Active Directory/AD Concepts/Credentails.md",
     "Active Directory/Credential Dumping/Credentails.md",
@@ -171,19 +183,6 @@
     "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
     "Active Directory/Protocols/MSRPC.md",
     "Active Directory/Protocols/SMB.md",
-    "Active Directory/Protocols/WinRM.md",
-    "Uncategorized/SMB.md",
-    "README.md",
-    "Active Directory/Domain Enumeration/Powershell/Groups.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/AD Concepts/Basics.md",
-    "Active Directory/AD Concepts/Logon Types.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Active Directory/AD Concepts/Computers.md",
-    "Active Directory/AD Concepts/Authorization.md",
-    "Active Directory/AD Concepts/Authentication.md",
-    "Windows/Commands/reg.md",
-    "Windows/Commands/sc.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",

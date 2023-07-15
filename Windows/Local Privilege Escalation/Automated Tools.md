@@ -1,0 +1,3 @@
+- PowerUp - https://github.com/PowerShellMafia/PowerSploit/blob/master/Privesc/PowerUp.ps1
+- BeRoot - https://github.com/AlessandroZ/BeRoot
+- 

