@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
+                "file": "Active Directory/AD Concepts/Authorization.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
+                "file": "Active Directory/AD Concepts/Authorization.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Automated Tools.md",
+                "file": "Active Directory/AD Concepts/Authorization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/Local Privilege Escalation/Automated Tools.md"
+                "file": "Active Directory/AD Concepts/Authorization.md"
               }
             }
           }
@@ -142,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -157,32 +156,34 @@
   },
   "active": "c1f08d7e7f9200d5",
   "lastOpenFiles": [
+    "Active Directory/Persistence/AdminSDHolder.md",
+    "Active Directory/Privilege Escalation/DNSAdmins.md",
+    "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
+    "Active Directory/Privilege Escalation/Constrained Delegation.md",
+    "Active Directory/Privilege Escalation/Kerberoast.md",
+    "Active Directory/Privilege Escalation",
+    "Active Directory/Persistence/Custom SSP.md",
+    "Active Directory/Persistence/DSRM.md",
+    "Active Directory/Persistence/Skeleton Key.md",
+    "Active Directory/Persistence/Silver Tickets.md",
     "Active Directory/Exploitation/Kerberos.md",
-    "Windows/Local Privilege Escalation/Automated Tools.md",
-    "Active Directory/Domain Enumeration/CMD.md",
-    "Active Directory/Domain Enumeration/Credential Injection.md",
-    "Active Directory/Domain Enumeration/Defence.md",
-    "Active Directory/Domain Enumeration/Sharphound-BloodHound.md",
-    "Active Directory/Domain Enumeration/Management Console.md",
+    "Active Directory/Persistence/Golden Tickets.md",
+    "Active Directory/Persistence",
+    "Windows/Evasion/AntiVirus.md",
     "Active Directory/Credential Dumping/Mimikatz.md",
-    "Active Directory/Domain Enumeration/Powershell/Users.md",
-    "Active Directory/Domain Enumeration/Powershell/Domain.md",
-    "Windows/Powershell Cheatsheet.md",
-    "Active Directory/Domain Enumeration/Powershell/ACLs.md",
-    "Windows/Windows Internals/DPAPI.md",
-    "Windows/Windows Internals/WMI.md",
-    "Active Directory/AD Concepts/Database.md",
-    "Active Directory/AD Concepts/Credentails.md",
-    "Active Directory/Credential Dumping/Credentails.md",
+    "Archive/Kerberos.md",
+    "Active Directory/Exploitation/NTLM.md",
+    "Active Directory/AD Concepts/Users.md",
+    "Active Directory/AD Concepts/Trusts.md",
+    "Active Directory/AD Concepts/Services.md",
+    "Active Directory/AD Concepts/Protocols.md",
+    "Active Directory/AD Concepts/NetNTLM.md",
+    "Active Directory/AD Concepts/Logon Types.md",
+    "Active Directory/AD Concepts/Kerberos.md",
     "Active Directory/AD Concepts/Groups.md",
     "Active Directory/AD Concepts/Group Policy.md",
-    "Windows/Windows Concepts/SID.md",
-    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
-    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
-    "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
-    "Active Directory/Protocols/MSRPC.md",
-    "Active Directory/Protocols/SMB.md",
+    "Active Directory/AD Concepts/Database.md",
+    "Active Directory/AD Concepts/Credentails.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",
@@ -194,8 +195,6 @@
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",
     "_attachments/Pasted image 20230512003628.png",
-    "Windows/Windows Internals",
-    "Windows/Persistence/Untitled",
-    "Windows/Persistence"
+    "Windows/Windows Internals"
   ]
 }

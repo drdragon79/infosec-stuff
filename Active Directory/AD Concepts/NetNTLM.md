@@ -25,7 +25,7 @@
 ### Four
 - The server verifies the the challenge response using `AcceptSecurityContext` and a security context is setup. The message now will be encrypted with the session key.
 
-> Note that the server never sens the NT Hash of the user but is only used to calculate the NTLM response and the session key.
+> Note that the server never sends the NT Hash of the user but is only used to calculate the NTLM response and the session key.
 > And the NTLM response is also knows as the NTLM Hash (NetNTLM Hash) and it depends on the version of NTLM Protocol.
 
 ### NTLMv1 (NetNTLMv1)

@@ -19,5 +19,9 @@ Get-Service windefend
 
 # Check what elements of defender is running 
 Get-MpComputerStatus | select realtimeprotectionenabled
+
+# Disable Realtime Monitoring
+Set-MpPreference -disableRealtimeMonitoring $true
+
 ```
 

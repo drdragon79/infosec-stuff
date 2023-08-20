@@ -21,28 +21,66 @@ sequenceDiagram
 psexec.py <Username>@<server> cmd.exe
 ```
 More about psexec [here](https://www.rapid7.com/blog/post/2013/03/09/psexec-demystified/)
-# WinRM
+# WinRM/Powershell Remoting
 - Ports: 5985/TCP (WinRM HTTP) or 5986/TCP (WinRM HTTPS)
-- Group: Remote Management Users
-Windows Remote Management (WinRM) is a web-based protocol used to send Powershell commands to Windows hosts remotely. Most Windows Server installations will have WinRM enabled by default, making it an attractive attack vector.
-- Using CMD:
-```cmd
-winrs.exe -u:<username> -p:<password> -r:<server> cmd
-```
-- Using Powershell:
+- Group Required: Remote Management Users
+- PsExec on steroids
+- If Admin creds are used, we get a elevated shell on the remote machine (No UAC issues)
+### One-to-One
+- Interactive login to one machine
+- Runs in a new process (wsmprovhost)
+- State-full (persistent variables and state) using `New-PSSession`
+- Commands:
+	- `Enter-PSSession` : Enter interactive prompt on the target machine
+	- `New-PSSession` : Returns sessions to create persistent environment.
 ```powershell
-# create a credential object
+# Create interactive session using the current credentials
+Enter-PSSession -ComputerName mymachine.domain.local
+
+# Create session
+$sess = New-PSSession -ComputerName mymachine.domain.local
+$sess # holds the credentails and ohter information
+
+# Enter-PSSession can be used to connnec to this session
+Enter-PSSession -Session $sess
+
+# Use Credentails to connect to the remote machine
+# Creat PScredentails object that holds username and password
 $username = 'Administrator';
 $password = 'Mypass123';
 $securePassword = ConvertTo-SecureString $password -AsPlainText -Force; 
 $credential = New-Object System.Management.Automation.PSCredential $username, $securePassword;
-
-# command to connect
+# Connect to the machine
 Enter-PSSession -Computername TARGET -Credential $credential
 ```
+
+### One-to-Many
+- Also knows as fan-out remoting.
+- Non Interactive
+- Executes commands parallely.
+- Commands:
+	- `Invoke-Command` : Executes command on one more machine parallely.
+- Run commands/scripts on:
+	- one more more computers
+	- disconnected session
+	- as a background job
+- Required administrative access on the target machine.
 ```powershell
-# We can also use Invoke-Command to run script blocks
-Invoke-Command -Computername TARGET -Credential $credential -ScriptBlock {whoami}
+# Execute Command
+Invoke-Command -ComputerName mycomputer.mydomain.local -ScriptBlock {whoami}
+
+# Execute a fiile
+Invoke-Command -ComputerName mycomputer.mydomain.local -FilePath .\Temp.ps1
+
+# Can also run local functions on the target machine
+Invoke-Command -ComputerName mycomputer.mydomain.local -ScriptBlock ${function:mylocalfunction}
+
+# Can also use already created session from New-PSSession
+Invoke-Command -FilePath C:\script.ps1 -Session $session
+```
+### CMD Command
+```cmd
+winrs.exe -u:<username> -p:<password> -r:<server> cmd
 ```
 # Sc
 -   **Ports:**

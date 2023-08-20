@@ -2,7 +2,6 @@
 - As [[NetNTLM]] is inherently flawed, the password hash can be treated as a password.
 - NTLM hash can be used to directly authenticate to a domain/service
 - [[Active Directory/Credential Dumping/Mimikatz]] for extracting Credentials
-
 ### Mimikatz
 ```powershell
 sekurlsa::pth /user:user.name /domain:za.tryhackme.com /ntlm:<hash> /run:<command>

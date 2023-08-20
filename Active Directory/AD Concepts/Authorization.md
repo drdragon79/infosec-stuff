@@ -9,18 +9,18 @@
 Owner  : DOCTOR\Domain Admins
 Group  : DOCTOR\Domain Admins
 Access : {System.DirectoryServices.ActiveDirectoryAccessRule,                                                 System.DirectoryServices.ActiveDirectoryAccessRule,                                                            System.DirectoryServices.ActiveDirectoryAccessRule,                                                            System.DirectoryServices.ActiveDirectoryAccessRule...}
-audit  :                                                                                                       
+audit  :
 ```
 
 # DACL
-Contains ACE that determines the  user/group that can can access the object.
+Contains ACE that determines the user/group that can can access the object.
 ### ACE in DACL
 Defines access permission on a object for a specific user or group.
 An ACE contains the following basic property:
 - `AccessControlType`: Specify if the ACE is for Allowing or Denying access
 - `IsInherited`: Specify if the ACE is inherited or not (True/False)
 - `InheritenceType`: The type of object class that can inherit the ACE from this object.
--  `ActiveDirectoryRights`: Indicates the type of access the ACE is applying.
+- `ActiveDirectoryRights`: Indicates the type of access the ACE is applying.
 - `IdentityReference`: The principal (User/Group) for which the ACE is applied.
 - `ObjectType`: GUID that indicates an extended right, property, or child object depending on the Access Mask Flag. All 0s if not used.
 ```powershell
