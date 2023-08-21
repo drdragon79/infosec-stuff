@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/AD Concepts/Authorization.md",
+                "file": "Active Directory/Persistence/ACLs.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/AD Concepts/Authorization.md",
+                "file": "Active Directory/Persistence/ACLs.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/AD Concepts/Authorization.md",
+                "file": "Active Directory/Persistence/ACLs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/AD Concepts/Authorization.md"
+                "file": "Active Directory/Persistence/ACLs.md"
               }
             }
           }
@@ -154,9 +154,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c1f08d7e7f9200d5",
+  "active": "4e5d286400d70392",
   "lastOpenFiles": [
-    "Active Directory/Persistence/AdminSDHolder.md",
+    "Active Directory/AD Concepts/Authorization.md",
+    "Active Directory/Persistence/ACLs.md",
     "Active Directory/Privilege Escalation/DNSAdmins.md",
     "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
     "Active Directory/Privilege Escalation/Constrained Delegation.md",
@@ -183,7 +184,6 @@
     "Active Directory/AD Concepts/Groups.md",
     "Active Directory/AD Concepts/Group Policy.md",
     "Active Directory/AD Concepts/Database.md",
-    "Active Directory/AD Concepts/Credentails.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",
