@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Persistence/ACLs.md",
+                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Persistence/ACLs.md",
+                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Persistence/ACLs.md",
+                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Persistence/ACLs.md"
+                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md"
               }
             }
           }
@@ -154,36 +154,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4e5d286400d70392",
+  "active": "c1f08d7e7f9200d5",
   "lastOpenFiles": [
-    "Active Directory/AD Concepts/Authorization.md",
-    "Active Directory/Persistence/ACLs.md",
-    "Active Directory/Privilege Escalation/DNSAdmins.md",
     "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
+    "Active Directory/AD Concepts/Users.md",
     "Active Directory/Privilege Escalation/Constrained Delegation.md",
+    "Active Directory/Privilege Escalation/DNSAdmins.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Active Directory/Exploitation/Kerberos.md",
     "Active Directory/Privilege Escalation/Kerberoast.md",
+    "Active Directory/AD Concepts/Authentication.md",
+    "Uncategorized/Data Exfilteration.md",
+    "Active Directory/Persistence/ACLs.md",
+    "Active Directory/AD Concepts/Authorization.md",
     "Active Directory/Privilege Escalation",
     "Active Directory/Persistence/Custom SSP.md",
     "Active Directory/Persistence/DSRM.md",
     "Active Directory/Persistence/Skeleton Key.md",
     "Active Directory/Persistence/Silver Tickets.md",
-    "Active Directory/Exploitation/Kerberos.md",
     "Active Directory/Persistence/Golden Tickets.md",
     "Active Directory/Persistence",
     "Windows/Evasion/AntiVirus.md",
     "Active Directory/Credential Dumping/Mimikatz.md",
     "Archive/Kerberos.md",
     "Active Directory/Exploitation/NTLM.md",
-    "Active Directory/AD Concepts/Users.md",
     "Active Directory/AD Concepts/Trusts.md",
     "Active Directory/AD Concepts/Services.md",
     "Active Directory/AD Concepts/Protocols.md",
     "Active Directory/AD Concepts/NetNTLM.md",
     "Active Directory/AD Concepts/Logon Types.md",
-    "Active Directory/AD Concepts/Kerberos.md",
     "Active Directory/AD Concepts/Groups.md",
-    "Active Directory/AD Concepts/Group Policy.md",
-    "Active Directory/AD Concepts/Database.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",
