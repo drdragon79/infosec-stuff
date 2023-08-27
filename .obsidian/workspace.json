@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
+                "file": "Active Directory/Persistence/Golden Tickets.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
+                "file": "Active Directory/Persistence/Golden Tickets.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
+                "file": "Active Directory/Persistence/Golden Tickets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md"
+                "file": "Active Directory/Persistence/Golden Tickets.md"
               }
             }
           }
@@ -156,9 +156,10 @@
   },
   "active": "c1f08d7e7f9200d5",
   "lastOpenFiles": [
+    "Active Directory/Persistence/DC Sync.md",
+    "Active Directory/Privilege Escalation/Constrained Delegation.md",
     "Active Directory/AD Concepts/Kerberos.md",
     "Active Directory/Privilege Escalation/DNSAdmins.md",
-    "Active Directory/Privilege Escalation/Constrained Delegation.md",
     "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
     "Active Directory/AD Concepts/Users.md",
     "Active Directory/Exploitation/Kerberos.md",
@@ -183,7 +184,6 @@
     "Active Directory/AD Concepts/Protocols.md",
     "Active Directory/AD Concepts/NetNTLM.md",
     "Active Directory/AD Concepts/Logon Types.md",
-    "Active Directory/AD Concepts/Groups.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",
