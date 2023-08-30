@@ -31,7 +31,7 @@ kerberos::tgt
 [[Active Directory/Exploitation/Kerberos#Golden Tickets|Golden Tickets]]
 - Create golden tickets from krbtgt's NTLM hash or Kerberos keys.
 ### silver
-- Create silver ticket from a service's NTLM hash or Kerberos keys.\
+- Create silver ticket from a service's NTLM hash or Kerberos keys.
 
 # SekurLSA
 Dumps keys, password hashses, pin codes from protected memory of lsass.exe proccess.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md",
+                "file": "Active Directory/Credential Dumping/Credential Manager.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md",
+                "file": "Active Directory/Credential Dumping/Credential Manager.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md",
+                "file": "Active Directory/Credential Dumping/Credential Manager.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md"
+                "file": "Active Directory/Credential Dumping/Credential Manager.md"
               }
             }
           }
@@ -142,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,45 +157,47 @@
   },
   "active": "c1f08d7e7f9200d5",
   "lastOpenFiles": [
+    "Active Directory/AD Concepts/Users.md",
+    "Active Directory/Credential Dumping/Credential Manager.md",
+    "Active Directory/Credential Dumping/LSASS.md",
+    "Active Directory/AD Concepts/Authentication.md",
+    "Active Directory/AD Concepts/NetNTLM.md",
+    "Active Directory/Credential Dumping/Local Credentials.md",
+    "Active Directory/AD Concepts/Credentials.md",
+    "Active Directory/AD Concepts/Computers.md",
+    "Cheatsheet/Mimikatz.md",
+    "Cheatsheet",
+    "Active Directory/Persistence/ACLs.md",
+    "Active Directory/Credentials",
+    "Active Directory/Untitled.md",
+    "Active Directory/Persistence/DSRM.md",
+    "Active Directory/Persistence/SID History.md",
+    "Active Directory/Persistence/Golden Certificates.md",
+    "Active Directory/Persistence/Custom SSP.md",
     "Active Directory/Persistence/DC Sync.md",
+    "Active Directory/Persistence/Golden Tickets.md",
+    "Active Directory/Persistence/Silver Tickets.md",
+    "Active Directory/Persistence/Skeleton Key.md",
+    "Windows/System Programming/Fundamentals.md",
+    "_attachments/Pasted image 20230828195012.png",
+    "_attachments/Pasted image 20230828194948.png",
+    "Windows/Windows Concepts/SID.md",
+    "Windows/Windows Concepts/Privileges.md",
+    "Windows/Windows Concepts/Policies.md",
+    "Windows/Windows Concepts/ACLs.md",
+    "Windows/System Programming",
     "Active Directory/Privilege Escalation/Constrained Delegation.md",
     "Active Directory/AD Concepts/Kerberos.md",
-    "Active Directory/Privilege Escalation/DNSAdmins.md",
-    "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
-    "Active Directory/AD Concepts/Users.md",
-    "Active Directory/Exploitation/Kerberos.md",
-    "Active Directory/Privilege Escalation/Kerberoast.md",
-    "Active Directory/AD Concepts/Authentication.md",
-    "Uncategorized/Data Exfilteration.md",
-    "Active Directory/Persistence/ACLs.md",
-    "Active Directory/AD Concepts/Authorization.md",
     "Active Directory/Privilege Escalation",
-    "Active Directory/Persistence/Custom SSP.md",
-    "Active Directory/Persistence/DSRM.md",
-    "Active Directory/Persistence/Skeleton Key.md",
-    "Active Directory/Persistence/Silver Tickets.md",
-    "Active Directory/Persistence/Golden Tickets.md",
     "Active Directory/Persistence",
-    "Windows/Evasion/AntiVirus.md",
-    "Active Directory/Credential Dumping/Mimikatz.md",
-    "Archive/Kerberos.md",
-    "Active Directory/Exploitation/NTLM.md",
-    "Active Directory/AD Concepts/Trusts.md",
-    "Active Directory/AD Concepts/Services.md",
-    "Active Directory/AD Concepts/Protocols.md",
-    "Active Directory/AD Concepts/NetNTLM.md",
-    "Active Directory/AD Concepts/Logon Types.md",
     "Active Directory/Protocols",
     "Containers/Kubernetes",
     "Containers/Docker",
     "Containers",
     "Windows/Commands",
-    "Archive",
     "Untitled.canvas",
-    "Active Directory/AD Concepts/Basics",
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",
-    "_attachments/Pasted image 20230512003628.png",
-    "Windows/Windows Internals"
+    "_attachments/Pasted image 20230512003628.png"
   ]
 }
