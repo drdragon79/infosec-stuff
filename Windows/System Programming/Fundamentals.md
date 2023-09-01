@@ -88,13 +88,13 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 ```rust
 use windows::Win32::System::SystemInformation::{self, GetNativeSystemInfo, SYSTEM_INFO};
 fn main() {
-    let mut name: SYSTEM_INFO = SYSTEM_INFO::default(); // initializing the default value of SYSTEM_INFO
+    let mut sysinfo: SYSTEM_INFO = SYSTEM_INFO::default(); // initializing the default value of SYSTEM_INFO
     unsafe { // using unsafe as GetNativeSystemInfo is an unsafe function
-        GetNativeSystemInfo(&mut name as *mut SYSTEM_INFO); // using raw pointers as this API uses the raw pointer
+        GetNativeSystemInfo(&mut sysinfo as *mut SYSTEM_INFO); // using raw pointers as this API uses the raw pointer
     }
-	    println!("Number of Processor: {}", name.dwNumberOfProcessors);
-    println!("Processor Type: {}", name.dwProcessorType);
-    println!("Page size: {} bytes", name.dwPageSize);
+    println!("Number of Processor: {}", sysinfo.dwNumberOfProcessors);
+    println!("Processor Type: {}", sysinfo.dwProcessorType);
+    println!("Page size: {} bytes", sysinfo.dwPageSize);
 
 }
 ```

@@ -7,7 +7,7 @@ The computer asks for the TGT from the Domain Controllers, and the TGT gets cach
 
 # Network Logon
 - When user connects to non-interactive services like SMB, RPC, SQL, etc.
-- Requires password, NT Hash, or kerberos keys for authentication. Prone to [[Active Directory/Exploitation/Kerberos#Pass the Ticket|PTT]] and [[NTLM#Pass The Hash|PTH]].
+- Requires password, NT Hash, or kerberos keys for authentication. Prone to [[Active Directory/Initial Foothold/Kerberos#Pass the Ticket|PTT]] and [[Active Directory/Exploitation/NTLM#Pass The Hash|PTH]].
 -  Credentials are **NOT** cached in the target machine. Credentials/tickets are only cached in the case of [[Active Directory/AD Concepts/Kerberos#Kerberos Delegations|Kerberos Delegations]].
 ```powershell
 # Accessing Share

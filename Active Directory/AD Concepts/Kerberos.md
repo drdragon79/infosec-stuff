@@ -42,13 +42,13 @@ The PAC also contains several signatures to maintain the integrity of the PAC.
 - Only the principal (users/service) can read contents STs, as it includes the session key needed to establish the secure communication between the client and server. 
 - STs are encrypted with key of the target principal.
 - In AD, principals are usually the service. Hence the STs are encrypted with the key of the account owner of the service. (The account that registered the service via SPN).
-- These [[Active Directory/AD Concepts/Users#Kerberos Keys|Kerberos Keys]] are derived from the password of these service accounts. Hence if these keys are compromised, it can be used to create ticket knows as [[Active Directory/Exploitation/Kerberos#Silver Tickets|Silver Tickets]], which can be used to access any service of that user.
+- These [[Active Directory/AD Concepts/Users#Kerberos Keys|Kerberos Keys]] are derived from the password of these service accounts. Hence if these keys are compromised, it can be used to create ticket knows as [[Active Directory/Initial Foothold/Kerberos#Silver Tickets|Silver Tickets]], which can be used to access any service of that user.
 - If two tickets are created for two services owned by the same user, it will be encrypted using the same key. Also, the target service (`sname`) is not the encrypted part of the ticket. Hence if we have access to one service of the user. We can change the target service of the user and access other services provided by the user. Hence if have the ticket for administrator to access MSSQL, we can change the the target to SMB (CIFS/machineName), and get administrative shell.
 
 ### Ticket Granting Ticket
 - Required by the KDC to issue ST for services. Can be thought of as ST for KDC.
 - As it should only be read by the principal, in this case KDC, it is encrypted by the key of `krbtgt` account which is the service account that runs the KDC (Also known as the KCD key).
-- If we compromise the key or password of `krbtgt` account, we can create arbitrary TGTs for any account known as [[Active Directory/Exploitation/Kerberos#Golden Tickets|Golden Tickets]]. Golden tickets can be used to impersonate any account in the domain, including Administrators.
+- If we compromise the key or password of `krbtgt` account, we can create arbitrary TGTs for any account known as [[Active Directory/Initial Foothold/Kerberos#Golden Tickets|Golden Tickets]]. Golden tickets can be used to impersonate any account in the domain, including Administrators.
 
 # Kerberos Keys
 [[Active Directory/AD Concepts/Users#Kerberos Keys|Kerberos Keys]]

