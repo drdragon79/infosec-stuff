@@ -1,4 +1,4 @@
-- [[SID]] is used to track the security principal for an account.
+- [[Windows/Windows Internals/SID]] is used to track the security principal for an account.
 - SID history is used to track previous SIDs of the user (maybe while migrating the AD environment to a new one). This allows the user to access resource in the previous/last domain using the new account.
 - SID history, by design, can story any SID, and doesn't need to be from other domain.
 - With domain admin privileges, we can add/modify SIDs to the SID history property of a user object.

@@ -4,28 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "81fed94871b2f79f",
+        "id": "d853c24a14a97915",
         "type": "tabs",
         "children": [
           {
-            "id": "30fa839c52b51d24",
+            "id": "271bd274051b971c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Credential Dumping/Domain Controller.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7b2754d8ef749713",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
+                "file": "Windows/Windows Internals/Security/Security Descriptor.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "/pth",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Credential Dumping/Domain Controller.md",
+                "file": "Windows/Windows Internals/Security/Security Descriptor.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Credential Dumping/Domain Controller.md",
+                "file": "Windows/Windows Internals/Security/Security Descriptor.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Credential Dumping/Domain Controller.md"
+                "file": "Windows/Windows Internals/Security/Security Descriptor.md"
               }
             }
           }
@@ -155,7 +142,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -167,34 +155,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f8c4aba21190f109",
+  "active": "271bd274051b971c",
   "lastOpenFiles": [
+    "Windows/Windows Security.md",
+    "Windows/Windows Internals/Security/Security Descriptor.md",
+    "Windows/Windows Internals/Security/Privilege.md",
+    "Windows/Windows Enumeration.md",
+    "Windows/Windows Internals/Security/Access Token.md",
+    "Windows/Windows Internals/Security/SID.md",
+    "Windows/Windows Internals/WMI.md",
+    "Windows/Windows Internals/Security",
+    "Windows/Windows Internals/UAC.md",
+    "Windows/Windows Internals/SysInternals.md",
+    "Windows/Windows Internals/DPAPI.md",
+    "Windows/Windows Internals/SID.md",
+    "Windows/Windows Internals/Privileges.md",
+    "Windows/Windows Internals/Policies.md",
+    "Windows/Windows Concepts/ACLs.md",
+    "Active Directory/Exploitation/ACLs.md",
+    "Untitled 1.md",
+    "Untitled.md",
+    "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
+    "Windows/Powershell Cheatsheet.md",
+    "README.md",
+    "Windows/System Programming/Fundamentals.md",
+    "Active Directory/Credential Dumping/Domain Controller.md",
     "Active Directory/Protocols/SMB.md",
     "Active Directory/Initial Foothold/ASREPRoast.md",
     "Active Directory/Privilege Escalation/Kerberoast.md",
     "Cheatsheet/Rubeus.md",
-    "Cheatsheet/Mimikatz.md",
-    "Active Directory/Initial Foothold/Kerberos.md",
-    "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
-    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
-    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
-    "Active Directory/Lateral Movement and Pivoting/NTLM.md",
-    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
-    "Active Directory/Exploitation/ACLs.md",
-    "Active Directory/Persistence/ACLs.md",
-    "Active Directory/Privilege Escalation/DNSAdmins.md",
-    "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
-    "Active Directory/Privilege Escalation/Constrained Delegation.md",
-    "Active Directory/Initial Foothold/LLMNR.md",
-    "Active Directory/Exploitation/NTLM.md",
-    "Active Directory/Lateral Movement and Pivoting/Pass The Hash-Ticket.md",
-    "Active Directory/Persistence/Golden Tickets.md",
-    "Uncategorized/Mimikatz.md",
-    "Active Directory/AD Concepts/Basics.md",
-    "Active Directory/AD Concepts/Authentication.md",
-    "Active Directory/AD Concepts/Database.md",
-    "Active Directory/AD Concepts/Credentials.md",
-    "Active Directory/Domain Enumeration/Credential Injection.md",
     "Cheatsheet",
     "Active Directory/Credentials",
     "_attachments/Pasted image 20230828195012.png",
@@ -206,7 +195,6 @@
     "Containers/Kubernetes",
     "Containers/Docker",
     "Containers",
-    "Windows/Commands",
     "Untitled.canvas",
     "_attachments/Pasted image 20230522234722.png",
     "_attachments/Pasted image 20230522234704.png",

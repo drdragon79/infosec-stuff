@@ -6,7 +6,7 @@
 	- Image of the executable program, contains the initial code to be executed
 	- A private table containing the handle of the kernel objects
 	- Access token - Security context - the context in which the process is running. Used to check of the process has permission over a resource
-	- Threads - one or more threads to execute the program. Frist thread is created when the process is started.
+	- Threads - one or more threads to execute the program. First thread is created when the process is started.
 * Some properties of process that we can find in task manager:
 	* `Name`: the executable that is run by the process.
 	* `PID`: Process ID, unique identified for the process.
