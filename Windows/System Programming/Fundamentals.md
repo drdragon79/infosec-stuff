@@ -83,7 +83,17 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 # Windows API/Win32 API
 ### Getting System Information
 ```c
-#include<stdio.h>
+#include <stdio.h>
+#include <Windows.h>
+#include <stdlib.h>
+
+int main() {
+    SYSTEM_INFO *systeminfo = (SYSTEM_INFO *)malloc(sizeof(SYSTEM_INFO));
+    GetNativeSystemInfo(systeminfo);
+    printf("Processor Type: %d\n",systeminfo->dwProcessorType);
+    printf("Number of Processors: %d\n",systeminfo->dwNumberOfProcessors);
+    printf("Page size: %d\n",systeminfo->dwPageSize);
+}
 ```
 ```rust
 use windows::Win32::System::SystemInformation::{self, GetNativeSystemInfo, SYSTEM_INFO};
@@ -97,6 +107,12 @@ fn main() {
     println!("Page size: {} bytes", sysinfo.dwPageSize);
 
 }
+```
+- Output
+```
+Processor Type: 8664
+Number of Processors: 4
+Page size: 4096
 ```
 ### Handling Errors
 ```rust
