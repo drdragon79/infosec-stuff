@@ -115,5 +115,114 @@ Number of Processors: 4
 Page size: 4096
 ```
 ### Handling Errors
-```rust
+`GetLastError` can be used to get error code encountered in the last function. `FormatMessage` can be used for format the error message to get the textual description.
+```c
+void errorhandling(){
+    DWORD errchar; // for storing error code
+    WCHAR errormsg[512]; // buffer for storing error message
+    HANDLE process = OpenProcess(
+        PROCESS_TERMINATE, // asking terminal permission for the process
+        FALSE,
+        468 // process ID
+    );
+    if(process) { // handle will be NULL or 0 if access is denied
+        TerminateProcess(
+            process, // handle to process
+            0 // exit code
+        );
+    } else {
+        DWORD errorcode = GetLastError(); // get error code
+        printf("Error Code: %u\n",errorcode);
+        FormatMessageW(
+            FORMAT_MESSAGE_FROM_SYSTEM, // flags for the error
+            NULL,
+            errorcode, // error code
+            0,
+            errormsg, // buffer for error message
+            512,
+            NULL);
+        printf("Error Message: %ws\n",errormsg);
+    }
+}
 ```
+### Strings
+- Windows uses UTF-16 to represent strings, which is 2 bytes per character.
+- Sometimes also known as Unicode.
+- Windows API also makes use of Unicode strings. For compatibility reasons, ANSI (ASCII) versions of the API call is also available.
+        - Functions ending with "W" represents Unicode version.
+        - Functions ending with "A" represents ANSI version.
+        - Function not having "A" or "W" is really a macro to either A or W version, depending on the machine and compiler. This is usually W for modern systems.
+- Types available:
+        - *WCHAR*, which a typedef to *wchar_t*, also knows as wide char, represents UNICODE charachters - 2 Bytes.
+        - *PWSTR* - Pointer to wide string (Unicode String Pointer), *PSTR* - Pointer to ASCII characters (ASCII String Pointer)
+        - *PCWSTR* - Pointer to constant wide string, *PCSTR* - Pointer to constant ascii string.
+        - Unicode Literal : L"Doctor" - Uses 2 bytes per character.
+- String manipulation:
+        - Classic S functions for string manipulation is unsafe.
+                - Eg: strcpy(ascii) , wcscpy(unicode), strcat etc.
+        - Safe versions:
+                - strcpy_s()
+                - wcscpy_s()
+        - Other safe versions, included in <strsafe.h>:
+                - StringCchCopy
+                - StringCchCat
+                - StringCchPrintf
+                - Have A and W version.
+- Some miscellaneous functions:
+```c
+void stringsfunctions() {
+    // get system directory path API.
+    WCHAR systemdirectory[MAX_PATH];
+    GetSystemDirectoryW(
+        systemdirectory, // buffer to store systemdirecotry information
+        _countof(systemdirectory) // length so that the function cannot overflow the buffer
+    );
+    printf("System Directory %ws\n",systemdirectory);
+
+    // get computer name API
+    WCHAR computername[MAX_COMPUTERNAME_LENGTH];
+    DWORD len = _countof(computername); // _countof counts the element in a buffer
+    BOOL res = GetComputerNameW( // returns BOOL
+        computername, // computer name buffer
+        &len // LPDWORD nSize, which is a long pointer to a DWORD.
+        // this type of parameter is called in-out parameter.
+        // IN: len specifies the length to fill in the buffer.
+        // OUT: the function then writes the length actually filled by the function.
+    );
+    if (res) {
+        printf("Computer Name(%d): %ws\n",len,computername);
+    }
+}
+```
+### Structures
+- Most structures in the windows API are defined like:
+```c
+typedef struct _SOME_STRUCT {
+        // fields
+} SOME_STRUCT, *PSOME_STRUCT, *LPSOMESTRUCT;
+```
+- The long prefix is there for historic reasons. There is no long pointer as such. Pointers have defined size:
+        - 4 bytes for 32 bit processor
+        - 8 bytes for 64 bit processor
+- Some structures have version, and the version depends on the size of the structure. The size of the structure is defined by the first member.
+```c
+
+```
+### Windows Version
+- Windows Numeric Version:
+        - Windows NT (4.0)
+        - Windows 2000 (5.0)
+        - Windows XP (5.1)
+        - Windows Server 2003, 2003 R2 (5.2)
+        - Windows Vista, Server 2008 (6.0)
+        - Windows 7, Server 2008 (6.1)
+        - Windows 8, Server 2012 (6.2)
+        - Windows 8.1, Server 2012 R2 (6.3)
+        - Windows 10, Server 2016 (10)
+- `GetVersionEx()` function was used traditionally to get the version information, but is now deprecated.
+- New helper functions defined in `versionhelpers.h` is used now:
+        - `IsWindowsXPSP3OrGreater()`
+        - `IsWindows10OrGreater()`
+        - `IsWindowsServer()`
+- These functions are implemented with `VerifyVersionInfo()`
+- It requires manifest file to get correct information%
