@@ -206,7 +206,24 @@ typedef struct _SOME_STRUCT {
         - 8 bytes for 64 bit processor
 - Some structures have version, and the version depends on the size of the structure. The size of the structure is defined by the first member.
 ```c
+void structures() {
+    SHELLEXECUTEINFOW shell; // a shell execute structure
+    memset( // used to null out any data structure
+        &shell, // pointer to the structure
+        NULL, // value to fill the strcutre with
+        sizeof(shell) // size of the structure
+    );
+    shell.cbSize = sizeof(shell); // setting the first member cbSize to the size of the structure
 
+    // another way to zero out a structure
+    SHELLEXECUTEINFOW shell2 = { sizeof(shell2) }; // this will set the first member to the size of the structure and zero out the rest
+
+    // settings the fields
+    shell.lpFile = L"c:\\windows\\win.ini"; // file to open
+    shell.lpVerb = L"open"; // action to perform
+    shell.nShow = SW_SHOWNORMAL; // display the window normally
+    ShellExecuteExW(&shell);
+}
 ```
 ### Windows Version
 - Windows Numeric Version:
@@ -225,4 +242,230 @@ typedef struct _SOME_STRUCT {
         - `IsWindows10OrGreater()`
         - `IsWindowsServer()`
 - These functions are implemented with `VerifyVersionInfo()`
-- It requires manifest file to get correct information%
+- It requires manifest file to get correct information
+```c
+void winversion() {
+    // deprecated but can be enabled with macro
+    OSVERSIONINFO vi = { sizeof(vi) };
+    GetVersionEx(&vi);
+    printf("%u.%u.%u\n", vi.dwMajorVersion, vi.dwMajorVersion, vi.dwBuildNumber);
+    BOOL ans;
+    if (ans = IsWindows7OrGreater()) {
+        printf("7 and greater");
+    }
+}
+```
+### System Information
+- `GetNativeSysteminfo()` & `GetSysteminfo()` can be used to query information about the operating system and architecture.
+- `GetPerformanceInformation()` from `psapi.h` can be used to get information about processes and threads
+```c
+void moresysteminfo() {
+    PERFORMANCE_INFORMATION pi; // perfomance information object
+    for (;K32GetPerformanceInfo(&pi, sizeof(pi));) { // infinite loop that updates the pi object
+        printf("Process: %u\n",pi.ProcessCount);
+        printf("Thread: %u", pi.ThreadCount);
+        printf("\r\x1b[2A");
+        // \r: return cariage: moves the cursor to the begining of the line
+        // \x1b: ESC: Suggests start of an escape sequence
+		// [2A: moves the cursor 2 lines up
+        Sleep(1000);
+    }
+}
+```
+# Objects & Handles
+### Kernel Objects
+- Windows is object oriented operating system.
+- Exposes objects like:
+	- Process
+	- Threads
+	- Mutex
+	- Semaphores
+	- Files
+	- Directories
+- Data structure for these objects are present in system space, and is inaccessible in user mode. Kernel mode can access these objects directly.
+- Kernel objects are reference counted. Once all handle to an object is closed, object is destroyed.
+- Users from user mode can only obtain handle to an object.
+### Handles
+- Process maintains a private handle table.
+- When a process creates an object, it receives a handle to the object, which is an indirect pointer to an object instance.
+	- Used as a way to access the underlying object.
+	- Can be used to share objects across processes.
+- Process Explorer can be used to see handles opened by a process.
+- Handles are always represented as a multiple of 4.
+- Objects exposed by the Windows API for the usermode:
+	- Process
+		- `CreateProcess()`
+		- `OpenProcess()`
+	- Threads
+		- `CreateThread()`
+		- `OpenThread()`
+	- Jobs
+		- `CreateJobObject()`
+		- `OpenJobObject()`
+	- Files
+		- `CreateFile()`
+		- `CreateFile2()`
+	- File Mapping (Section)
+		- `CreateFileMapping()`
+		- `OpenFileMapping()`
+	- Token
+		- `LogonUser()`
+		- `OpenProcessToken()`
+	- Mutex (Mutant)
+		- `CreateMutex[Ex]()`
+		- `OpenMutex()`
+	- Event
+		- `CreateEvent[Ex]()`
+		- `OpenEvent()`
+	- Semaphore
+		- `CreateSemaphore()`
+		- `OpenSemaphore()`
+	- Timer
+		- `CreateWritableTimer()`
+		- `OpenWritableTimer()`
+	- I/O Completion Port
+		- `CreateIOCompletionPort()`
+	- Window Station
+		- `CreateWindowStation()`
+		- `OpenWindowStation()`
+	- Desktop
+		- `CreateDesktop()`
+		- `OpenDesktop`
+- These functions return a HANDLE to the object created or opened.
+- If the functions fail, it returns `NULL` or `INVALID_HANDLE_VALUE`
+- After use, handle should be closed using `CloseHandle()`, which will delete the handle from the handle table and decrement the reference count of the object by one. (If reference count becomes 0, the object is deleted)
+```c
+void handles() {
+	// create event
+	HANDLE evnt = CreateEventW(NULL, TRUE, FALSE, NULL);
+	if (evnt) {
+		SetEvent(evnt);
+		CloseHandle(evnt);
+	}
+	else {
+		printf("Failed to create event %u\n", GetLastError());
+	}
+
+}
+```
+### Pseudo Handles
+- A normal handle is always multiple of four. First handle value is 4.
+- Pseudo Handles have special value, and are not closable
+	- Handle returned by `GetCurrentProcess()` returns `-1` and is handle to the current process
+	- Handle returned by `GetCurrentThread()` returns `-2` and is handle to the current thread
+	- Handle returned by `GetCurrentProcessToken()` returns `-4`  which is handle to current process's token object.
+	- Handle returned by `GetCurrentThreadToken()` returns `-5`  which is handle to current thread's token object.
+	- Handle returned by `GetCurrentThreadEffectiveToken()` returns `-6` which is handle to current's thread's token if it's impersonating.
+	- All tokens have `TOKEN_QUERY` and `TOKEN_QUERY_SOURCE` rights only.
+```c
+void pseudoHandles() {
+	HANDLE prcshndl = GetCurrentProcess();
+	HANDLE thrdhndl = GetCurrentThread();
+	HANDLE prcstknhndl = GetCurrentProcessToken();
+	HANDLE thrdtknhndl = GetCurrentThreadToken();
+	HANDLE thrdefftknhndl = GetCurrentThreadEffectiveToken();
+	printf("Process Handle: %d\n", (int)prcshndl);
+	printf("Thread Handle: %d\n", (int)thrdhndl);
+	printf("Process Token Handle: %d\n", (int)prcstknhndl);
+	printf("Thread Token Handle: %d\n", (int)thrdtknhndl);
+	printf("Thread Effective Token Handle: %d\n", (int)thrdefftknhndl);
+
+}
+```
+```
+Process Handle: -1
+Thread Handle: -2
+Process Token Handle: -4
+Thread Token Handle: -5
+Thread Effective Token Handle: -6
+```
+- Use Case: `SetPriority()` function can be used to set priority of a process, and required handle to a process, so a handle to our own process can be supplied to the function to change the priority of our process.
+```c
+void changepriority() {
+	SetPriorityClass(
+		GetCurrentProcess(), // handle to current process
+		HIGH_PRIORITY_CLASS // priority class
+	);
+}
+```
+### Sharing Objects
+- Objects created can be shared by other processes.
+- This can be done my:
+	- Process handle inheritance: A child process gets access to some handles of the parent process
+	- Creating/Opening objects by name.
+	- Duplicating a handle: difficult in practice.
+##### Object Names
+- Allows object lookup by name.
+- Can be shared easily within process.
+- Not all objects can have name. 
+- Named objects are stored in the `object manager namespace`
+```c
+void sharingmutex() {
+	HANDLE mtx = CreateMutexW(NULL,FALSE, L"mymtx");
+	printf("Handle created\n");
+	if (!mtx) {
+		printf("Error Creating Mutex\n");
+	}
+	printf("Last Error: %u\n", GetLastError());
+	Sleep(INFINITE);
+}
+```
+- If the above code runs more than once, the `Create*()`  returns the handle to the same object, but also generates an error with error code 183, which is `ERROR_ALREADY_EXISTS`
+- Output #1: First Instance
+```c
+Handle created
+Last Error: 0
+```
+- Output #2: Second Instance
+```c
+Handle created
+Last Error: 183
+```
+- Both these handle with point to the same object.
+- Programs that wants to force a single will create a named object and check for it's existence. If the named object exists, they terminate and move the focus on the original instance.
+### Object Names & Sessions
+- Each session object should have it's own objects.
+- The object manager creates a session directory with a session ID subdirectory, in which the named objects are created. Session can be:
+	- `0`: Session 0 is used by services and user-mode drivers
+	- `1`: Session 1 is used by user programs
+- WinObj from SysInternals can be used to analyze object manager.
+- An object created in session 1 will reside in `\Session\1\BaseNamedObjects\mynamedobject`
+- Session 0 objects are stored in the root `\BaseNamedObjects\`
+- If a user wants to access object in session 0, it can be done by prefixing the named object with `Global\`
+- This to note about standard named objects are they are visible. They can be viewed by sysinternal tools such as `Process Explorer`. Private Object Namespace can be used to hide objects.
+### Private Object Namespace
+- This is used to make the objects invisible.
+- Access can be restricted using Integrity levels or SIDs.
+- APIs:
+	- `CreateBoundaryDescriptor()`
+	- `AddSIDToBoundaryDescriptor()`
+	- `CreatePrivateNamespace()`
+	- `OpenPrivateNamespace()`
+	- `ClosePrivateNamespace()`
+```c
+void privatenamespace() {
+	// creating the boundary descriptor
+	HANDLE hBoundary = CreateBoundaryDescriptorW(
+		L"MyDescriptor", // descriptor name
+		NULL
+		);
+	if (!hBoundary)
+		printf("Error Creating Boundary\n");
+	HANDLE hNamespace = CreatePrivateNamespaceW(
+		NULL,
+		hBoundary, // boundary descriptor
+		PRIVATE_NAMESPACE // private namespace name
+		);
+	if (!hNamespace) { // in case it is already present, open the private namespace
+		hNamespace = OpenPrivateNamespaceW(
+			hBoundary,
+			PRIVATE_NAMESPACE
+		);
+	}
+
+	// creating an object in the private namespace
+	HANDLE hmutex = CreateMutexW(NULL, FALSE, PRIVATE_NAMESPACE L"\\mymtx");
+	Sleep(INFINITE);
+}
+```
+- If process is inspected using process explorer, the object will be displayed as `\...\mymtx` so the namespace of the object is indecipherable/invisible by the inspector. A user mode process can never open handle to this object if they don't know the private namespace name or don't have access to it.
