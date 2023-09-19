@@ -394,7 +394,7 @@ void changepriority() {
 	- Process handle inheritance: A child process gets access to some handles of the parent process
 	- Creating/Opening objects by name.
 	- Duplicating a handle: difficult in practice.
-##### Object Names
+##### 1. Object Names
 - Allows object lookup by name.
 - Can be shared easily within process.
 - Not all objects can have name. 
@@ -469,3 +469,90 @@ void privatenamespace() {
 }
 ```
 - If process is inspected using process explorer, the object will be displayed as `\...\mymtx` so the namespace of the object is indecipherable/invisible by the inspector. A user mode process can never open handle to this object if they don't know the private namespace name or don't have access to it.
+##### 2. Handle Inheritance
+- Way to share objects.
+- Handles can be copied to a new child process.
+- Handles that should be inherited by the child process should be marked `INHERITABLE`.
+- The `CreateProcess()` call must specify TRUE for inherit handle parameter.
+- All the inherited handles are duplicated with the the same handles values.
+```c
+void handleinherit() {
+    HANDLE hndl = CreateEventW(NULL, TRUE, FALSE, L"MyHandle"); // creating an event object
+    printf("Handle: 0x%p\n", hndl);
+
+    SetHandleInformation( // to mark handle as INHERITABLE
+        hndl, // handle to event object
+        HANDLE_FLAG_INHERIT, // flag to change
+        HANDLE_FLAG_INHERIT // flag to change it with
+    );
+
+    // creating a process
+    PROCESS_INFORMATION pi; // create process will fill this object with the process ID and other details such as thread ID and process ID
+    STARTUPINFOW si = { sizeof(si) };
+    wchar_t cmdline[] = L"notepad";
+
+    if (CreateProcessW(NULL, cmdline, NULL, NULL, TRUE, 0, NULL, NULL, &si, &pi)) {
+        printf("Process ID: %u\n", pi.dwProcessId);
+        CloseHandle(pi.hProcess);
+        CloseHandle(pi.hThread);
+    }
+}
+```
+- After this code, both the program and notepad will have the event handle with the same handle ID pointing to the same resource in memory.
+- The handle ID from the parent process can be copied over the child process by passing the handle value as command line argument to the child process. The child process must now handle the argument to get the handle value and cast it as void pointer to be able to use the event.
+```c
+whcar_t cmdline[] = L"notepad {}" // replace {} with handle ID. In this case notepad's default behavious is to open the file.
+```
+##### 3. Duplicating Handles
+- Most generic mechanism to create a copy of a handle.
+- Works for any kind of object
+- The API `DuplicateHandle()` is used to duplicate a handle in for another process.
+        - Process A creates an object X.
+        - Process A gets a handle to another process B
+        - Process A call duplicate handle API, and passes the handle of process B and the handle of object X to duplicate.
+        - This will duplicate the handle of object X in process B. Process B will now have a handle to X.
+```c
+void duphandle() {
+        // creating an object to duplicate
+        HANDLE hevnt = CreateEventW(NULL, TRUE, FALSE, L"Myevent");
+        printf("Handle : 0x%p", hevnt);
+
+        // opening a handle to a process. In this case notepad
+        HANDLE phandle = OpenProcess(PROCESS_DUP_HANDLE, NULL, 6476);
+        if (!phandle) {
+                printf("Error Opening Process. Code: %u",GetLastError());
+        }
+
+        HANDLE targethandle; // this is the handle that the target process will get
+        BOOL res = DuplicateHandle(
+                GetCurrentProcess(), // source process handle, which is current process
+                hevnt, // source handle, the handle to duplicate
+                phandle, // target process
+                &targethandle, // pointer to the targethandle
+                0, // desired access - 0 becuase we specify access later.
+                TRUE, // BOOL, makes the handle inheritable
+                DUPLICATE_SAME_ACCESS // duplicate the same access for the target handle. Ignores desired access paramter
+        );
+        if (res) {
+                printf("Handle Duplicated\n");
+        }
+}
+```
+- After this function executes. The handle `Myevent` will be duplicated over to the notepad process with the same handle access as the caller process.
+- The major issue is notifying the other process that a handle has been duplicated for it. The notification should be done via some inter process communication that the other process can handle.
+### User & GDI Objects
+- The `Object Manager` in the executive only manages and responsible for kernel objects.
+- The `User` and `GDI` objects are managed by `Win32k.sys`. These objects are responsible for *User*interface and *G*raphics *D*evice *I*nterface.
+- The API calls for these objects go through `user32.dll` and `gdi32.dll` and not through `ntdll.dll` as they invoke the sysnter/syscall directly.
+- Handles for User objects are reffered by:
+        - `HNWD` for Windows
+        - `HMENU` for Menus
+        - `HHOOK` for Hooks
+- These objects have no reference counting, and they are private to a window station.
+- But these handles have a much global scope, compared to a normal kernel handle which is private to a process.
+- Handles for GDI objects are referred by:
+        - `HDC` for device context
+        - `HPEN` for pen
+        - `HBRUSH` for brush
+        - `HBITMAP` for a bitmap
+- These are private to a process but like User objects, they don't have reference counting
