@@ -86,7 +86,7 @@ ForestDnsZones       domainDNS            DC=ForestDnsZones,DC=doctor,DC=local
 - Lightweight Directory Access Protocol
 - Can retried each and every Active Directory object.
 - Access all the domain data using ports:
-	- TCP: 389 - LDAP
+	- TCP: 380 - LDAP
 	- TCP/SSL: 636 - LDAPS
 - LDAP can be queried using `ldapsearch` utility
 ```bash

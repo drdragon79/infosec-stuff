@@ -4,22 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "ccb89bcde5b0a3ed",
+        "id": "327f5c7c8f278544",
         "type": "tabs",
         "children": [
           {
-            "id": "93d4245c93b7e002",
+            "id": "efc951ef15bbc131",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/System Programming/Fundamentals.md",
+                "file": "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d370d4660e6d6bc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/Protocols/WinRM.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "group policy",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -77,7 +90,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 289.5
+    "width": 247.5
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Windows/System Programming/Fundamentals.md",
+                "file": "Active Directory/Protocols/WinRM.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Windows/System Programming/Fundamentals.md",
+                "file": "Active Directory/Protocols/WinRM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Windows/System Programming/Fundamentals.md"
+                "file": "Active Directory/Protocols/WinRM.md"
               }
             }
           },
@@ -143,7 +156,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -165,49 +180,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "93d4245c93b7e002",
+  "active": "8d370d4660e6d6bc",
   "lastOpenFiles": [
-    "Windows/Windows Internals/Security/Elevation.md",
-    "Windows/Windows Internals/Security/User Account Control.md",
-    "Untitled.canvas",
-    "Windows/Windows Internals/Security/Integrity Levels.md",
-    "Windows/System Programming/Fundamentals.md",
-    "Windows/Windows Internals/Security/Privilege.md",
-    "Windows/Windows Internals/Security/Access Token.md",
-    "Windows/Windows Internals/Security/SID.md",
-    "Windows/Windows Internals/DPAPI.md",
-    "Windows/Windows Internals/Security/Security Descriptor.md",
-    "_attachments/Pasted image 20230904145553.png",
-    "Windows/Windows Security.md",
+    "Active Directory/Protocols/SMB.md",
+    "Active Directory/Protocols/MSRPC.md",
+    "_attachments/Pasted image 20231109212038.png",
+    "_attachments/Pasted image 20231109194843.png",
+    "_attachments/Pasted image 20231109193737.png",
+    "_attachments/Pasted image 20231109193711.png",
+    "_attachments/Pasted image 20231109191856.png",
+    "_attachments/Pasted image 20231109183242.png",
+    "_attachments/Pasted image 20230923224000.png",
+    "Windows/Persistence/Adding Privileged Users.md",
+    "Active Directory/AD Concepts/Kerberos.md",
+    "Windows/Windows Internals/Uncategorized/WMI.md",
+    "Windows/Windows Internals/Uncategorized/SysInternals.md",
+    "Windows/Windows Internals/Uncategorized/SID.md",
+    "Windows/Windows Internals/Uncategorized/Privileges.md",
+    "Windows/Windows Internals/Uncategorized/Policies.md",
+    "Windows/Windows Internals/Uncategorized/DPAPI.md",
     "Windows/Windows Enumeration.md",
-    "Windows/Windows Internals/WMI.md",
-    "Windows/Windows Internals/Security",
-    "Windows/Windows Internals/UAC.md",
-    "Windows/Windows Internals/SysInternals.md",
-    "Windows/Windows Internals/SID.md",
-    "Windows/Windows Internals/Privileges.md",
-    "Windows/Windows Internals/Policies.md",
-    "Windows/Windows Concepts/ACLs.md",
-    "Active Directory/Exploitation/ACLs.md",
-    "Untitled 1.md",
-    "Untitled.md",
-    "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
     "Windows/Powershell Cheatsheet.md",
-    "README.md",
-    "Active Directory/Credential Dumping/Domain Controller.md",
-    "Cheatsheet",
-    "Active Directory/Credentials",
+    "Windows/Windows Internals/Security/Elevation.md",
+    "Windows/Windows Internals/Security/Integrity Levels.md",
+    "Windows/Windows Internals/Security/Access Token.md",
+    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
+    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
+    "Windows/System Programming/Fundamentals.md",
+    "Windows/Windows Internals/System Architecture/Operating System Model.md",
+    "Windows/Windows Internals/System Architecture/Architecture Overview.md",
+    "Windows/Windows Internals/Security/User Account Control.md",
+    "Windows/Windows Internals/Security/SID.md",
+    "Windows/Windows Internals/Security/Security Descriptor.md",
+    "Windows/Windows Internals/Security/Privilege.md",
+    "Wireless/Wifi/Basics.md",
     "_attachments/Pasted image 20230828195012.png",
-    "_attachments/Pasted image 20230828194948.png",
-    "Windows/System Programming",
-    "Active Directory/Privilege Escalation",
-    "Active Directory/Persistence",
-    "Active Directory/Protocols",
-    "Containers/Kubernetes",
-    "Containers/Docker",
-    "Containers",
-    "_attachments/Pasted image 20230522234722.png",
-    "_attachments/Pasted image 20230522234704.png",
-    "_attachments/Pasted image 20230512003628.png"
+    "_attachments/Pasted image 20230904145553.png",
+    "_attachments/Pasted image 20230923190922.png",
+    "README.md",
+    "Wireless/Wifi",
+    "Windows/Windows Internals/System Architecture/Untitled",
+    "Untitled.canvas",
+    "Untitled 1.canvas",
+    "Windows/Windows Internals/Uncategorized",
+    "Windows/Windows Internals/Threads/Untitled",
+    "Windows/Windows Internals/System Architecture",
+    "Windows/Windows Internals/Fundamentals",
+    "Windows/Windows Internals/Threads",
+    "Windows/Windows Internals/Process & Jobs",
+    "Windows/Windows Internals/Security",
+    "Cheatsheet"
   ]
 }

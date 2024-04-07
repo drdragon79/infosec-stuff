@@ -1,7 +1,7 @@
 - Users
 ### User Identification
 - `SamAccountName`: Username of the user
-- `SID`: domain [[Windows/Windows Internals/SID]] + [[Windows/Windows Internals/SID#RID]]
+- `SID`: domain [[Windows/Windows Internals/Uncategorized/SID]] + [[Windows/Windows Internals/Uncategorized/SID#RID]]
 - `DistinguishedName`: used in LDAP to identify objects in an Active Directory. 
 ### User Secrets
 #### NTLM

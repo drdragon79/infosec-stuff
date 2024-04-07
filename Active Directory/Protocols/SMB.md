@@ -91,3 +91,10 @@ cme smb -L
 # Use modules
 cme smb <target> <option> -M <module_name>
 ```
+### Cloning entire share
+```bash
+smbclient //domain.loc/sharename
+smb: \> RECURSE ON # set recursive to on
+smb: \> PROMPT OFF # do no ask y/n for every directory
+smb: \> mget * # get everyhing * = wildcard
+```
