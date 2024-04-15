@@ -23,17 +23,17 @@ Get-ADUser -Filter * -SearchBase "CN=Users,DC=MYORG,DC=LOCAL"
 ### Powerview
 ```powershell
 # Get all the user
-Get-NetUser
+Get-DomainUser
 
 # Get Information about specific user
-Get-NetUser -Username student1
+Get-DomainUser -Idnentity username
 
 # Get property of the user
-Get-UserProperty
-Get-Userproperty -Properties pwdLastset
+Get-DomainUser -Identity username -Properties *
+Get-DomainUser -Properties *
 
 # Search for strings in user's attribute
-Find-UserField -SearchField Description -SearchTerm "built"
+Get-DomainUser -LDAPFilter "Description=*build*" | select name,description
 
 # Get actively logged users on a computer 
 # Needs local admin rights on the target 
@@ -46,3 +46,12 @@ Get-LoggedonLocal -ComputerName comp.domain.local
 # Get the last logged user on a computer (needs admin rights and remote registry on the target)
 Get-LastLoggedOn -ComputerName <server>
 ```
+### Other Tools
+SessionHunter
+```powershell
+# Can be used to enumerate remote logged on users on a machine without local admin privileges
+Invoke-SessionHunter -FailSafe
+# This uses remote registry and uses HKEY_USERS hive
+# Opsec verison of the command
+Invoke-SessionHunter -NoPortScan -Targets C:\servers.txt
+	```

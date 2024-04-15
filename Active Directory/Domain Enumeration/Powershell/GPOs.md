@@ -18,15 +18,21 @@ Get-GPResultantSetOfPolicy -ReportType Html -Path C:\Users\Admin\report.html
 ### Powerview
 ```powershell
 # Get list of group policy in current domain
-Get-NetGPO
+Get-DomainGPO
 
 # List which GPOs are applied to student.domain.local
-Get-NetGPO -ComputerName student.domain.local
+Get-DomainGPO -ComputerIdentity student.domain.local
 
 # Get GPOs that use restricted groups or groups.xml for interesting users
-Get-NetGPOGroup
+Get-DomainGPOLocalGroup
 
 ## NOTE: There is no powerview function to get resultant set of policy 
+
+# Get users which are in a local group of a machine using GPO
+Get-DomainGPOComputerLocalGroupMapping -ComputerIdentity computer1
+
+# Get machines where the given user is a member of a specific group
+Get-DomainGPOUserLocalGroupMappting -Identity username -Verbose
 
 # Get users which are a part of a local group of a machine using GPO
 Find-GPOComputerAdmin -CommputerName comp.domain.local

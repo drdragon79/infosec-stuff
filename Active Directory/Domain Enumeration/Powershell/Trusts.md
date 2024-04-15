@@ -11,6 +11,6 @@ Get-ADTrust -Domain us.dollarcorp.moneycorp.local -Filter *
 ### Powerview
 ```powershell
 # List all domain trust from the current domain
-Get-NetDomainTrust
-Get-NetDomainTrust -Domain us.dollarcorp.moneycorp.local
+Get-DomainTrust
+Get-DomainTrust -Domain us.dollarcorp.moneycorp.local
 ```

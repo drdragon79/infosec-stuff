@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "327f5c7c8f278544",
+        "id": "5de0d25a0b0b4770",
         "type": "tabs",
         "children": [
           {
-            "id": "efc951ef15bbc131",
+            "id": "bd5e15e5054352cf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d370d4660e6d6bc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/Protocols/WinRM.md",
+                "file": "Active Directory/Privilege Escalation/Kerberoast.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -61,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "group policy",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -90,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 247.5
+    "width": 289.5
   },
   "right": {
     "id": "32319a25aaf4e1db",
@@ -106,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Protocols/WinRM.md",
+                "file": "Active Directory/Privilege Escalation/Kerberoast.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -123,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Protocols/WinRM.md",
+                "file": "Active Directory/Privilege Escalation/Kerberoast.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Protocols/WinRM.md"
+                "file": "Active Directory/Privilege Escalation/Kerberoast.md"
               }
             }
           },
@@ -167,8 +154,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,10 +166,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8d370d4660e6d6bc",
+  "active": "bd5e15e5054352cf",
   "lastOpenFiles": [
-    "Active Directory/Protocols/SMB.md",
-    "Active Directory/Protocols/MSRPC.md",
+    "Active Directory/Persistence/ACLs.md",
+    "Active Directory/Credential Dumping/LSASS.md",
+    "Active Directory/Credential Dumping/Local Credentials.md",
+    "Active Directory/Credential Dumping/LAPS.md",
+    "Active Directory/Credential Dumping/Domain Controller.md",
+    "Active Directory/Credential Dumping/Credential Manager.md",
+    "Active Directory/Initial Foothold/Kerberos.md",
+    "Active Directory/Initial Foothold/LLMNR.md",
+    "Active Directory/Initial Foothold/ASREPRoast.md",
+    "Active Directory/Lateral Movement and Pivoting/WMI-CIM.md",
+    "Active Directory/Lateral Movement and Pivoting/Running Process Remotely.md",
+    "Active Directory/Lateral Movement and Pivoting/NTLM.md",
+    "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
+    "Active Directory/Lateral Movement and Pivoting/Abusing User Behaviour.md",
+    "Active Directory/Domain Enumeration/Management Console.md",
+    "Active Directory/Domain Enumeration/Sharphound-BloodHound.md",
+    "Active Directory/Domain Enumeration/Defence.md",
+    "Active Directory/Domain Enumeration/Credential Injection.md",
+    "Active Directory/Domain Enumeration/CMD.md",
+    "Windows/Local Privilege Escalation/Service Exploits.md",
+    "Active Directory/Domain Enumeration/Powershell/Forest.md",
+    "Active Directory/Domain Enumeration/Powershell/Groups.md",
+    "Active Directory/Domain Enumeration/Powershell/Organisational Unit.md",
+    "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
+    "Active Directory/Privilege Escalation/Kerberoast.md",
+    "Active Directory/Privilege Escalation/DNSAdmins.md",
+    "Windows/Powershell",
     "_attachments/Pasted image 20231109212038.png",
     "_attachments/Pasted image 20231109194843.png",
     "_attachments/Pasted image 20231109193737.png",
@@ -191,33 +202,9 @@
     "_attachments/Pasted image 20231109191856.png",
     "_attachments/Pasted image 20231109183242.png",
     "_attachments/Pasted image 20230923224000.png",
-    "Windows/Persistence/Adding Privileged Users.md",
-    "Active Directory/AD Concepts/Kerberos.md",
-    "Windows/Windows Internals/Uncategorized/WMI.md",
-    "Windows/Windows Internals/Uncategorized/SysInternals.md",
-    "Windows/Windows Internals/Uncategorized/SID.md",
-    "Windows/Windows Internals/Uncategorized/Privileges.md",
-    "Windows/Windows Internals/Uncategorized/Policies.md",
-    "Windows/Windows Internals/Uncategorized/DPAPI.md",
-    "Windows/Windows Enumeration.md",
-    "Windows/Powershell Cheatsheet.md",
-    "Windows/Windows Internals/Security/Elevation.md",
-    "Windows/Windows Internals/Security/Integrity Levels.md",
-    "Windows/Windows Internals/Security/Access Token.md",
-    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
-    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
-    "Windows/System Programming/Fundamentals.md",
-    "Windows/Windows Internals/System Architecture/Operating System Model.md",
-    "Windows/Windows Internals/System Architecture/Architecture Overview.md",
-    "Windows/Windows Internals/Security/User Account Control.md",
-    "Windows/Windows Internals/Security/SID.md",
-    "Windows/Windows Internals/Security/Security Descriptor.md",
-    "Windows/Windows Internals/Security/Privilege.md",
-    "Wireless/Wifi/Basics.md",
     "_attachments/Pasted image 20230828195012.png",
     "_attachments/Pasted image 20230904145553.png",
     "_attachments/Pasted image 20230923190922.png",
-    "README.md",
     "Wireless/Wifi",
     "Windows/Windows Internals/System Architecture/Untitled",
     "Untitled.canvas",
@@ -228,7 +215,6 @@
     "Windows/Windows Internals/Fundamentals",
     "Windows/Windows Internals/Threads",
     "Windows/Windows Internals/Process & Jobs",
-    "Windows/Windows Internals/Security",
-    "Cheatsheet"
+    "Windows/Windows Internals/Security"
   ]
 }

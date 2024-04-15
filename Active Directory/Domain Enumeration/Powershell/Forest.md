@@ -21,8 +21,8 @@ Get-ADTrust -Filter 'msDS-TrustForestTrustInfo -ne "$null"'
 - Forest Enumeration
 ```powershell
 # Get Detials about forest
-Get-NetForest
-Get-NetForest -Forest eurocorp.local
+Get-Forest
+Get-Forest -Forest eurocorp.local
 
 # Get list of domains in the forest
 Get-NetForestDomain

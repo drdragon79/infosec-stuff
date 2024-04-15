@@ -14,5 +14,5 @@ Get-NetOU -FullData
 
 # Get GPO applied on an OU
 # gplink attribute of an OU gives GPO ID of the GPO applied to the OU
-Get-NetGPO -GPOName "{GPO_ID}"
+Get-DomainGPO -Identity "{GPO_ID}"
 ```

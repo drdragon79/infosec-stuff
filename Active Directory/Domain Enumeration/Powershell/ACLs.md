@@ -17,14 +17,20 @@ It is a list of Access Control Entities (ACE) - ACE corresponds to individual pe
 ### Powerview
 ```powershell
 # Get ACL Accociated with a specific object
-Get-ObjectAcl -SamAccountName student1 -ResolveGUIDs
+Get-DomainObjectAcl -SamAccountName student1 -ResolveGUIDs
 
 # Get ACL accociated with the specific prefix to be used for search (search by Distinguished name)
-Get-ObjectAcl -ADSprefix 'CN=Administrator,CN=Users' -Verbose
+Get-DomainObjectAcl -ADSprefix 'CN=Administrator,CN=Users' -Verbose
 
 # Get ACL for ldap path
-Get-ObjectAcl -ADSpath "LDAP://CN=Domain..." -ResolveGUIDs -Verbose
+Get-DomainObjectAcl -SearchBase "LDAP://CN=Domain..." -ResolveGUIDs -Verbose
 
 # Search for interesting ACEs
 Get-PathAcl -Path "\\dcorp-dc.dolarcorp.local/SYSVOL"
+
+# find interesting ACLs
+Find-InterestingDomainAcl -ResolveGUIDs
+
+# Find intersting ACLs for a specific user
+Find-InterestingDomainAcl -ResolveGUIDs | ?{$_.IdentityReferenceName -match "username"}
 ```

@@ -1,4 +1,4 @@
-- Are set of policies/rules/action that apply to AD [[Active Directory/AD Concepts/Users|Users]] and [[Computers]].
+- Are set of policies/rules/action that apply to AD [[Active Directory/AD Concepts/Users|Users]] and [[Active Directory/AD Concepts/Computers]].
 # GPOs
 - Group policy objects.
 - Each GPO has a set of policies.

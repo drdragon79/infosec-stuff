@@ -21,8 +21,12 @@ Get-ADComputer -Filter * -Properties DNSHostName | %{Test-Connection -Count 1 -C
 
 ### Powerview
 ```powershell
-Get-NetComputer
-Get-NetComputer -OperatingSystem "*server 2016*"
-Get-NetComputer -Ping
-Get-NetComputer -FullData
+# Get list of all the computer ojbect
+Get-DomainComputer | Select-Ojbect Name
+
+# Query computers based on operating system
+Get-DomainComputer -OperatingSytem "*Server 2022*"
+
+# Test connectin to a computer
+Get-DomainComputer -Ping
 ```

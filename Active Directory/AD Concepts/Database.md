@@ -59,7 +59,7 @@ CN=Administrator,CN=Users,DC=doctor,DC=local
 CN=Administrator,OU=Users,DC=doctor,DC=local
 ```
 1. `Domain Components (DC)` : Identifies the domain. DC for `it.doctor.local` would be `DC=it,DC=doctor,DC=local`.
-2. `Organizational Unit (OU)` : Identifies organizational units used to store objects.
+2. `Organizational Unit (OU)` : Identifies organisational units used to store objects.
 3. `Common Name (CN)` : Identifies objects or containers.
 
 # Partitions

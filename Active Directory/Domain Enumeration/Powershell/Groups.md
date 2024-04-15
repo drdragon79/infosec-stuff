@@ -25,20 +25,22 @@ Get-ADPricipalGroupMembership -Identity "Student"
 
 ### Powerview
 ```powershell
-Get-NetGroup
-Get-NetGroup -Domain anotherdomain.local
-Get-NetGroup -FullData
+Get-DomainGroup
+Get-DomainGroup -Domain anotherdomain.local
+Get-DomainGroup -FullData
 
 # search group containing *admin*
-Get-NetGroup *admin*
+Get-DomainGroup *admin*
 
 # Get members of the group 
-Get-NetGroupMember -GroupName "Domain Admins" -Recurse
+Get-DomainGroupMember -GroupName "Domain Admins" -Recurse
 
 # Get Group membership of a user
-Get-NetGroup -Username "student1"
+Get-DomainGroup -Username "student1"
 
 # List local groups on a machine
 # Other than the domain controller we need to administrative privs on the computer to get local groups 
-Get-NetLocalGroup -ComputerName domain
+Get-NetLocalGroup -ComputerName dc.domain.local
+# Get members of the local group
+	Get-NetLocalGroupMember -ComptuerName dc.domain.local -GroupName Administrator
 ```

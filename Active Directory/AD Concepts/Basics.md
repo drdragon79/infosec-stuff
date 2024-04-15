@@ -23,6 +23,7 @@ flowchart TD
 	A[Trust] --> B[doctor.local]
 	A --> C[dragon.local]
 ```
+- Forests are considered a security boundary, because if one domain in a forest in compromised, the entire forest in considered compromised.
 # Permission Delegations
 - AD Delegations are used to grans users some permission to perform tasks that require elevated permission without adding them to `DomainAdmins` or `Administrators`.
 - Delegations are used to delegate some permisson over an object of collections of OUs. For example: people from IT can have `PasswordReset` permission over users in Management OU.
