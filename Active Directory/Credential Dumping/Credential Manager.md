@@ -1,3 +1,4 @@
+#runas #mimikatz #powershell #cmdkey #vaultcmd 
 - Credential manager stores passwords for website, rpd logons etc.
 - `vaultcmd` and `cmdkey` can be used to manage credentials in the credential manager.
 ```powershell

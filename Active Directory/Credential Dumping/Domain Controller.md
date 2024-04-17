@@ -1,3 +1,4 @@
+#impacket #ntdsutil
 - The `NTDS` (New Technology Directory Services) is a database that contains all the AD data.
 - It has:
 	- Schema Table

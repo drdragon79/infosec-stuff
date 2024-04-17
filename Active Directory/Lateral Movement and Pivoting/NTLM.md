@@ -1,3 +1,4 @@
+#cme #mimikatz #msf #evil-winrm #xfreerdp 
 # Pass The Hash
 - As [[NetNTLM]] is inherently flawed, the password hash can be treated as a password.
 - NTLM hash can be used to directly authenticate to a domain/service

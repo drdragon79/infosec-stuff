@@ -1,3 +1,4 @@
+#wmi
 [[WMI]]
 # Connecting to WMI on remote machine
 ### Protocols support

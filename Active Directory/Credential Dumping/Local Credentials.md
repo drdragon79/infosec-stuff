@@ -1,3 +1,4 @@
+#msf #wmi #vssadmin #reg #mimikatz #impacket
 # SAM Database
 - Local database of local users and their credentials. 
 - Cannot be read by any user while windows is running.

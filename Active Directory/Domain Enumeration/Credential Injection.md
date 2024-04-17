@@ -8,10 +8,9 @@
 runas /netonly /user:<domain>\<username> cmd.exe
 ```
 * `/netonly`: Loads crendetials for network authentication. Commands are executed locally but network authentication will be performed over the domain account context.
-
 * `/user:<domain>\<username>`: Username of the domain account we want to authenticate. It is recommended to use Fully quallyfied domain name instead of netbions name
-
 * `cmd.exe`: Command to execute.
+- The logon type used by `runas` is logon type 9, which is different from the normal logon. Only programs that requires remote authentication, will use the new injected credentials. Eg., using `dir` on a remote share, will use the injected credentials.
 
 #### Credential Verification
 The credentials are not verfied when we pass it to `runas`. To Verify the credentials, we cal try to list the `SYSVOL` directory.

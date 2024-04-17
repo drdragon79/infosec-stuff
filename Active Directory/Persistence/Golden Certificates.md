@@ -1,3 +1,4 @@
+#mimikatz #rubeus 
 - We can use certificates to maintain persistence
 - Valid certificate can be used for client authentication to get TGT.
 - To prevent this form persistence, blue team needs to revoke the certificate. This is the only way to defend.

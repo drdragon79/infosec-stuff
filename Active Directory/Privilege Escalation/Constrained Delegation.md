@@ -1,3 +1,4 @@
+#kekeo #mimikatz #powershell 
 - [[#Unconstrained Delegation]] is dangerous, as it allows services to impersonate user and access any service.
 - S4U restricts this and only allows delegation to certain services.
 	- Service for User to Proxy (S4U2Proxy)

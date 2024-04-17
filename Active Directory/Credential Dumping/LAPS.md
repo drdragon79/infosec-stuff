@@ -1,3 +1,4 @@
+#powershell
 # Group Policy
 - Changing local administrator password in all the machines is a difficult task. 
 - This is usually done through Group Policies Preferences.

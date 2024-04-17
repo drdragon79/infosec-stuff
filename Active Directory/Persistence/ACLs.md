@@ -1,3 +1,4 @@
+#powershell
 - With DA privs, the ACL of the domain root can be modified to provide usefull rights  like FullControl or the ability to run DCSync.
 ```powershell
 # Give yourself Fullcontrol over the root domain object

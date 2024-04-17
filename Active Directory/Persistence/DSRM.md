@@ -1,3 +1,4 @@
+#powershell #mimikatz 
 - Stands for Directory Services Restore Mode.
 - By default, we can't login as the local Administrator in the DC. The password for this account is the DSRM password which was setup during the server installation.
 - DSRM password is also called the SafeMode password. It is required when a server is promoted to Domain Controller, or when the server is rebooted in the Safe Mode.

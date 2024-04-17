@@ -1,3 +1,4 @@
+#mimikatz 
 [[Credentials#LSASS]]
 - `lsass.exe` is a protected process. 
 ### Disabling lsass protection

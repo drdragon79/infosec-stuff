@@ -1,3 +1,4 @@
+#psexec #tscon
 # RDP Session Hijacking
 - If an administrator uses RDP to log in to a machine and Instead of logging off the session, closes the RDP session, the session remains open on the server indefinately.
 - If we have Administrative rights on a machine, we can reopen the session.

@@ -1,3 +1,4 @@
+#powerview #ldap #mimikatz #powershell 
 When a user requests for ST, and if the service owner has the `TRUSTED_FOR_DELEGATION` flag set in [[Active Directory/AD Concepts/Users#User Account Control|User Account Control]], the ST received from the KCD will have the `OK_AS_DELEGATE` flag set.
 To set `TRUSTED_FOR_DELEGATION` flag in User Account Control, the user needs to have `SeEnableDelegationPrivilege` privilege.
 #### Ticket Acquisition

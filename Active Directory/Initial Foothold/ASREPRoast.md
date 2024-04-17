@@ -1,3 +1,4 @@
+#impacket #powershell #rubeus
 - Also known as targeted kerberoasting.
 - In kerberos, pre-authentication is required for users. 
 - Pre-Authentication is when a user sends the timestamp encrypted with it's kerberos key to request TGT (AS-REQ)

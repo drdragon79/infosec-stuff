@@ -1,3 +1,4 @@
+#impacket #mimikatz 
 - TGTs are encrypted with the `krbtgt`'s key derived from it's password.
 - If we get hold of this key, we can forge TGTs for any user subsequently getting access to any service as any user. These tickets are called Golden Tickets.
 - This can be done using dumping credential of the domain controller or via [[DCSync]] attack.

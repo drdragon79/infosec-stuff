@@ -1,3 +1,4 @@
+#mimikatz #schtasks #klist
 - STs are encrypted with the service user's key derived from it's password.
 - If we have this key, we can forge ST's for any service running under that user. These tickets are called Silver Tickets.
 - The key can be dumped from the lsass process memory or by [[#Kerberoast]], or dumping the entire AD Database (NTDS.dit file)

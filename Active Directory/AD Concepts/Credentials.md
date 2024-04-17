@@ -8,6 +8,7 @@
 	- `Digest SSP`: Used to store clear text password in memory before windows 2008 R2. 
 - LSASS process is accessible to users with `SeDebugPrivilege` (Administrators hold this privilege)
 - Mimikatz's `sekurlsa` module can be used to extract credentials from the LSASS memory.
+- LSASS is a very heavily monitored and secure process. MDR and EDRs keeps a big eye on LSASS all the time. Even if you open a handle to the process, EDRs will generate an alert.
 # Registry Credentials
 ### SECURITY Hive
 - `HKLM\Security\Policy\Secrets`

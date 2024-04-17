@@ -1,3 +1,4 @@
+#rubeus #kerbrute
 # Brute Force
 We can brute force username and password based on the errors that we get from kerberos.
 - `KDC_ERR_PREAUTH_FAILED`: Incorrect password

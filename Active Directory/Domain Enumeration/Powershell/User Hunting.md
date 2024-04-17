@@ -26,4 +26,8 @@ Invoke-UserHunter -CheckAccess
 # STEALTH MODE
 Invoke-UserHunter -Stealth
 # This option queries the DC of the current or provided domain for members of the given group (Domain Admins by default) using get-netGroupMembers, gets a list of ONLY high traffic servers (DC, File Servers and Distrbuted File Servers) for less traffic generation and list sessions and logged on users (GetNetSessoiin/GetNetLoggedon) for each machine.
+
+# SessionHunter
+# Doesn't require local admin privilege on the remote machine
+Invoke-SessionHunter
 ```

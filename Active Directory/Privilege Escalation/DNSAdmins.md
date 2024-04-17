@@ -1,3 +1,4 @@
+#powershell #dnscmd #sc 
 - DNSAdmins group member can load arbitrary DLLs with the privilege of the process called dns.exe. dns.exe runs as SYSTEM.
 - If domain controlles in also running a DNS server, it can be abused to gain domain admin.
 # Enumeration
