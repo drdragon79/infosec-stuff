@@ -1,5 +1,5 @@
 #mimikatz 
-- Persistence technique where it is possible to path the DC's lssass process so that it allows access as any user with a single password.
+- Persistence technique where it is possible to path the DC's `lssass` process so that it allows access as any user with a single password.
 - Discovered by Dell Secureworks.
 - Using mimikatz to inject skeleton key
 ```powershell
