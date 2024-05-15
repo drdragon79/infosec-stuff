@@ -28,3 +28,5 @@ Get-ADUser -Filter {DoesNotRequirePreAuth -eq $True} -Properties DoesNotRequireP
 ```powershell
 .\Rubeus.exe asreproast
 ```
+---
+If a user has `GenericAll` or `GenericWrite` on another user, they can turn enable `DONT_REQUIRE_PREAUTH` and then request for TGT for that account. This is preferred over password reset because, password is much more noisy that turning of `DONT_REQUIRE_PREAUTH`.

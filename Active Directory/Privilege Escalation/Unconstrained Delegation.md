@@ -3,7 +3,7 @@ When a user requests for ST, and if the service owner has the `TRUSTED_FOR_DELEG
 To set `TRUSTED_FOR_DELEGATION` flag in User Account Control, the user needs to have `SeEnableDelegationPrivilege` privilege.
 #### Ticket Acquisition
 - Client requests for the ST for a service with SPN `HTTP\webserv` which is owned by `websrv$` machine account.
-- The KDC checks for `TRUSTED_FOR_DELEGATION` in `websrv$` account's UAC. KDC returns a ST with `OK_AS_DELEGATE` and `FORWARDABLE` flag set.
+- The KDC checks for `TRUSTED_FOR_DELEGATION` in `websrv$` account's UAC. KDC returns an ST with `OK_AS_DELEGATE` and `FORWARDABLE` flag set.
 - The Client checks of these flags and asks a `FORWARDED` TGT. The KDC responds with a TGT with `FORWARDED` flag set.
 - The Client sends the ST and the `FORWARDED` TGT to the service for access. 
 - The Serivice uses this TGT to request ST for `MSSQLSvc\dbsrv` serivce.
@@ -20,7 +20,7 @@ mimikatz sekurlsa::tickets
 ```
 - Powerview
 ```powershell
-Get-NetComputer -unContrained
+Get-DomainComputer -unconstrained
 ```
 - Active Directory Module
 ```powershell

