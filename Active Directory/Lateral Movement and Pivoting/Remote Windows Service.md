@@ -24,7 +24,7 @@ sequenceDiagram
 	participant svc as SVCCTL (PORT 40345)
 	Client->>svc: rpcbind to SVCCTL
 ```
-2. If the above process failes sc with reach SVCCTL via SMB named pipes on port 445 (SMB) or port 135 (SMB over NETBIOS)
+2. If the above process fails, sc with reach SVCCTL via SMB named pipes on port 445 (SMB) or port 135 (SMB over NETBIOS)
 ```mermaid
 sequenceDiagram
 	participant Client

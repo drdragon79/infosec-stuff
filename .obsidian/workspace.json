@@ -4,47 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b788606a43ef4af6",
+        "id": "37fd1edf20d56dc1",
         "type": "tabs",
         "children": [
           {
-            "id": "e2a318a9e2321c65",
+            "id": "d2ce51c7c4a64a13",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1c977c01a6feecdd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/Persistence/Golden Tickets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9b1acb78974968ae",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "graph",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -118,11 +89,10 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
@@ -135,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -157,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Active Directory/Privilege Escalation/Constrained Delegation.md"
-              }
+              "state": {}
             }
           },
           {
@@ -174,12 +141,11 @@
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 351.5,
     "collapsed": true
   },
   "left-ribbon": {
@@ -192,55 +158,55 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9b1acb78974968ae",
+  "active": "d2ce51c7c4a64a13",
   "lastOpenFiles": [
-    "Active Directory/Privilege Escalation/DNSAdmins.md",
-    "Active Directory/Privilege Escalation/Unconstrained Delegation.md",
-    "Active Directory/Privilege Escalation/Constrained Delegation.md",
-    "Active Directory/Privilege Escalation/Kerberoast.md",
-    "Active Directory/Lateral Movement and Pivoting/Kerberos.md",
-    "Active Directory/Initial Foothold/ASREPRoast.md",
-    "Active Directory/Persistence/ACLs.md",
-    "Active Directory/Persistence/DSRM.md",
-    "Active Directory/Persistence/Golden Certificates.md",
-    "Active Directory/Persistence/Diamond Ticket.md",
-    "Active Directory/Persistence/Custom SSP.md",
-    "Active Directory/Persistence/Golden Tickets.md",
-    "Active Directory/Persistence/SID History.md",
-    "Active Directory/Persistence/Silver Tickets.md",
-    "Active Directory/Persistence/Skeleton Key.md",
-    "Active Directory/Credential Dumping/DC Sync.md",
-    "Active Directory/Lateral Movement and Pivoting/NTLM.md",
-    "Windows/Powershell/Cheatsheet.md",
-    "Windows/Windows Internals/Uncategorized/SID.md",
+    "Windows/Windows Enumeration.md",
+    "Windows/Windows Internals/Uncategorized/WMI.md",
     "Windows/Windows Internals/Uncategorized/SysInternals.md",
+    "Windows/Windows Internals/Uncategorized/SID.md",
+    "Windows/Windows Internals/Uncategorized/Privileges.md",
+    "Windows/Windows Internals/Uncategorized/Policies.md",
+    "Windows/Windows Internals/Uncategorized/DPAPI.md",
+    "Windows/Windows Internals/System Architecture/Operating System Model.md",
+    "Windows/Windows Internals/System Architecture/Architecture Overview.md",
+    "Windows/Windows Internals/Security/User Account Control.md",
+    "Windows/Windows Internals/Security/SID.md",
+    "Windows/Windows Internals/Security/Security Descriptor.md",
+    "Windows/Windows Internals/Security/Privilege.md",
+    "Windows/Windows Internals/Security/Integrity Levels.md",
+    "Windows/Windows Internals/Security/Elevation.md",
     "Windows/Windows Internals/Security/Access Token.md",
-    "Active Directory/AD Concepts/Services.md",
-    "Uncategorized/Applocker.md",
-    "Active Directory/Lateral Movement and Pivoting/PSEXEC.md",
+    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
+    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
+    "Windows/System Programming/Fundamentals.md",
     "Windows/Powershell/Detections & Bypass.md",
-    "Active Directory/Lateral Movement and Pivoting/WimRM (PowerShell Remoting).md",
+    "Windows/Powershell/Cheatsheet.md",
+    "Windows/Persistence/Services.md",
+    "Windows/Commands/reg.md",
+    "Windows/Persistence/Scheduled Tasks.md",
+    "Windows/Persistence/Logon Triggered.md",
+    "Windows/Persistence/Login Screen (RDP).md",
+    "Windows/Windows Internals/Process & Jobs/_assets/proc_creation.png",
+    "Windows/Windows Internals/Security/_assets/elevation.png",
+    "Windows/Windows Internals/Security/_assets",
+    "Windows/Windows Internals/Process & Jobs/_assets",
+    "Windows/System Programming/_assets/sys_arch2.png",
+    "Windows/System Programming/_assets",
+    "Windows/System Programming/_assets/sys_arch1.png",
+    "Windows/Windows Internals/Uncategorized/_assets/reg2.png",
+    "Windows/Windows Internals/Uncategorized/_assets/reg1.png",
+    "Windows/Windows Internals/Threads/_assets/wmi.png",
+    "Windows/Windows Internals/Threads/_assets",
+    "Windows/Windows Internals/Uncategorized/_assets/wmi.png",
+    "_attachments/Pasted image 20221227143012.png",
+    "Active Directory/Domain Enumeration/Powershell/_assets/find_local_admin.png",
+    "Windows/Windows Internals/Uncategorized/_assets",
+    "Active Directory/AD Concepts/Untitled",
+    "Active Directory/AD Concepts/_assets",
+    "Active Directory/Domain Enumeration/Powershell/_assets",
     "Windows/Powershell",
-    "_attachments/Pasted image 20231109212038.png",
-    "_attachments/Pasted image 20231109194843.png",
-    "_attachments/Pasted image 20231109193737.png",
-    "_attachments/Pasted image 20231109193711.png",
-    "_attachments/Pasted image 20231109191856.png",
-    "_attachments/Pasted image 20231109183242.png",
-    "_attachments/Pasted image 20230923224000.png",
-    "_attachments/Pasted image 20230828195012.png",
-    "_attachments/Pasted image 20230904145553.png",
-    "_attachments/Pasted image 20230923190922.png",
     "Wireless/Wifi",
-    "Windows/Windows Internals/System Architecture/Untitled",
     "Untitled.canvas",
-    "Untitled 1.canvas",
-    "Windows/Windows Internals/Uncategorized",
-    "Windows/Windows Internals/Threads/Untitled",
-    "Windows/Windows Internals/System Architecture",
-    "Windows/Windows Internals/Fundamentals",
-    "Windows/Windows Internals/Threads",
-    "Windows/Windows Internals/Process & Jobs",
-    "Windows/Windows Internals/Security"
+    "Untitled 1.canvas"
   ]
 }

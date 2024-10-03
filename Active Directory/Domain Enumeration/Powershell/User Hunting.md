@@ -1,5 +1,5 @@
 ### Powerview
-- Find all the machine on the current domain where the current user has local admin access.![[Pasted image 20221106011205.png]]
+- Find all the machine on the current domain where the current user has local admin access.
 ```powershell
 # This function queries the DC of the current or provided domain for a list of computers (Get-NetComputer) and then use multi-threaded Invoke-CheckLocalADminAcess on each machine.
 Find-LocalAdminAcess -Verbose
@@ -7,10 +7,10 @@ Find-LocalAdminAcess -Verbose
 
 # Same can by done by help of remote administration tools like WMI and powershell remoting. Pretty Usefull in cases ports (RPC and SMB) used by Find-LocalAdminAccess are blocked
 Find-WMILocalAdminAccess.ps1
-# The script recivies a list of machine, then goes to each and every machine and runs a simple WMI query. The query needs local admin priv on the machine, hence, in case of failure, the account doesn't have local admin priv, and in case of success, account has local privs access.
-# Both the above mentioned script are very noisy
+Find-PowershellLocalAdminAccess.ps1
+# As both WMI and Powershell remoting requires local admin access, if we are able to connect to the machines, we have admin access on the machine
 ```
-- Find local admins on all machine of the domain (needs administrator privs on non-dc machines).![[Pasted image 20221106011710.png]]
+- Find local admins on all machine of the domain (needs administrator privs on non-dc machines. ![](_assets/find_local_admin.png)
 ```powershell
 Invoke-EnumerateLocalAdmin -Verbose
 ```

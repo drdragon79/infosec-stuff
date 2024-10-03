@@ -7,4 +7,4 @@
 - UAC virtualization, if enabled, automatically translate these global location and hives to local per user area:
 	- `C:\Users\drdragon\AppData\Local\VirtualStore`
 - For legacy application, virtualization is enabled by default. for newer application, it needs to be enabled. For system processes, applications can never be virtualized.
-- The virtualization is also a part of [[Access Token]].
+- The virtualization is also a part of [Access Token](Access%20Token.md).

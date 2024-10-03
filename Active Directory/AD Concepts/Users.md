@@ -1,7 +1,7 @@
 - Users
 ### User Identification
 - `SamAccountName`: Username of the user
-- `SID`: domain [[Windows/Windows Internals/Uncategorized/SID]] + [[Windows/Windows Internals/Uncategorized/SID#RID]]
+- `SID`: domain [SID](Windows/Windows%20Internals/Uncategorized/SID) + [RID](Windows/Windows%20Internals/Uncategorized/SID#RID)
 - `DistinguishedName`: used in LDAP to identify objects in an Active Directory. 
 ### User Secrets
 #### NTLM
@@ -40,14 +40,13 @@ LMHash = DES("KGS!@#$%",password1) + DES("KGS!@#$%",password2)
 - `PrimaryGroupID`: Primary group of the user. Does not appear in MemberOf.
 - `ServicePrincipalName`
 - [msDS-AllowedToDelegateTo](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-ada2/86261ca1-154c-41fb-8e5f-c6446e77daaa) -> The list of services for which the user (and its own services) can impersonate clients using Kerberos Constrained Delegation. [SeEnableDelegationPrivilege](http://www.harmj0y.net/blog/activedirectory/the-most-dangerous-user-right-you-probably-have-never-heard-of/) required to modify it.
-- [[#User Account Control]]
+- [User Account Control](#User%20Account%20Control)
 
 ### Computer Accounts
 Each computer in the domain has it's own user. Users are stored in the `User` class. Computers are stored in the `Computer` class which a subclass of the `User` class. It is stored as `Hostname$`.
 
 ### Trust Account
-When trust is established with a domain, a trust user account is created which also ends with a `$` symbol. The username of this account is the Netbios name of the domain.
+When trust is established with a domain, a trust user account is created which also ends with a `$` symbol. The username of this account is the net-bios name of the domain.
 This user stores the trust key, as the NThash or kerberos keys.
 
-### User Enumeration
-[[Active Directory/Domain Enumeration/Powershell/Users|Users]]
+[User Enumeration](../Domain%20Enumeration/Powershell/Users.md)

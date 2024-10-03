@@ -7,15 +7,15 @@ The computer asks for the TGT from the Domain Controllers, and the TGT gets cach
 
 # Network Logon
 - When user connects to non-interactive services like SMB, RPC, SQL, etc.
-- Requires password, NT Hash, or kerberos keys for authentication. Prone to [[Active Directory/Initial Foothold/Kerberos#Pass the Ticket|PTT]] and [[Active Directory/Exploitation/NTLM#Pass The Hash|PTH]].
--  Credentials are **NOT** cached in the target machine. Credentials/tickets are only cached in the case of [[Active Directory/AD Concepts/Kerberos#Kerberos Delegations|Kerberos Delegations]].
+- Requires password, NT Hash, or kerberos keys for authentication. Prone to [PTT](Active%20Directory/Initial%20Foothold/Kerberos#Pass%20the%20Ticket) and [PTH](Active%20Directory/Exploitation/NTLM#Pass%20The%20Hash).
+-  Credentials are **NOT** cached in the target machine. Credentials/tickets are only cached in the case of [Kerberos Delegations](Active%20Directory/AD%20Concepts/Kerberos#Kerberos%20Delegations).
 ```powershell
 # Accessing Share
 dir \\ws-01\Temp
 # Executing Command
 psexec.exe \\dc01 cmd.exe
 ```
-- The client negotiate the authentication mechanism using [[Authentication#SPNEGO]].
+- The client negotiate the authentication mechanism using [SPNEGO](Authentication#SPNEGO).
 
 # Batch Logon
 - Used in context of a scheduled task running as a user. 
@@ -47,5 +47,5 @@ New-PSSession -Credential $cred -Authentication Credssp
 # Remote Interactive Logon
 - Used when a user logins to the computer using RDP.
 - Credentials are cached in the `lsass` process.
-- It uses [[Authentication#Cred SSP]] to send credentials.
+- It uses [CredSSP](Authentication#Cred%20SSP) to send credentials.
 - User needs to be part of "Remote Desktop Users" group or "SeRemoteInteractiveLogonRight" to be able to RDP.

@@ -1,5 +1,5 @@
 #kekeo #mimikatz #powershell 
-- [[#Unconstrained Delegation]] is dangerous, as it allows services to impersonate user and access any service.
+- [Unconstrained Delegation](Unconstrained%20Delegation.md) is dangerous, as it allows services to impersonate user and access any service.
 - S4U restricts this and only allows delegation to certain services.
 	- Service for User to Proxy (S4U2Proxy)
 	- Service for User to Self (S4U2Self)
@@ -10,7 +10,7 @@
 ### S4U2Proxy
 This extension allows a service to request another service on behalf of the user by using `ST` instead of `TGT`.
 The service can only ask for impersonation `ST` for certain services defined in one of the following ways:
-- **Classic Constrained Delegation**: `msDS-AllowedToDelegateTo` attribute of the service account. It contains [[Active Directory/AD Concepts/Services#SPN|SPN]] of the services for which the service account can ask ST for. To edit this parameter, `SeEnableDelegationPrivilege` priv is required.
+- **Classic Constrained Delegation**: `msDS-AllowedToDelegateTo` attribute of the service account. It contains [SPN](Active%20Directory/AD%20Concepts/Services#SPN) of the services for which the service account can ask ST for. To edit this parameter, `SeEnableDelegationPrivilege` priv is required.
 - **Resource Based Constrained Delegation**: The service account is mentioned in the `msDS-AllowedToActOnBehalfOfOtherIdentity` attribute of the target service for which the service account will ask ST for.
 ---
 Constrained Delegation works in one of the two ways:

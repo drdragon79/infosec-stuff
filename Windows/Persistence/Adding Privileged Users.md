@@ -13,8 +13,8 @@ net localgroup "Backup Operators" backdoor /add
 net localroup "Remote Management users" backdoor /add
 ```
 
-- By default, the UAC strips the remote user of it's administrative privs, this can be disabled. [[Policies#LocalAccountTokenFilterPolicy]]
-- As a member of "Backup Operators", we can now save system and sam hives from the regsitery and use Impacket to get the system hash. [[Impacket#secretsdump.py]]
+- By default, the UAC strips the remote user of it's administrative privs, this can be disabled. [LocalAccountTokenFilterPolicy](Policies#LocalAccountTokenFilterPolicy)
+- As a member of "Backup Operators", we can now save system and sam hives from the regsitery and use Impacket to get the system hash. [secretsdump.py](Impacket#secretsdump.py)
 
 ### Assigning privileges to users.
 - By default, the 'backup Operators' have two privileges:
@@ -42,8 +42,8 @@ Set-PSSessionconfiguration -Name Microsoft.Powershell -showSecurityDescriptorUI
 ```
 
 ### RID hijacking
-[[Windows/Windows Internals/Uncategorized/SID]]
-- Changing the effective RID of a user to RID of an admistrator so that when the user logs in, it will have the same access tokens as an administrator.
+[SID](Windows/Windows%20Internals/Uncategorized/SID)
+- Changing the effective RID of a user to RID of an administrator so that when the user logs in, it will have the same access tokens as an administrator.
 - Effective RID is stored in `F` key at:
 ```cmd
 HKLM\SAM\SAM\Domain\Account\Users\RID(hex)

@@ -1,8 +1,8 @@
 #cme #mimikatz #msf #evil-winrm #xfreerdp 
 # Pass The Hash
-- As [[NetNTLM]] is inherently flawed, the password hash can be treated as a password.
+- As [NetNTLM](../AD%20Concepts/NetNTLM.md) is inherently flawed, the password hash can be treated as a password.
 - NTLM hash can be used to directly authenticate to a domain/service
-- [[Cheatsheet/Mimikatz]] for extracting Credentials
+- [Mimikatz](../../Cheatsheet/Mimikatz.md) for extracting Credentials
 ### Mimikatz
 ```powershell
 sekurlsa::pth /user:user.name /domain:za.tryhackme.com /ntlm:<hash> /run:<command>

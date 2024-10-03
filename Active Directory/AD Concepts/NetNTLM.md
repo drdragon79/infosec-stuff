@@ -1,10 +1,8 @@
 - NetNTLM or just NTLM.
-
 ### Versions
 - NTLMv1: Version 1 of NTML/NetNTLM
 - NTLM2: NTLMv1 with enhanced security
 - NTLMv2: Better version of NTLMv1.
-
 - NTLM does not generate network traffic on it's own. It is used by application level protocols such as SMB, LDAP etc.
 - NTLM can be used by both Active Directory and Workgroups.
 
@@ -12,11 +10,10 @@
 - `NEGOTIATE`
 - `CHALLENGE`
 - `AUTHENTICATE`
-
 ### One
-- After initiating the security context using `InitializeSecurityContext` via [[Authentication#NTLM SSP]], client sends a `NEGOTIATE` message to the server, with security options and NTLM version to use.
+- After initiating the security context using `InitializeSecurityContext` via [NTLM SSP](Authentication#NTLM%20SSP), client sends a `NEGOTIATE` message to the server, with security options and NTLM version to use.
 ### Two
-- The server generates a security challenge by calling `AcceptSecurityContext` from [[Authentication#NTLM SSP]] and sends a challenge message back to the client with NTLM version confirmation, and information such as computer name, version and the domain name. 
+- The server generates a security challenge by calling `AcceptSecurityContext` from [NTLM SSP](Authentication#NTLM%20SSP) and sends a challenge message back to the client with NTLM version confirmation, and information such as computer name, version and the domain name. 
 ### Three
 - The client receives the challenge from the server and passes it back to `InitializeSecurityContext` to calculate a response using the user's password (NT Hash)
 - Client creates a `session key` and encrypts it with another key knows as `session base key` derived from NT Hash of the user.
@@ -29,7 +26,7 @@
 > And the NTLM response is also knows as the NTLM Hash (NetNTLM Hash) and it depends on the version of NTLM Protocol.
 
 ### NTLMv1 (NetNTLMv1)
-- In NTLMv1, the NTLM response to the challenge is calcualted by encrypting the challenge with user's NT Hash using DES algorithm.
+- In NTLMv1, the NTLM response to the challenge is calculated by encrypting the challenge with user's NT Hash using DES algorithm.
 - The session key is also encrypted using the DES algorithm.
 
 ### NTLMv2 (NetNTLMv2)

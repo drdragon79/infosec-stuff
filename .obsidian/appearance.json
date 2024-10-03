@@ -1,7 +1,9 @@
 {
   "theme": "obsidian",
-  "accentColor": "#a76bef",
-  "cssTheme": "Things",
+  "accentColor": "",
+  "cssTheme": "",
   "baseFontSize": 17,
-  "monospaceFontFamily": "JetBrainsMono Nerd Font"
+  "monospaceFontFamily": "JetBrainsMono Nerd Font",
+  "textFontFamily": "Cantarell,Bodoni 72,JetBrainsMonoNL Nerd Font",
+  "interfaceFontFamily": ""
 }

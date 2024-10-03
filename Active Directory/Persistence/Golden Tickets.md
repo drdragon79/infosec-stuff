@@ -3,7 +3,7 @@
 - `krbtgt` account password is not rotated automatically. Microsoft's best practice is to rotate every 6 months, which is more than enough time to maintain persistence.
 - Password history for `krbtgt` account is maintained by the DC.
 - If we get hold of this key, we can forge TGTs for any user subsequently getting access to any service as any user. These tickets are called Golden Tickets.
-- This can be done using dumping credential of the domain controller or via [[DCSync]] attack.
+- This can be done using dumping credential of the domain controller or via [DC Sync](../Credential%20Dumping/DC%20Sync.md) attack.
 - This can also be done by dumping the NTDS.dit file locally.
 - Using impacket's secretsdump.py:
 ```bash
@@ -42,7 +42,7 @@ Rubeus.exe
 
 ---
 - AES256 keys should be used to avoid any alerts or detection.
-- AES keys for `krbtgt` account can also be obtained by perfoming [[DC Sync]]
+- AES keys for `krbtgt` account can also be obtained by performing [DC Sync](../Credential%20Dumping/DC%20Sync.md)
 ```powershell
 # mimikatz
 lsadump::dcsync /user:dcorp\krbtgt

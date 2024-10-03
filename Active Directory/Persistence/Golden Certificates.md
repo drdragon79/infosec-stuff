@@ -5,7 +5,7 @@
 # Exploitation
 - We need to get the private key of the root CA's certificate, after which we can create our own certificate.
 - Usually the key is protected by the HSM (Hardware Security Module).
-- If HSM is not used, [[DPAPI]] is used. In such case we can use mimikatz and other tools.
+- If HSM is not used, [DPAPI](../../Windows/Windows%20Internals/Uncategorized/DPAPI.md) is used. In such case we can use mimikatz and other tools.
 - List certificates stored on the Domain Controller using mimikatz
 ```powershell
 crypto::certificates /systemstore:local_machine

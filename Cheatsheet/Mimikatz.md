@@ -28,7 +28,7 @@ kerberos::purge
 kerberos::tgt
 ```
 ### golden
-[[Active Directory/Initial Foothold/Kerberos#Golden Tickets|Golden Tickets]]
+[Golden Tickets](Active%20Directory/Initial%20Foothold/Kerberos#Golden%20Tickets)
 - Create golden tickets from krbtgt's NTLM hash or Kerberos keys.
 ### silver
 - Create silver ticket from a service's NTLM hash or Kerberos keys.
@@ -49,7 +49,7 @@ sekurlsa::backupkey
 sekurlsa::credman
 ```
 ### dpapi
-[[DPAPI]]
+[DPAPI](../Windows/Windows%20Internals/Uncategorized/DPAPI.md)
 - Lists cached master keys
 ```powershell
 sekurlsa::dpapi

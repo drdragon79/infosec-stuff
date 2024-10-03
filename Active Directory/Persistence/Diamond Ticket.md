@@ -1,6 +1,6 @@
 - When we forge a `diamont ticket`, there is no pre-auth request corresponding to the forged ticket. This is an anomaly and can be detected by MDIs.
-- To bypass this, we can request a TGT, de-crypt it, modify if, then re-encrypt it, using the AES keys of the `krbtgt` account.
-- Diamond ticket is the ofsec safe version of the golden ticket.
+- To bypass this, we can request a TGT, decrypt it, modify if, then re-encrypt it, using the AES keys of the `krbtgt` account.
+- Diamond ticket is the opsec safe version of the golden ticket.
 ### Rubeus
 ```powershell
 Rubues.exe diamond

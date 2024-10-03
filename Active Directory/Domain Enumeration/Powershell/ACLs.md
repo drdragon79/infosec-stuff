@@ -1,8 +1,7 @@
 Enables Control on the ability of a process to access object and other resource in active directory based on:
 * Access Token (security context of a process - Identity and Privilege of a user)
 * Security Discriptors (SID of the owner, Discretionary ACL(DACL) and System ACL(SACL). Both DACL and SACL had entries called Access Control Entities (ACEs))
-
-![[Pasted image 20221102143332.png]]
+![](_assets/acl.png)
 ### ACL (Access Control List)
 It is a list of Access Control Entities (ACE) - ACE corresponds to individual permission or audit access. Who has permission and what can be done on an object.
 	Types of ACL:

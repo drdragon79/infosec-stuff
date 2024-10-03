@@ -3,7 +3,7 @@
 - If we have this key, we can forge ST's for any service running under that user. These tickets are called Silver Tickets.
 - Way more silent and powerful compared to the Golden Ticket attack because we are not interacting with the Domain Controller. We only interact with the service.
 - A trade-off of this attack is that, the persistence duration is less than of the Golden Ticket attack, as the machine account (response for running services like win-rm, smb etc.) usually has a password rotation duration of 30 days.
-- The key can be dumped from the lsass process memory or by [[#Kerberoast]], or dumping the entire AD Database (NTDS.dit file)
+- The key can be dumped from the lsass process memory or by [Kerberoast](../Privilege%20Escalation/Kerberoast.md), or dumping the entire AD Database (NTDS.dit file)
 - The PAC is signed with the `krbtgt`'s account, hence a fake signature is used to create the PAC. The PAC signature is not verified if the the ticket is less than 20 minutes old. We can also add more privilege to the PAC, as it is not verified. For example, we can modify the PAC user group to include the `Domain Admins`. 
 ### Mimikatz
 - Mimikatz can be used to forge silver tickets

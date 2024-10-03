@@ -67,8 +67,8 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 		- Ready - Wants to execute code but CPU is busy running other threads.
 		- Waiting - Thread doesn't want to execute, as it is waiting for some data or IO processing to complete.
 # System Architecture
-![[Pasted image 20230828194948.png]]
-![[Pasted image 20230828195012.png]]
+![[_assets/sys_arch1.png]]
+![[_assets/sys_arch2.png]]
 # Windows Subsystem APIs
 ### Windows API
 - Also called Win32 API
@@ -292,7 +292,7 @@ void moresysteminfo() {
 	- Can be used to share objects across processes.
 - Process Explorer can be used to see handles opened by a process.
 - Handles are always represented as a multiple of 4.
-- Objects exposed by the Windows API for the usermode:
+- Objects exposed by the Windows API for the user-mode:
 	- Process
 		- `CreateProcess()`
 		- `OpenProcess()`

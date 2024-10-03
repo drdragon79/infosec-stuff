@@ -2,7 +2,7 @@
 	- NTLM
 	- Kerberos
 
-[[#SPNEGO]] is used to agree on which authentication protocols can/should be used.
+[SPNEGO](#SPNEGO) is used to agree on which authentication protocols can/should be used.
 
 # GSS-API
 - GSS-API: Generic Security Service - Application Programming Interface
@@ -23,7 +23,7 @@ GSS-API also handles integrity and confidentiality:
 
 # Windows SSP
 - Security Support Providers in form of DLLs. 
-- Implements [[#SSPI]], so that it can used by applications (clients, servers).
+- Implements [SSPI](#SSPI), so that it can used by applications (clients, servers).
 ### Kerberos SSP
 - `kerberos.dll`
 - Manages kerberos authentication.
@@ -35,7 +35,7 @@ GSS-API also handles integrity and confidentiality:
 - Can be extracted from lsass process.
 ### Negotiate SSP
 - `secur32.dll`
-- Intermediary SSP than manages [[#SPNEGO]] negotiation and delegates authentication to [[#NTLM SSP]] or [[#Kerberos SSP]] based on negotiation.
+- Intermediary SSP than manages [SPNEGO](#SPNEGO) negotiation and delegates authentication to NTLM SSP or Kerberos SSP based on negotiation.
 ### Digest SSP
 - `wdigest.dll`
 - Implements the Digest Access Protocol.
@@ -45,7 +45,7 @@ GSS-API also handles integrity and confidentiality:
 - Provides TLS/SSL for HTTPS communication.
 ### Cred SSP
 - `credssp.dll`
-- Creates TLS channel, authenticates the client through [[#Negotiate SSP]] and allows client to send credentials to the server. 
+- Creates TLS channel, authenticates the client through Negotiate SSP and allows client to send credentials to the server. 
 - Used by RDP, in NLA(Network Level Authentication) mode, verifies and authenticate before beginning the RDP session.
 
 # SPNEGO

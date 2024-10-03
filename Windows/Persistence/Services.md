@@ -1,4 +1,4 @@
-[[reg#sc]]
+[sc](reg#sc)
 ### Creating New Services
 ```powershell
 # Create a reverse shell using msfvenom, with exe-service, as service executables are different from normal executables

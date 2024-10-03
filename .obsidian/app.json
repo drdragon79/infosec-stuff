@@ -8,9 +8,11 @@
     "margin": "0",
     "downscalePercent": 100
   },
-  "attachmentFolderPath": "_attachments",
+  "attachmentFolderPath": "./_assets",
   "readableLineLength": false,
   "showLineNumber": false,
   "showFrontmatter": false,
-  "alwaysUpdateLinks": true
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true
 }

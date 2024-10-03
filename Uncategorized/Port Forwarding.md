@@ -14,8 +14,8 @@ ssh -L 0.0.0.0:90:192.168.10.12:80 192.168.10.87
 - Opens up port on `0.0.0.0` on port `90` on `SSH Client` which when accessed forwards the connection to `192.168.10.12` on port `80` which is only accessible via `192.168.10.87`
 ### Remote Port Forward
 - `SSH Server` listens for a connection on a configured port.
-- When the port recieves the connection it forwards the connection to the `SSH Client` machine on the configured destination port
-- Can be used to expose Client localhost to the public if `SSH Server` is avaliable on public internet
+- When the port receives the connection it forwards the connection to the `SSH Client` machine on the configured destination port
+- Can be used to expose Client localhost to the public if `SSH Server` is available on public internet
 ```bash
 ssh -R [Server_IP]:<Server_Port>:<Client_IP><Client_Port> <server/IP>
 ```
@@ -25,8 +25,8 @@ ssh -R 0.0.0.0:8080:localhost:80 myserver.com
 ```
 - Opens a port `8080` on `myserver.com` which forwards the incoming connection the `SSH Client`'s localhost on port `80`
 # Socat
-- Usefull when SSH is not available.
-- Does not come preinstalled. Neet to tranfer socat binary to host. 
+- Useful when SSH is not available.
+- Does not come preinstalled. Need to transfer socat binary to host. 
 ```bash
 socat TCP4-LISTEN:1234,fork TCP4:1.1.1.1:4321
 ```

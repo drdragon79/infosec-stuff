@@ -6,7 +6,6 @@ wmic /namespace:\\root\securitycenter2 path antivirusproduct
 # Using powershell WMI
 Get-CimInstance -Namespace root/securitycenter2 -Class antivirusproduct
 ```
-
 # Windows Defender
 - Windows Defender is windows's preinstalled AntiVirus solution.
 - Works in 3 modes:

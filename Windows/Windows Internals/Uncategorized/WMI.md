@@ -4,7 +4,8 @@
 	- WBEM: Web Based Enterprise Management
 - Provides a uniform interface for applications/script to manage a local or remote computer or network
 # Architecture
-![[Pasted image 20221216201142.png]]
+![](_assets/wmi.png)
+![](../Uncategorized/_assets/wmi.png)
 # Components
 ### MOF Files (managed object format)
 - Defines WMI namespace, classes providers etc.
@@ -377,9 +378,9 @@ GetSecurityDescriptor
 > EnumKeys and EnumValues method has a vague definition in the case of registry and WMI.
 > For Example:
 > 	1. EnumKeys returns the following data for `software\Microsoft\OneDrive`
-![[Pasted image 20221227143012.png]]
-> 	1. EnumValues return the following data for `software\Microsoft\OneDrive`
-![[Pasted image 20221227143119.png]]
+![image](_assets/reg2.png)
+> 	2. EnumValues return the following data for `software\Microsoft\OneDrive`
+![image](_assets/reg1.png)
 - Query Keys within keys with `EnumKey`
 ```powershell
 Invoke-WmiMethod -Namespace root\default -Class StdRegProv -Name EnumKey -ArgumentList @(2147483649,"Software\Microsoft\Internet Explorer\Toolbar") | Select-Object -ExpandProperty sNames
