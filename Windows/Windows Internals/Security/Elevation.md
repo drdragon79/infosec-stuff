@@ -18,7 +18,7 @@
 	</trustInfo>
 	```
 # Elevation Process
-![[_assets/elevation.png]]
+![elevation](_assets/elevation.png)
 1. User opens explorer which is running as a standard user token.
 2. When the user double clicks on an application which request administrator rights or the user selects "Run as Administrator", the `ShellExecute` API is called to execute *app.exe*.
 3. `ShellExecute` calls a helper service *AppInfo Service*.

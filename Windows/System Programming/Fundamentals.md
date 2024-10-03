@@ -67,8 +67,8 @@ In 64 bit version of windows 8 and earlier, only 8 TB of user and kernel space w
 		- Ready - Wants to execute code but CPU is busy running other threads.
 		- Waiting - Thread doesn't want to execute, as it is waiting for some data or IO processing to complete.
 # System Architecture
-![[_assets/sys_arch1.png]]
-![[_assets/sys_arch2.png]]
+![sys_arch1](_assets/sys_arch1.png)
+![sys_arch2](_assets/sys_arch2.png)
 # Windows Subsystem APIs
 ### Windows API
 - Also called Win32 API

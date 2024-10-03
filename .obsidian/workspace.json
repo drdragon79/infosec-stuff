@@ -11,8 +11,12 @@
             "id": "d2ce51c7c4a64a13",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/Protocols/MSRPC.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Active Directory/Protocols/MSRPC.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Active Directory/Protocols/MSRPC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Active Directory/Protocols/MSRPC.md"
+              }
             }
           },
           {
@@ -160,6 +168,10 @@
   },
   "active": "d2ce51c7c4a64a13",
   "lastOpenFiles": [
+    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
+    "Windows/Windows Internals/Security/Elevation.md",
+    "Windows/System Programming/Fundamentals.md",
+    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
     "Windows/Windows Enumeration.md",
     "Windows/Windows Internals/Uncategorized/WMI.md",
     "Windows/Windows Internals/Uncategorized/SysInternals.md",
@@ -174,11 +186,7 @@
     "Windows/Windows Internals/Security/Security Descriptor.md",
     "Windows/Windows Internals/Security/Privilege.md",
     "Windows/Windows Internals/Security/Integrity Levels.md",
-    "Windows/Windows Internals/Security/Elevation.md",
     "Windows/Windows Internals/Security/Access Token.md",
-    "Windows/Windows Internals/Process & Jobs/Process Internals.md",
-    "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
-    "Windows/System Programming/Fundamentals.md",
     "Windows/Powershell/Detections & Bypass.md",
     "Windows/Powershell/Cheatsheet.md",
     "Windows/Persistence/Services.md",

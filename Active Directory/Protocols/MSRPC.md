@@ -10,7 +10,7 @@
 - PORT 593 is the endpoint mapper 
 ### SMB
 - PORT 445
-- [[Active Directory/Protocols/SMB|SMB]] using its [[Active Directory/Protocols/SMB#IPC$|IPC$]] share, exposes named pipes which can be used to perform RPC calls.
+- [SMB](Active%20Directory/Protocols/SMB) using its [IPC$](Active%20Directory/Protocols/SMB#IPC$) share, exposes named pipes which can be used to perform RPC calls.
 ### Ephemeral Range
 - Range of TCP ports directly hosting RPC application
 

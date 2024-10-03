@@ -1,1 +1,1 @@
-![[_assets/proc_creation.png]]
+![proc_creation](_assets/proc_creation.png)
