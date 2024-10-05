@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "37fd1edf20d56dc1",
+        "id": "609490abbccf6811",
         "type": "tabs",
         "children": [
           {
-            "id": "d2ce51c7c4a64a13",
+            "id": "ded0bea4235b5316",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Protocols/MSRPC.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Protocols/MSRPC.md",
+                "file": "README.md",
                 "collapseAll": true,
                 "extraContext": true,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Protocols/MSRPC.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Protocols/MSRPC.md"
+                "file": "README.md"
               }
             }
           },
@@ -166,8 +166,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d2ce51c7c4a64a13",
+  "active": "ded0bea4235b5316",
   "lastOpenFiles": [
+    "Windows/Windows Internals/Uncategorized/Policies.md",
+    "Windows/Windows Internals/Security/User Account Control.md",
+    "Windows/Windows Internals/Uncategorized/Privileges.md",
+    "Windows/Windows Internals/Uncategorized/SID.md",
+    "Windows/Windows Internals/Security/SID.md",
+    "Active Directory/Persistence/SID History.md",
+    "Active Directory/Persistence/Custom SSP.md",
+    "Active Directory/Privilege Escalation/Constrained Delegation.md",
+    "README.md",
+    "Active Directory/Protocols/MSRPC.md",
+    "Active Directory/Protocols/SMB.md",
     "Windows/Windows Internals/Process & Jobs/Fundamentals.md",
     "Windows/Windows Internals/Security/Elevation.md",
     "Windows/System Programming/Fundamentals.md",
@@ -175,25 +186,14 @@
     "Windows/Windows Enumeration.md",
     "Windows/Windows Internals/Uncategorized/WMI.md",
     "Windows/Windows Internals/Uncategorized/SysInternals.md",
-    "Windows/Windows Internals/Uncategorized/SID.md",
-    "Windows/Windows Internals/Uncategorized/Privileges.md",
-    "Windows/Windows Internals/Uncategorized/Policies.md",
     "Windows/Windows Internals/Uncategorized/DPAPI.md",
     "Windows/Windows Internals/System Architecture/Operating System Model.md",
     "Windows/Windows Internals/System Architecture/Architecture Overview.md",
-    "Windows/Windows Internals/Security/User Account Control.md",
-    "Windows/Windows Internals/Security/SID.md",
     "Windows/Windows Internals/Security/Security Descriptor.md",
     "Windows/Windows Internals/Security/Privilege.md",
     "Windows/Windows Internals/Security/Integrity Levels.md",
     "Windows/Windows Internals/Security/Access Token.md",
     "Windows/Powershell/Detections & Bypass.md",
-    "Windows/Powershell/Cheatsheet.md",
-    "Windows/Persistence/Services.md",
-    "Windows/Commands/reg.md",
-    "Windows/Persistence/Scheduled Tasks.md",
-    "Windows/Persistence/Logon Triggered.md",
-    "Windows/Persistence/Login Screen (RDP).md",
     "Windows/Windows Internals/Process & Jobs/_assets/proc_creation.png",
     "Windows/Windows Internals/Security/_assets/elevation.png",
     "Windows/Windows Internals/Security/_assets",

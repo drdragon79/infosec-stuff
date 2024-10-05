@@ -1,5 +1,4 @@
 #mimikatz #powershell 
-[GSS-API](Authentication#GSS-API)
 - Injecting our own SSP for programs to use.
 - Mimikatz has it's own `mimilib.dll` SSP. This SSP logs local logons, service account and machine account password in clear text on the target server.
 - `mimilib.dll` should be present in the system32 directory on the target system, and add mimilib to the `HKLM\SYSTEM\CurrentControlSet\Control\LSA\Security Packages`

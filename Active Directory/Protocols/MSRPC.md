@@ -10,7 +10,7 @@
 - PORT 593 is the endpoint mapper 
 ### SMB
 - PORT 445
-- [SMB](Active%20Directory/Protocols/SMB) using its [IPC$](Active%20Directory/Protocols/SMB#IPC$) share, exposes named pipes which can be used to perform RPC calls.
+- [SMB](SMB.md) using its [IPC$](SMB#IPC$) share, exposes named pipes which can be used to perform RPC calls.
 ### Ephemeral Range
 - Range of TCP ports directly hosting RPC application
 
@@ -27,7 +27,7 @@ python rpcdump.py <target>
 ### rpcclient
 ```bash
 # Connect
-rpcclient -U <username>%<password> <target>
+		rpcclient -U <username>%<password> <target>
 
 # Test null session
 rpcclient -U "" -N <target>
